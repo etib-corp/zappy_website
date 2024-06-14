@@ -1,14 +1,9 @@
-import logo from './logo.svg';
-
-import { Button, ButtonGroup, Card, Navbar } from 'flowbite-react';
-
-import './App.css';
-import Navbar_ from './componants/Navbar';
+import Custom_Navbar from "./componants/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar_></Navbar_>
+    <div>
+      <Custom_Navbar></Custom_Navbar>
     </div>
   );
 }
