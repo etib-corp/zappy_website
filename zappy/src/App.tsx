@@ -6,6 +6,7 @@ import Quote, { Title } from "./components/Quote";
 import Presentation, { Team } from "./components/Presentation";
 
 import home from "./JSON/home-description.json";
+import GetButton from "./components/GetButton";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Article properties={home} />
           <Title text="Our Team:" />
           <Team />
+          <GetButton />
           <Footer_Component />
         </div>
     </main>
