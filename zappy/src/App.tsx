@@ -7,6 +7,7 @@ import Presentation, { Team } from "./components/Presentation";
 
 import home from "./JSON/home-description.json";
 import GetButton from "./components/GetButton";
+import Roadmap from "./components/Roadmap";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Article properties={home} />
           <Title text="Our Team:" />
           <Team />
+          <Roadmap />
           <GetButton />
           <Footer_Component />
         </div>
