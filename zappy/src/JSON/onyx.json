@@ -1,0 +1,38 @@
+{
+    "3D":
+    {
+        "name": "3D",
+        "description": "See the Amber world in 3 dimensions.",
+        "image": "https://images.wallpaperscraft.com/image/single/cube_figure_dark_142157_1920x1080.jpg"
+    },
+    "VR":
+    {
+        "name": "Virtual Reality",
+        "description": "See from your own eyes.",
+        "image": "https://blog.laval-virtual.com/wp-content/uploads/2023/02/laval-virtual-2023-evenement-realite-virtuelle-augmentee-metaverse-casques-vr-ar-meta.jpeg"
+    },
+    "Music":
+    {
+        "name": "Music / Sound effects",
+        "description": "Listen to the best music.",
+        "image": "https://images4.alphacoders.com/194/194136.jpg"
+    },
+    "Exploration":
+    {
+        "name": "Exploration",
+        "description": "Discover while moving yourself.",
+        "image": "https://wallpapersmug.com/download/1920x1080/4cd860/landscape-man-explorer.jpg"
+    },
+    "Design":
+    {
+        "name": "Design",
+        "description": "Enjoy while using a pure interface.",
+        "image": "https://static.vecteezy.com/ti/vecteur-libre/p3/9873447-science-fiction-futuriste-interface-utilisateur-hud-design-panneau-pour-business-app-abstract-technology-concept-technology-concept-fui-widescreen-aspect-ratio-hologram-communication-statistic-data-infographic-vectoriel.jpg"
+    },
+    "Information":
+    {
+        "name": "Information",
+        "description": "Watch in real time what is going on.",
+        "image": "https://wallpaper-house.com/data/out/4/wallpaper2you_41550.jpg"
+    }
+}
