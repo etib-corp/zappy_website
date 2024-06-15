@@ -2,7 +2,7 @@ import { Card } from "flowbite-react";
 
 const Bloc: React.FC<{ properties: any }> = ({ properties }) => {
   return (
-    <Card className="max-w-sm blur-sm transition transform hover:-translate-y-1 hover:blur-none motion-reduce:transition-none motion-reduce:hover:transform-none"
+    <Card className="max-w-sm transition transform hover:-translate-y-3 motion-reduce:transition-none motion-reduce:hover:transform-none"
         imgAlt={properties.description}
         imgSrc={properties.image}>
         <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
