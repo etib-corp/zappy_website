@@ -1,0 +1,32 @@
+{
+    "Lore":
+    {
+        "title": "Amber: The lore",
+        "content": "In a distant future, humanity has discovered an unknown planet rich in mysterious resources and inhabited by alien beings. This planet, named Zappy, becomes the arena for an intense competition between various human and alien factions, each striving to exploit the planet's resources to gain a strategic advantage. The game takes place on a grid representing the surface of the planet Zappy. Players need to move around, gather resources, build structures, and interact with other players (both allies and enemies). Each action must be carefully planned to optimize the faction's efficiency and strategy."
+    },
+    "Buffer":
+    {
+        "title": "Buffer management",
+        "content": "We took care about how the messages between the clients and the server are manage."
+    },
+    "Architecture":
+    {
+        "title": "Architecture",
+        "content": "As developper, we know how much is important in any project to have a good architecture. So we made 2 sub parts in the server, the logic side which can't be altered from the network side and vice-versa."
+    },
+    "Time":
+    {
+        "title": "Time management",
+        "content": "For this project, we made a time management for the requests very specific and very efficient, inspired by thread but without using them."
+    },
+    "Memory":
+    {
+        "title": "Memory management",
+        "content": "In a program in low level programming like C, memory handling must be as accurate as in our project."
+    },
+    "Error":
+    {
+        "title": "Error management",
+        "content": "Sometimes users make mistakes, and if your software is not tested enough you can't prevent a bug, so we grant a fully robust server. And sometimes, your machine can be lazy or faulty, don't worry we handle it !"
+    }
+}
