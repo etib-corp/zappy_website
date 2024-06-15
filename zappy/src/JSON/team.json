@@ -1,0 +1,38 @@
+{
+    "leo":
+    {
+        "name": "Leo",
+        "image": "assets/team/leo.jpg",
+        "description": "Leo is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+    },
+    "nathan":
+    {
+        "name": "Nathan",
+        "image": "assets/team/nathan.jpg",
+        "description": "Nathan is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+    },
+    "julien":
+    {
+        "name": "Julien",
+        "image": "assets/team/julien.jpg",
+        "description": "Julien is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+    },
+    "benjamin":
+    {
+        "name": "Benjamin",
+        "image": "assets/team/benjo.jpg",
+        "description": "Benjamin is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+    },
+    "noah":
+    {
+        "name": "Noah",
+        "image": "assets/team/noah.jpg",
+        "description": "Noah is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+    },
+    "cedric":
+    {
+        "name": "Cedric",
+        "image": "assets/team/cedric.jpg",
+        "description": "Cedric is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+    }
+}
