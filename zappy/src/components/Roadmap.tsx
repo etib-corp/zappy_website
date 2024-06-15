@@ -9,9 +9,11 @@ export default function Roadmap() {
                     <Timeline.Content>
                     <Timeline.Time>April 5 2024</Timeline.Time>
                     <Timeline.Title>Etib's Game Engine implementation</Timeline.Title>
+                    <br/>
                     <Timeline.Body className="text-sm">
                         Get started with the implementation of the game engine, the core of the Onyx project.
                         <Timeline>
+                            <br/>
                             <Timeline.Item>
                                 <Timeline.Point />
                                 <Timeline.Content>
@@ -97,7 +99,7 @@ export default function Roadmap() {
                                 <Timeline.Content>
                                 <Timeline.Time>June 8 2024</Timeline.Time>
                                 <Timeline.Title>Audio and Animations</Timeline.Title>
-                                <Timeline.Body className="text-sm">
+                                <Timeline.Body className="text-sm w-4/5">
                                     We have implemented an ultra compatible audio system. And we made a first version of 3D animations.
                                 </Timeline.Body>
                                 </Timeline.Content>

@@ -8,7 +8,7 @@ export default function Onyx() {
     return (
         <div className="dark:bg-gray-800 py-2">
             <Narbar_Component />
-            <div className="flex justify-center items-center bg-violet-500 my-10">
+            <div className="flex justify-center items-center bg-tahiti my-10">
                 <h1 className="text-4xl font-bold">Onyx</h1>
                 <Article properties={{ title: "Dive into immersion", content: "Experience the simulation" }} />
             </div>
