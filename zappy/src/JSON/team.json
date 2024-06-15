@@ -3,36 +3,36 @@
     {
         "name": "Leo",
         "image": "assets/team/leo.jpg",
-        "description": "Leo is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+        "description": "Léo is our project manager. He mainly leads the Zappy project. He is a student who is passionate about computer science and XR technologies. As a detail-oriented and a perfectionist, he is always looking for new challenges and opportunities to learn."
     },
     "nathan":
     {
         "name": "Nathan",
         "image": "assets/team/nathan.jpg",
-        "description": "Nathan is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+        "description": "Nathan is a very beautiful man with such a big sex."
     },
     "julien":
     {
         "name": "Julien",
         "image": "assets/team/julien.jpg",
-        "description": "Julien is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+        "description": "Biker and optimisation nerd, Julien is a student in computer science. He is always searching for new ways to improve his code and make it more efficient. He is also a big fan of graphical programming and is in a good way to become a shader master."
     },
     "benjamin":
     {
         "name": "Benjamin",
         "image": "assets/team/benjo.jpg",
-        "description": "Benjamin is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+        "description": "Benjo (as we call him) is our UI brain. He is a student in computer science and is passionate about user experience and design. As a Mac user, he always has a good taste in design and he represents a great asset for Etib."
     },
     "noah":
     {
         "name": "Noah",
         "image": "assets/team/noah.jpg",
-        "description": "Noah is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+        "description": "Simply the good guy of the team. Noah is a student in computer science and is passionate about IOT and embedded systems. Enjoying complex problems, he was the perfect fit for the AI part of the Zappy project."
     },
     "cedric":
     {
         "name": "Cedric",
         "image": "assets/team/cedric.jpg",
-        "description": "Cedric is a software engineer with a passion for creating innovative solutions. He has a strong background in computer science and has worked on a variety of projects ranging from web development to machine learning. He is always looking for new challenges and opportunities to learn."
+        "description": "Safety first! Cedric is a student in computer science and is passionate about security and cryptography. He is always looking for new ways to secure his code and make it more robust. Even if he is a bit paranoid, he is a great asset for the team."
     }
 }

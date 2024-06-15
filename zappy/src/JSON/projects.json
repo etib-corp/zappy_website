@@ -3,18 +3,18 @@
     {
         "name": "Amber",
         "image": "assets/amber.webp",
-        "description": "Amber is a fossilized tree resin that has been appreciated for its color and natural beauty since Neolithic times. Much valued from antiquity to the present as a gemstone, amber is made into a variety of decorative objects. Amber is used in jewelry. It has also been used as a healing agent in folk medicine."
+        "description": "Amber is a planet far away from Earth. It is a planet of great beauty and great danger. The planet is covered in a thick, dense jungle, with towering trees and thick undergrowth. The planet is home of the Trantorians, a smart and intelligent species that has evolved to live in the dense jungle."
     },
     "onyx":
     {
         "name": "Onyx",
         "image": "assets/onyx.webp",
-        "description": "Onyx is a banded variety of the oxide mineral chalcedony. Agate and onyx are both varieties of layered chalcedony that differ only in the form of the bands: agate has curved bands and onyx has parallel bands. The colors of its bands range from white to almost every color. Commonly, specimens of onyx contain bands of black and/or white."
+        "description": "Onyx is THE User Interface that allow you to live in the digital world which is Amber. It is a powerful and user friendly interface, which such a great design that you will never want to leave it. Onyx is the key to access all the features of Amber, and it is the only way to interact with the planet."
     },
     "turing":
     {
         "name": "Turing",
         "image": "assets/turing.webp",
-        "description": "Alan Mathison Turing was an English mathematician, computer scientist, logician, cryptanalyst, philosopher, and theoretical biologist. Turing was highly influential in the development of theoretical computer science, providing a formalisation of the concepts of algorithm and computation with the Turing machine, which can be considered a model of a general-purpose computer."
+        "description": "Turing AI represents the intelligence of the Trantorians. It is a powerful AI that has been designed to make the Trantorians level up their intelligence and knowledge. Turing AI represents an evolutive intelligence that is constantly learning and evolving. It is the key to the future of the Trantorians."
     }
 }
