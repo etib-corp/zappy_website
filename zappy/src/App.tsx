@@ -11,7 +11,7 @@ import Roadmap from "./components/Roadmap";
 
 function App() {
   return (
-    <main >
+    <main className="overflow-x-hidden" >
         <div className="dark:bg-gray-800 py-2">
           <Narbar_Component />
           <Presentation />

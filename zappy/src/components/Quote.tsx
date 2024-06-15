@@ -4,7 +4,7 @@ import People from "./People";
 
 const Quote: React.FC<{ picture: string; name: string; description: string; text: string }> = ({ picture, name, description, text }) => {
     return (
-        <figure className="mx-auto max-w-screen-md text-center my-20">
+        <figure className="mx-auto px-3 max-w-screen-md text-center my-20">
             <svg
                 className="mx-auto mb-3 h-10 w-10 text-gray-400 dark:text-gray-600"
                 aria-hidden="true"

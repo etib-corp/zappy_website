@@ -2,8 +2,8 @@ import { Alert, Timeline } from "flowbite-react";
 
 export default function Roadmap() {
     return (
-        <div className="flex flex-wrap justify-center">
-            <Timeline className="text-sm mx-5">
+        <div className="flex flex-wrap justify-center mx-5">
+            <Timeline className="text-sm">
                 <Timeline.Item>
                     <Timeline.Point />
                     <Timeline.Content>
@@ -138,112 +138,113 @@ export default function Roadmap() {
                 </Timeline.Item>
             </Timeline>
             <div className="flex flex-col">
-            <Alert className="my-5 mx-5">
-                <span className="font-semibold text-xl">Informations !</span>
-                <br />
-                <br />
-                We have 2 projects in parallel, the Game Engine and Zappy itself.
-                <br />
-                <br />
-                The Game Engine is used in Zappy, but it's a standalone project.
-                <br />
-                We started the Game Engine a long time ago, and basically it was coded in C.
-            </Alert>
-            <Timeline className="my-5 mx-5">
-                <Timeline.Item>
-                    <Timeline.Point />
-                    <Timeline.Content>
-                    <Timeline.Time>May 20 2024</Timeline.Time>
-                    <Timeline.Title>Let's change the world | <br />Working on the server</Timeline.Title>
-                    <Timeline.Body className="text-sm w-96">
-                        We have set up the project, by making the CI/CD. We have started to work on the server by adding some utils libs.
-                        <Timeline>
-
-                        <Timeline.Item>
-                            <Timeline.Point />
-                            <Timeline.Content>
-                            <Timeline.Time>May 21 2024</Timeline.Time>
-                            <Timeline.Title>Networkout</Timeline.Title>
-                            <Timeline.Body className="text-sm w-96">
-                                We started to make the base of the communication protocol between the server and the client.
-                            </Timeline.Body>
-                            </Timeline.Content>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <Timeline.Point />
-                            <Timeline.Content>
-                            <Timeline.Time>May 27 2024</Timeline.Time>
-                            <Timeline.Title>Logic</Timeline.Title>
-                            <Timeline.Body className="text-sm w-96">
-                                The logic between the server and the client is now implemented. (There still some bugs)
-                            </Timeline.Body>
-                            </Timeline.Content>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <Timeline.Point />
-                            <Timeline.Content>
-                            <Timeline.Time>May 30 2024</Timeline.Time>
-                            <Timeline.Title>Graphic is coming soon</Timeline.Title>
-                            <Timeline.Body className="text-sm w-96">
-                                Here we are, we can display the first 3D model from the server !
-                            </Timeline.Body>
-                            </Timeline.Content>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <Timeline.Point />
-                            <Timeline.Content>
-                            <Timeline.Time>June 3 2024</Timeline.Time>
-                            <Timeline.Title>Intelligence</Timeline.Title>
-                            <Timeline.Body className="text-sm w-96">
-                                Our AI is starting to work ! We can see the first results.
-                            </Timeline.Body>
-                            </Timeline.Content>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <Timeline.Point />
-                            <Timeline.Content>
-                            <Timeline.Time>June 9 2024</Timeline.Time>
-                            <Timeline.Title>Checkpoint !</Timeline.Title>
-                            <Timeline.Body className="text-sm w-96">
-                                Here we update papers and we are ready to move on the next step.
-                            </Timeline.Body>
-                            </Timeline.Content>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <Timeline.Point />
-                            <Timeline.Content>
-                            <Timeline.Time>June 10 2024</Timeline.Time>
-                            <Timeline.Title>User friendly now</Timeline.Title>
-                            <Timeline.Body className="text-sm w-96">
-                                We have implemented a first version of the user interface. It's very simple but it's a start.
-                            </Timeline.Body>
-                            </Timeline.Content>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <Timeline.Point />
-                            <Timeline.Content>
-                            <Timeline.Time>June 13 2024</Timeline.Time>
-                            <Timeline.Title>Interface done</Timeline.Title>
-                            <Timeline.Body className="text-sm w-96">
-                                The user interface is now done, thanks to the change made on the Game Engine.
-                            </Timeline.Body>
-                            </Timeline.Content>
-                        </Timeline.Item>
-                        <Timeline.Item>
-                            <Timeline.Point />
-                            <Timeline.Content>
-                            <Timeline.Time>June 14 2024</Timeline.Time>
-                            <Timeline.Title>The first merge</Timeline.Title>
-                            <Timeline.Body className="text-sm w-96">
-                                After 4 weeks of work, we have merged the interface, the server and our AI together. We see some little things to fix.
-                            </Timeline.Body>
-                            </Timeline.Content>
-                        </Timeline.Item>
-                        </Timeline>
-                    </Timeline.Body>
-                    </Timeline.Content>
-                </Timeline.Item>
-            </Timeline>
+                <Alert className="my-5 mx-5">
+                    <span className="font-semibold text-xl">Informations !</span>
+                    <br />
+                    <br />
+                    We have 2 projects in parallel, the Game Engine and Zappy itself.
+                    <br />
+                    <br />
+                    The Game Engine is used in Zappy, but it's a standalone project.
+                    <br />
+                    We started the Game Engine a long time ago, and basically it was coded in C.
+                </Alert>
+                <Timeline className="my-5">
+                    <Timeline.Item>
+                        <Timeline.Point />
+                        <Timeline.Content>
+                        <Timeline.Time>May 20 2024</Timeline.Time>
+                        <Timeline.Title>Let's change the world | <br />Working on the server</Timeline.Title>
+                        <br/>
+                        <Timeline.Body className="text-sm w-80">
+                            We have set up the project, by making the CI/CD. We have started to work on the server by adding some utils libs.
+                            <Timeline>
+                            <br/>
+                            <Timeline.Item>
+                                <Timeline.Point />
+                                <Timeline.Content>
+                                <Timeline.Time>May 21 2024</Timeline.Time>
+                                <Timeline.Title>Networkout</Timeline.Title>
+                                <Timeline.Body className="text-sm w-80">
+                                    We started to make the base of the communication protocol between the server and the client.
+                                </Timeline.Body>
+                                </Timeline.Content>
+                            </Timeline.Item>
+                            <Timeline.Item>
+                                <Timeline.Point />
+                                <Timeline.Content>
+                                <Timeline.Time>May 27 2024</Timeline.Time>
+                                <Timeline.Title>Logic</Timeline.Title>
+                                <Timeline.Body className="text-sm w-80">
+                                    The logic between the server and the client is now implemented. (There still some bugs)
+                                </Timeline.Body>
+                                </Timeline.Content>
+                            </Timeline.Item>
+                            <Timeline.Item>
+                                <Timeline.Point />
+                                <Timeline.Content>
+                                <Timeline.Time>May 30 2024</Timeline.Time>
+                                <Timeline.Title>Graphic is coming soon</Timeline.Title>
+                                <Timeline.Body className="text-sm w-80">
+                                    Here we are, we can display the first 3D model from the server !
+                                </Timeline.Body>
+                                </Timeline.Content>
+                            </Timeline.Item>
+                            <Timeline.Item>
+                                <Timeline.Point />
+                                <Timeline.Content>
+                                <Timeline.Time>June 3 2024</Timeline.Time>
+                                <Timeline.Title>Intelligence</Timeline.Title>
+                                <Timeline.Body className="text-sm w-80">
+                                    Our AI is starting to work ! We can see the first results.
+                                </Timeline.Body>
+                                </Timeline.Content>
+                            </Timeline.Item>
+                            <Timeline.Item>
+                                <Timeline.Point />
+                                <Timeline.Content>
+                                <Timeline.Time>June 9 2024</Timeline.Time>
+                                <Timeline.Title>Checkpoint !</Timeline.Title>
+                                <Timeline.Body className="text-sm w-80">
+                                    Here we update papers and we are ready to move on the next step.
+                                </Timeline.Body>
+                                </Timeline.Content>
+                            </Timeline.Item>
+                            <Timeline.Item>
+                                <Timeline.Point />
+                                <Timeline.Content>
+                                <Timeline.Time>June 10 2024</Timeline.Time>
+                                <Timeline.Title>User friendly now</Timeline.Title>
+                                <Timeline.Body className="text-sm w-80">
+                                    We have implemented a first version of the user interface. It's very simple but it's a start.
+                                </Timeline.Body>
+                                </Timeline.Content>
+                            </Timeline.Item>
+                            <Timeline.Item>
+                                <Timeline.Point />
+                                <Timeline.Content>
+                                <Timeline.Time>June 13 2024</Timeline.Time>
+                                <Timeline.Title>Interface done</Timeline.Title>
+                                <Timeline.Body className="text-sm w-80">
+                                    The user interface is now done, thanks to the change made on the Game Engine.
+                                </Timeline.Body>
+                                </Timeline.Content>
+                            </Timeline.Item>
+                            <Timeline.Item>
+                                <Timeline.Point />
+                                <Timeline.Content>
+                                <Timeline.Time>June 14 2024</Timeline.Time>
+                                <Timeline.Title>The first merge</Timeline.Title>
+                                <Timeline.Body className="text-sm w-80">
+                                    After 4 weeks of work, we have merged the interface, the server and our AI together. We see some little things to fix.
+                                </Timeline.Body>
+                                </Timeline.Content>
+                            </Timeline.Item>
+                            </Timeline>
+                        </Timeline.Body>
+                        </Timeline.Content>
+                    </Timeline.Item>
+                </Timeline>
             </div>
         </div>
     );
