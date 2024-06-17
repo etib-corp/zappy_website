@@ -140,8 +140,8 @@ export default function Roadmap() {
                 </Timeline.Item>
             </Timeline>
             <div className="flex flex-col">
-                <Alert className="my-5 mx-5">
-                    <span className="font-semibold text-xl">Informations !</span>
+                <Alert className="my-5 mx-5 dark:text-white">
+                    <span className="font-semibold text-xl dark:text-white ">Informations !</span>
                     <br />
                     <br />
                     We have 2 projects in parallel, the Game Engine and Zappy itself.
