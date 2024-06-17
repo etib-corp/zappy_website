@@ -21,19 +21,19 @@ export default function Amber() {
             <Article properties={amber.Lore} />
             <Title text="Our technicals advantages" />
             <div className="flex flex-wrap justify-center">
-                <div className="max-w-96 mx-10">
+                <div className="max-w-96 mx-5">
                     <Article properties={amber.Buffer} />
                 </div>
-                <div className="max-w-96 mx-10">
+                <div className="max-w-96 mx-5">
                     <Article properties={amber.Architecture} />
                 </div>
-                <div className="max-w-96 mx-10">
+                <div className="max-w-96 mx-5">
                     <Article properties={amber.Time} />
                 </div>
-                <div className="max-w-96 mx-10">
+                <div className="max-w-96 mx-5">
                     <Article properties={amber.Memory} />
                 </div>
-                <div className="max-w-96 mx-10">
+                <div className="max-w-96 mx-5">
                     <Article properties={amber.Error} />
                 </div>
             </div>
