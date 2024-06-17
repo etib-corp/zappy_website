@@ -1,0 +1,381 @@
+\doxysection{server/libs/list/include/list.h File Reference}
+\hypertarget{list_8h}{}\label{list_8h}\index{server/libs/list/include/list.h@{server/libs/list/include/list.h}}
+
+
+This file contains the definition of the linked\+\_\+list\+\_\+t structure.  
+
+
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Structure representing a linked list node. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structlist__s}{list\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Represents a list data structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{list_8h_a40f8d9377dce35f8aab81e47051a2e8b}{LIST\+\_\+\+FORWARD}}(list)~(list = list-\/$>$next)
+\begin{DoxyCompactList}\small\item\em Macro to move the list pointer forward to the next element. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{list_8h_ac0fdbe49b6dc758535dbe3e9ba56665c}{CAST}}(type,  var)~((type)var)
+\begin{DoxyCompactList}\small\item\em Macro to cast a variable to a specific type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8h_a2d68774629ac361c160d71fb82b89868}{constructor\+\_\+t}}) (va\+\_\+list \texorpdfstring{$\ast$}{*}args)
+\begin{DoxyCompactList}\small\item\em Typedef for a constructor function pointer. \end{DoxyCompactList}\item 
+typedef void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8h_a29a1b06eaf4dd164b2243c9cc3e964b4}{destructor\+\_\+t}}) (void \texorpdfstring{$\ast$}{*}obj)
+\begin{DoxyCompactList}\small\item\em Typedef for a destructor function pointer. \end{DoxyCompactList}\item 
+\Hypertarget{list_8h_a5ebb514c0c55eff439091ec77a0f3a2a}\label{list_8h_a5ebb514c0c55eff439091ec77a0f3a2a} 
+typedef struct \mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+s}} {\bfseries linked\+\_\+list\+\_\+t}
+\item 
+\Hypertarget{list_8h_a3b55f1cd33b93f9cc32dbe31f95e22ed}\label{list_8h_a3b55f1cd33b93f9cc32dbe31f95e22ed} 
+typedef struct \mbox{\hyperlink{structlist__s}{list\+\_\+s}} {\bfseries list\+\_\+t}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{list_8h_a90a4f7164abc1245f7c3b219ccdb425e}{push\+\_\+front\+\_\+node}} (\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}l, \mbox{\hyperlink{list_8h_a2d68774629ac361c160d71fb82b89868}{constructor\+\_\+t}} create, va\+\_\+list \texorpdfstring{$\ast$}{*}ap)
+\item 
+\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8h_ac273aebc0dd0d381d905fd740cea49ca}{new\+\_\+node}} (va\+\_\+list \texorpdfstring{$\ast$}{*}ap, \mbox{\hyperlink{list_8h_a2d68774629ac361c160d71fb82b89868}{constructor\+\_\+t}} constructor)
+\item 
+bool \mbox{\hyperlink{list_8h_aceecd8efa6837c1c665884b5f169f22f}{push\+\_\+back\+\_\+node}} (\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}l, \mbox{\hyperlink{list_8h_a2d68774629ac361c160d71fb82b89868}{constructor\+\_\+t}} create, va\+\_\+list \texorpdfstring{$\ast$}{*}ap)
+\item 
+void \mbox{\hyperlink{list_8h_ad784c43191630ff3e0008ec2ab874b0a}{destroy\+\_\+node}} (\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}l, \mbox{\hyperlink{list_8h_a29a1b06eaf4dd164b2243c9cc3e964b4}{destructor\+\_\+t}} destroy)
+\begin{DoxyCompactList}\small\item\em Destroys a node in a linked list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{list_8h_a414a898f930b87630fc3a3684c38259c}{remove\+\_\+node}} (\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}l, \mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*}index, bool free\+\_\+data)
+\item 
+size\+\_\+t \mbox{\hyperlink{list_8h_a6f690b73f774c250838f4164da0dc314}{list\+\_\+len}} (\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l)
+\item 
+bool \mbox{\hyperlink{list_8h_a4fa62229245c11a6c21584b51e266408}{push\+\_\+front\+\_\+list}} (\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l,...)
+\item 
+void \mbox{\hyperlink{list_8h_a76a5a2affee799562bbd12215908c1be}{destroy\+\_\+list}} (\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}l)
+\begin{DoxyCompactList}\small\item\em Destroys a list and frees all allocated memory. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{list_8h_aedfe9ef010242ad8c9f4dff5572d08cf}{push\+\_\+back\+\_\+list}} (\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l,...)
+\item 
+\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8h_a235945922f5eb66d76862046c04d4786}{create\+\_\+list}} (\mbox{\hyperlink{list_8h_a2d68774629ac361c160d71fb82b89868}{constructor\+\_\+t}} constructor, \mbox{\hyperlink{list_8h_a29a1b06eaf4dd164b2243c9cc3e964b4}{destructor\+\_\+t}} destructor)
+\begin{DoxyCompactList}\small\item\em Creates a new list. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8h_a66ea8d6c23f463702f66ada8918cdd16}{list\+\_\+find\+\_\+node}} (\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l, void \texorpdfstring{$\ast$}{*}data, bool(\texorpdfstring{$\ast$}{*}cmp)(void \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*}))
+\item 
+\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{list_8h_a912ab932ca5f2323fd22ebd6d089d840}{list\+\_\+find\+\_\+node\+\_\+p}} (\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}l, void \texorpdfstring{$\ast$}{*}ref)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the definition of the linked\+\_\+list\+\_\+t structure. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{list_8h_ac0fdbe49b6dc758535dbe3e9ba56665c}\label{list_8h_ac0fdbe49b6dc758535dbe3e9ba56665c} 
+\index{list.h@{list.h}!CAST@{CAST}}
+\index{CAST@{CAST}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{CAST}{CAST}}
+{\footnotesize\ttfamily \#define CAST(\begin{DoxyParamCaption}\item[{}]{type,  }\item[{}]{var }\end{DoxyParamCaption})~((type)var)}
+
+
+
+Macro to cast a variable to a specific type. 
+
+This macro performs a type cast on the given variable to the specified type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type to cast the variable to. \\
+\hline
+{\em var} & The variable to be casted. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The casted variable of the specified type. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_a40f8d9377dce35f8aab81e47051a2e8b}\label{list_8h_a40f8d9377dce35f8aab81e47051a2e8b} 
+\index{list.h@{list.h}!LIST\_FORWARD@{LIST\_FORWARD}}
+\index{LIST\_FORWARD@{LIST\_FORWARD}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{LIST\_FORWARD}{LIST\_FORWARD}}
+{\footnotesize\ttfamily \#define LIST\+\_\+\+FORWARD(\begin{DoxyParamCaption}\item[{}]{list }\end{DoxyParamCaption})~(list = list-\/$>$next)}
+
+
+
+Macro to move the list pointer forward to the next element. 
+
+This macro updates the list pointer to point to the next element in the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list} & The list pointer to be moved forward. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{list_8h_a2d68774629ac361c160d71fb82b89868}\label{list_8h_a2d68774629ac361c160d71fb82b89868} 
+\index{list.h@{list.h}!constructor\_t@{constructor\_t}}
+\index{constructor\_t@{constructor\_t}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{constructor\_t}{constructor\_t}}
+{\footnotesize\ttfamily typedef void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*} constructor\+\_\+t) (va\+\_\+list \texorpdfstring{$\ast$}{*}args)}
+
+
+
+Typedef for a constructor function pointer. 
+
+This typedef represents a constructor function pointer that takes a va\+\_\+list pointer as a parameter and returns a void pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & A va\+\_\+list pointer containing the arguments for the constructor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A void pointer representing the constructed object. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_a29a1b06eaf4dd164b2243c9cc3e964b4}\label{list_8h_a29a1b06eaf4dd164b2243c9cc3e964b4} 
+\index{list.h@{list.h}!destructor\_t@{destructor\_t}}
+\index{destructor\_t@{destructor\_t}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{destructor\_t}{destructor\_t}}
+{\footnotesize\ttfamily typedef void(\texorpdfstring{$\ast$}{*} destructor\+\_\+t) (void \texorpdfstring{$\ast$}{*}obj)}
+
+
+
+Typedef for a destructor function pointer. 
+
+This typedef represents a destructor function pointer that takes a void pointer as a parameter and does not return a value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & A void pointer representing the object to be destroyed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{list_8h_a235945922f5eb66d76862046c04d4786}\label{list_8h_a235945922f5eb66d76862046c04d4786} 
+\index{list.h@{list.h}!create\_list@{create\_list}}
+\index{create\_list@{create\_list}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{create\_list()}{create\_list()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*} create\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{list_8h_a2d68774629ac361c160d71fb82b89868}{constructor\+\_\+t}}}]{constructor,  }\item[{\mbox{\hyperlink{list_8h_a29a1b06eaf4dd164b2243c9cc3e964b4}{destructor\+\_\+t}}}]{destructor }\end{DoxyParamCaption})}
+
+
+
+Creates a new list. 
+
+This function creates a new list and returns a pointer to it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em constructor} & The constructor function to be used for initializing elements in the list. \\
+\hline
+{\em destructor} & The destructor function to be used for cleaning up elements in the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created list. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_a76a5a2affee799562bbd12215908c1be}\label{list_8h_a76a5a2affee799562bbd12215908c1be} 
+\index{list.h@{list.h}!destroy\_list@{destroy\_list}}
+\index{destroy\_list@{destroy\_list}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_list()}{destroy\_list()}}
+{\footnotesize\ttfamily void destroy\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{l }\end{DoxyParamCaption})}
+
+
+
+Destroys a list and frees all allocated memory. 
+
+This function destroys a list by freeing all the nodes and their associated data. It also frees the memory allocated for the list structure itself.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & A pointer to a pointer to the list to be destroyed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{list_8h_ad784c43191630ff3e0008ec2ab874b0a}\label{list_8h_ad784c43191630ff3e0008ec2ab874b0a} 
+\index{list.h@{list.h}!destroy\_node@{destroy\_node}}
+\index{destroy\_node@{destroy\_node}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{destroy\_node()}{destroy\_node()}}
+{\footnotesize\ttfamily void destroy\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{l,  }\item[{\mbox{\hyperlink{list_8h_a29a1b06eaf4dd164b2243c9cc3e964b4}{destructor\+\_\+t}}}]{destroy }\end{DoxyParamCaption})}
+
+
+
+Destroys a node in a linked list. 
+
+This function destroys a node in a linked list by removing it from the list and freeing its memory.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & A pointer to a pointer to the linked list. \\
+\hline
+{\em destroy} & A function pointer to the destructor function that will be called to free the memory of the node\textquotesingle{}s data. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{list_8h_a66ea8d6c23f463702f66ada8918cdd16}\label{list_8h_a66ea8d6c23f463702f66ada8918cdd16} 
+\index{list.h@{list.h}!list\_find\_node@{list\_find\_node}}
+\index{list\_find\_node@{list\_find\_node}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_find\_node()}{list\_find\_node()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*} list\+\_\+find\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l,  }\item[{void \texorpdfstring{$\ast$}{*}}]{data,  }\item[{bool(\texorpdfstring{$\ast$}{*})(void \texorpdfstring{$\ast$}{*}, void \texorpdfstring{$\ast$}{*})}]{cmp }\end{DoxyParamCaption})}
+
+Finds a node in the linked list that matches the given data using the provided comparison function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The linked list to search in. \\
+\hline
+{\em data} & The data to match against. \\
+\hline
+{\em cmp} & The comparison function to use for matching. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the found node, or NULL if no matching node is found. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_a912ab932ca5f2323fd22ebd6d089d840}\label{list_8h_a912ab932ca5f2323fd22ebd6d089d840} 
+\index{list.h@{list.h}!list\_find\_node\_p@{list\_find\_node\_p}}
+\index{list\_find\_node\_p@{list\_find\_node\_p}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_find\_node\_p()}{list\_find\_node\_p()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*} list\+\_\+find\+\_\+node\+\_\+p (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l,  }\item[{void \texorpdfstring{$\ast$}{*}}]{ref }\end{DoxyParamCaption})}
+
+Finds a node in the linked list that contains a specific reference.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The linked list to search in. \\
+\hline
+{\em ref} & The reference to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the found node, or NULL if not found. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_a6f690b73f774c250838f4164da0dc314}\label{list_8h_a6f690b73f774c250838f4164da0dc314} 
+\index{list.h@{list.h}!list\_len@{list\_len}}
+\index{list\_len@{list\_len}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{list\_len()}{list\_len()}}
+{\footnotesize\ttfamily size\+\_\+t list\+\_\+len (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l }\end{DoxyParamCaption})}
+
+Returns the number of elements in the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The pointer to the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of elements in the list. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_ac273aebc0dd0d381d905fd740cea49ca}\label{list_8h_ac273aebc0dd0d381d905fd740cea49ca} 
+\index{list.h@{list.h}!new\_node@{new\_node}}
+\index{new\_node@{new\_node}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{new\_node()}{new\_node()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*} new\+\_\+node (\begin{DoxyParamCaption}\item[{va\+\_\+list \texorpdfstring{$\ast$}{*}}]{ap,  }\item[{\mbox{\hyperlink{list_8h_a2d68774629ac361c160d71fb82b89868}{constructor\+\_\+t}}}]{constructor }\end{DoxyParamCaption})}
+
+Creates a new node for a linked list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ap} & The va\+\_\+list pointer for the constructor arguments. \\
+\hline
+{\em constructor} & The constructor function for the node. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created linked\+\_\+list\+\_\+t node. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_aedfe9ef010242ad8c9f4dff5572d08cf}\label{list_8h_aedfe9ef010242ad8c9f4dff5572d08cf} 
+\index{list.h@{list.h}!push\_back\_list@{push\_back\_list}}
+\index{push\_back\_list@{push\_back\_list}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{push\_back\_list()}{push\_back\_list()}}
+{\footnotesize\ttfamily bool push\+\_\+back\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Adds an element to the end of the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The list to which the element will be added. \\
+\hline
+{\em ...} & The element(s) to be added to the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the element(s) were successfully added, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_aceecd8efa6837c1c665884b5f169f22f}\label{list_8h_aceecd8efa6837c1c665884b5f169f22f} 
+\index{list.h@{list.h}!push\_back\_node@{push\_back\_node}}
+\index{push\_back\_node@{push\_back\_node}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{push\_back\_node()}{push\_back\_node()}}
+{\footnotesize\ttfamily bool push\+\_\+back\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{l,  }\item[{\mbox{\hyperlink{list_8h_a2d68774629ac361c160d71fb82b89868}{constructor\+\_\+t}}}]{create,  }\item[{va\+\_\+list \texorpdfstring{$\ast$}{*}}]{ap }\end{DoxyParamCaption})}
+
+Adds a new node to the end of a linked list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & A pointer to the pointer of the linked list. \\
+\hline
+{\em create} & The constructor function used to create the new node. \\
+\hline
+{\em ap} & A pointer to the va\+\_\+list of arguments for the constructor function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns true if the node was successfully added, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_a4fa62229245c11a6c21584b51e266408}\label{list_8h_a4fa62229245c11a6c21584b51e266408} 
+\index{list.h@{list.h}!push\_front\_list@{push\_front\_list}}
+\index{push\_front\_list@{push\_front\_list}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{push\_front\_list()}{push\_front\_list()}}
+{\footnotesize\ttfamily bool push\+\_\+front\+\_\+list (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{l,  }\item[{}]{... }\end{DoxyParamCaption})}
+
+Adds an element to the front of the list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The list to which the element will be added. \\
+\hline
+{\em ...} & The element to be added to the list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the element was successfully added, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_a90a4f7164abc1245f7c3b219ccdb425e}\label{list_8h_a90a4f7164abc1245f7c3b219ccdb425e} 
+\index{list.h@{list.h}!push\_front\_node@{push\_front\_node}}
+\index{push\_front\_node@{push\_front\_node}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{push\_front\_node()}{push\_front\_node()}}
+{\footnotesize\ttfamily bool push\+\_\+front\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{l,  }\item[{\mbox{\hyperlink{list_8h_a2d68774629ac361c160d71fb82b89868}{constructor\+\_\+t}}}]{create,  }\item[{va\+\_\+list \texorpdfstring{$\ast$}{*}}]{ap }\end{DoxyParamCaption})}
+
+Adds a new node to the front of the linked list.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The pointer to the linked list. \\
+\hline
+{\em create} & The constructor function to create the new node. \\
+\hline
+{\em ap} & The variable argument list for the constructor function. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the node was successfully added, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{list_8h_a414a898f930b87630fc3a3684c38259c}\label{list_8h_a414a898f930b87630fc3a3684c38259c} 
+\index{list.h@{list.h}!remove\_node@{remove\_node}}
+\index{remove\_node@{remove\_node}!list.h@{list.h}}
+\doxysubsubsection{\texorpdfstring{remove\_node()}{remove\_node()}}
+{\footnotesize\ttfamily bool remove\+\_\+node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{l,  }\item[{\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{index,  }\item[{bool}]{free\+\_\+data }\end{DoxyParamCaption})}
+
+Removes a node from the linked list at the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em l} & The pointer to the pointer of the linked list. \\
+\hline
+{\em index} & The pointer to the node to be removed. \\
+\hline
+{\em free\+\_\+data} & A boolean indicating whether the data should be freed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the node was successfully removed, false otherwise. 
+\end{DoxyReturn}

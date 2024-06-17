@@ -1,0 +1,115 @@
+\doxysection{EGE\+::Movement Class Reference}
+\hypertarget{classEGE_1_1Movement}{}\label{classEGE_1_1Movement}\index{EGE::Movement@{EGE::Movement}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classEGE_1_1Movement_1_1MovementError}{Movement\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1Movement_aa332c6c530f07bd6f840be193632707f}\label{classEGE_1_1Movement_aa332c6c530f07bd6f840be193632707f} 
+{\bfseries Movement} (int duration=1000, bool loop=false)
+\item 
+\Hypertarget{classEGE_1_1Movement_a3508b17a43bc5cbfaa2d3234b29586ee}\label{classEGE_1_1Movement_a3508b17a43bc5cbfaa2d3234b29586ee} 
+void {\bfseries move} (float delta\+Time)
+\item 
+\Hypertarget{classEGE_1_1Movement_a02dfd2a22dfe724db4ddac92cf3c0642}\label{classEGE_1_1Movement_a02dfd2a22dfe724db4ddac92cf3c0642} 
+\mbox{\hyperlink{classEGE_1_1Movement}{EGE\+::\+Movement}} \& {\bfseries add\+Model} (const std\+::string \&name, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Model}{EGE\+::\+Model}} $>$ \&model)
+\item 
+\Hypertarget{classEGE_1_1Movement_a856a7c949692857c59855242324fd562}\label{classEGE_1_1Movement_a856a7c949692857c59855242324fd562} 
+\mbox{\hyperlink{classEGE_1_1Movement}{EGE\+::\+Movement}} \& {\bfseries remove\+Model} (const std\+::string \&name)
+\item 
+\Hypertarget{classEGE_1_1Movement_a3f4916ba425b818bc5e07badcca37b31}\label{classEGE_1_1Movement_a3f4916ba425b818bc5e07badcca37b31} 
+bool {\bfseries has\+Model} (const std\+::string \&name) const
+\item 
+\Hypertarget{classEGE_1_1Movement_a4abf18abccd823f4a8f93b65eafedfd2}\label{classEGE_1_1Movement_a4abf18abccd823f4a8f93b65eafedfd2} 
+int {\bfseries get\+Models\+Count} () const
+\item 
+\Hypertarget{classEGE_1_1Movement_aee973c7382c0078b43f96ee2153f4124}\label{classEGE_1_1Movement_aee973c7382c0078b43f96ee2153f4124} 
+std\+::vector$<$ std\+::string $>$ {\bfseries get\+Models\+Names} () const
+\item 
+\Hypertarget{classEGE_1_1Movement_a04aee304198bba83ef46a74ec715e5b9}\label{classEGE_1_1Movement_a04aee304198bba83ef46a74ec715e5b9} 
+std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Model}{EGE\+::\+Model}} $>$ $>$ {\bfseries get\+Models} () const
+\item 
+\Hypertarget{classEGE_1_1Movement_a07e6aa5c960b06f072255ccde54212c6}\label{classEGE_1_1Movement_a07e6aa5c960b06f072255ccde54212c6} 
+void {\bfseries set\+Key\+Frames} (const std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ $>$ \&key\+Frames)
+\item 
+\Hypertarget{classEGE_1_1Movement_a87020967302428207856d812edc41636}\label{classEGE_1_1Movement_a87020967302428207856d812edc41636} 
+std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ $>$ {\bfseries get\+Key\+Frames} () const
+\item 
+\Hypertarget{classEGE_1_1Movement_aa53bf7e45bda00c43c7c95e8a333968d}\label{classEGE_1_1Movement_aa53bf7e45bda00c43c7c95e8a333968d} 
+void {\bfseries set\+Current\+Key\+Frame} (int key\+Frame)
+\item 
+\Hypertarget{classEGE_1_1Movement_abc9372a577d3dd6288678b3976a974e7}\label{classEGE_1_1Movement_abc9372a577d3dd6288678b3976a974e7} 
+int {\bfseries get\+Current\+Key\+Frame} () const
+\item 
+\Hypertarget{classEGE_1_1Movement_afe515bf27a61e902ba17abbbe8f3dc09}\label{classEGE_1_1Movement_afe515bf27a61e902ba17abbbe8f3dc09} 
+void {\bfseries set\+Duration} (int duration)
+\item 
+\Hypertarget{classEGE_1_1Movement_ab4bb66397feb4e1fc3721ebfd0db865f}\label{classEGE_1_1Movement_ab4bb66397feb4e1fc3721ebfd0db865f} 
+int {\bfseries get\+Duration} () const
+\item 
+\Hypertarget{classEGE_1_1Movement_a22663b5903b18cc9c779d5c57f4f542a}\label{classEGE_1_1Movement_a22663b5903b18cc9c779d5c57f4f542a} 
+\mbox{\hyperlink{classEGE_1_1Movement}{EGE\+::\+Movement}} \& {\bfseries push\+Front\+Key\+Frame} (const \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ \&key\+Frame)
+\item 
+\Hypertarget{classEGE_1_1Movement_a3b92f792f4338741615113835f1f0a2c}\label{classEGE_1_1Movement_a3b92f792f4338741615113835f1f0a2c} 
+\mbox{\hyperlink{classEGE_1_1Movement}{EGE\+::\+Movement}} \& {\bfseries push\+Back\+Key\+Frame} (const \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ \&key\+Frame)
+\item 
+\Hypertarget{classEGE_1_1Movement_a65f6c70498a344dc114bbe0362ded810}\label{classEGE_1_1Movement_a65f6c70498a344dc114bbe0362ded810} 
+void {\bfseries insert\+Key\+Frame} (int ind, const \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ \&key\+Frame)
+\item 
+\Hypertarget{classEGE_1_1Movement_a60f4f8daa5168428251c43b68b30d8e3}\label{classEGE_1_1Movement_a60f4f8daa5168428251c43b68b30d8e3} 
+void {\bfseries replace\+Key\+Frame} (int ind, const \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ \&key\+Frame)
+\item 
+\Hypertarget{classEGE_1_1Movement_ac66f4b80572971816e95a7c57f880f00}\label{classEGE_1_1Movement_ac66f4b80572971816e95a7c57f880f00} 
+\mbox{\hyperlink{classEGE_1_1Movement}{EGE\+::\+Movement}} \& {\bfseries remove\+Key\+Frame} (int ind)
+\item 
+\Hypertarget{classEGE_1_1Movement_a40d2da38496cbd8873496c06ec9491fc}\label{classEGE_1_1Movement_a40d2da38496cbd8873496c06ec9491fc} 
+\mbox{\hyperlink{classEGE_1_1Maths_1_1Vector3}{EGE\+::\+Maths\+::\+Vector3}}$<$ float $>$ {\bfseries get\+Rotation} (const \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ \&key\+Frame) const
+\item 
+\Hypertarget{classEGE_1_1Movement_ae0a3a5a533497605fbec097e191c6c86}\label{classEGE_1_1Movement_ae0a3a5a533497605fbec097e191c6c86} 
+\mbox{\hyperlink{classEGE_1_1Maths_1_1Vector3}{EGE\+::\+Maths\+::\+Vector3}}$<$ float $>$ {\bfseries get\+Scale} (const \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ \&key\+Frame) const
+\item 
+\Hypertarget{classEGE_1_1Movement_af224cf4b3fefc71709d0d83248b44026}\label{classEGE_1_1Movement_af224cf4b3fefc71709d0d83248b44026} 
+\mbox{\hyperlink{classEGE_1_1Maths_1_1Vector3}{EGE\+::\+Maths\+::\+Vector3}}$<$ float $>$ {\bfseries get\+Shear} (const \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ \&key\+Frame) const
+\item 
+\Hypertarget{classEGE_1_1Movement_aae08f38eaba8d3a77381aec04a87dba1}\label{classEGE_1_1Movement_aae08f38eaba8d3a77381aec04a87dba1} 
+\mbox{\hyperlink{classEGE_1_1Maths_1_1Vector3}{EGE\+::\+Maths\+::\+Vector3}}$<$ float $>$ {\bfseries get\+Translation} (const \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ \&key\+Frame) const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classEGE_1_1Movement_ad58551b8d061103b498ed82bbb383c27}\label{classEGE_1_1Movement_ad58551b8d061103b498ed82bbb383c27} 
+std\+::vector$<$ \mbox{\hyperlink{classEGE_1_1Maths_1_1Matrix}{EGE\+::\+Maths\+::\+Matrix}}$<$ 4, 4, float $>$ $>$ {\bfseries \+\_\+key\+Frames}
+\item 
+\Hypertarget{classEGE_1_1Movement_abf3d21c7bbe0321d396c4b7e59359541}\label{classEGE_1_1Movement_abf3d21c7bbe0321d396c4b7e59359541} 
+int {\bfseries \+\_\+current\+Key\+Frame}
+\item 
+\Hypertarget{classEGE_1_1Movement_a355c732f2b5deaba16cce9841786997b}\label{classEGE_1_1Movement_a355c732f2b5deaba16cce9841786997b} 
+int {\bfseries \+\_\+last\+Key\+Frame}
+\item 
+\Hypertarget{classEGE_1_1Movement_a968b87a879bf2a14e08c4c279cad5388}\label{classEGE_1_1Movement_a968b87a879bf2a14e08c4c279cad5388} 
+std\+::map$<$ std\+::string, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classEGE_1_1Model}{EGE\+::\+Model}} $>$ $>$ {\bfseries \+\_\+models}
+\item 
+\Hypertarget{classEGE_1_1Movement_a93864c706b02065639dcd0bde305e03e}\label{classEGE_1_1Movement_a93864c706b02065639dcd0bde305e03e} 
+int {\bfseries \+\_\+duration}
+\item 
+\Hypertarget{classEGE_1_1Movement_a0b335a4fd5f063564dbf82aaabf340c6}\label{classEGE_1_1Movement_a0b335a4fd5f063564dbf82aaabf340c6} 
+int {\bfseries \+\_\+duration\+Per\+Key\+Frame}
+\item 
+\Hypertarget{classEGE_1_1Movement_a575c1c9a3b3e84eeab67ec8eab8394d8}\label{classEGE_1_1Movement_a575c1c9a3b3e84eeab67ec8eab8394d8} 
+std\+::chrono\+::high\+\_\+resolution\+\_\+clock {\bfseries \+\_\+clock}
+\item 
+\Hypertarget{classEGE_1_1Movement_a37e7827e60d13be2b3019bb7f6d793bc}\label{classEGE_1_1Movement_a37e7827e60d13be2b3019bb7f6d793bc} 
+std\+::chrono\+::high\+\_\+resolution\+\_\+clock\+::time\+\_\+point {\bfseries \+\_\+last\+Time}
+\item 
+\Hypertarget{classEGE_1_1Movement_ad889ab632b2f4d98deb939e0aa5e1cec}\label{classEGE_1_1Movement_ad889ab632b2f4d98deb939e0aa5e1cec} 
+bool {\bfseries \+\_\+loop}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/ege/include/Movement.\+hpp\item 
+gui/ege/src/Movement.\+cpp\end{DoxyCompactItemize}

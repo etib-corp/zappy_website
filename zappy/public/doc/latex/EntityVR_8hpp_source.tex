@@ -1,0 +1,38 @@
+\doxysection{Entity\+VR.\+hpp}
+\hypertarget{EntityVR_8hpp_source}{}\label{EntityVR_8hpp_source}\index{gui/bonusVR/include/EntityVR.hpp@{gui/bonusVR/include/EntityVR.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ EntityVR}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ ENTITYVR\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ ENTITYVR\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}Maths/Vector3.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}ModelVR.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}Shader.hpp"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEntityVR}{EntityVR}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classEntityVR}{\string~EntityVR}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ update(std::shared\_ptr<EGE::Shader>\ shader);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ setPosition(\textcolor{keyword}{const}\ EGE::Maths::Vector3<float>\&\ position);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ EGE::Maths::Vector3<float>\ getPosition();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ std::shared\_ptr<EGE::ModelVR>\ \_model;}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ EGE::Maths::Vector3<float>\ \_position;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00030\ \};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !ENTITYVR\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

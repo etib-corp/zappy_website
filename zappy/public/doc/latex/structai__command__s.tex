@@ -1,0 +1,51 @@
+\doxysection{ai\+\_\+command\+\_\+s Struct Reference}
+\hypertarget{structai__command__s}{}\label{structai__command__s}\index{ai\_command\_s@{ai\_command\_s}}
+
+
+Structure representing an AI command.  
+
+
+
+
+{\ttfamily \#include $<$amber\+\_\+manage\+\_\+command\+\_\+ai.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structai__command__s_a5a882208d197aa4113a6d883ed286b90}{\+\_\+command}}
+\item 
+type\+\_\+command\+\_\+t \mbox{\hyperlink{structai__command__s_ac3f0efe512542e5ba0f90c731591bc6b}{\+\_\+type}}
+\item 
+void(\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structai__command__s_ae5996fed2f6dbb290a54f5bfb7079fc6}{\+\_\+func}} )(\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure representing an AI command. 
+
+This structure holds information about an AI command, including the command string, the type of command, and a function pointer to the corresponding command handler. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structai__command__s_a5a882208d197aa4113a6d883ed286b90}\label{structai__command__s_a5a882208d197aa4113a6d883ed286b90} 
+\index{ai\_command\_s@{ai\_command\_s}!\_command@{\_command}}
+\index{\_command@{\_command}!ai\_command\_s@{ai\_command\_s}}
+\doxysubsubsection{\texorpdfstring{\_command}{\_command}}
+{\footnotesize\ttfamily char\texorpdfstring{$\ast$}{*} ai\+\_\+command\+\_\+s\+::\+\_\+command}
+
+The command string. \Hypertarget{structai__command__s_ae5996fed2f6dbb290a54f5bfb7079fc6}\label{structai__command__s_ae5996fed2f6dbb290a54f5bfb7079fc6} 
+\index{ai\_command\_s@{ai\_command\_s}!\_func@{\_func}}
+\index{\_func@{\_func}!ai\_command\_s@{ai\_command\_s}}
+\doxysubsubsection{\texorpdfstring{\_func}{\_func}}
+{\footnotesize\ttfamily void(\texorpdfstring{$\ast$}{*} ai\+\_\+command\+\_\+s\+::\+\_\+func) (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)}
+
+Function pointer to the command handler. \Hypertarget{structai__command__s_ac3f0efe512542e5ba0f90c731591bc6b}\label{structai__command__s_ac3f0efe512542e5ba0f90c731591bc6b} 
+\index{ai\_command\_s@{ai\_command\_s}!\_type@{\_type}}
+\index{\_type@{\_type}!ai\_command\_s@{ai\_command\_s}}
+\doxysubsubsection{\texorpdfstring{\_type}{\_type}}
+{\footnotesize\ttfamily type\+\_\+command\+\_\+t ai\+\_\+command\+\_\+s\+::\+\_\+type}
+
+The type of command. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+server/include/amber\+\_\+manage\+\_\+command\+\_\+ai.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,37 @@
+\doxysection{amber\+\_\+manage\+\_\+client.\+h}
+\hypertarget{amber__manage__client_8h_source}{}\label{amber__manage__client_8h_source}\index{server/include/amber\_manage\_client.h@{server/include/amber\_manage\_client.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ amber\_manage\_client}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AMBER\_MANAGE\_CLIENT\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ AMBER\_MANAGE\_CLIENT\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{common__defines_8h}{common\_defines.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_init.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_world.h"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ *amber\_create\_client(va\_list\ *ap);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00038\ \textcolor{keywordtype}{void}\ amber\_destroy\_client(\textcolor{keywordtype}{void}\ *client);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{void}\ amber\_manage\_client\_read(\mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *server,}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00067\ \textcolor{keywordtype}{int}\ amber\_get\_nbr\_clients\_by\_team(\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *server,\ \textcolor{keywordtype}{char}\ *team);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00079\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *amber\_get\_client\_by\_id(\mbox{\hyperlink{structlist__s}{list\_t}}\ *clients,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00097\ \textcolor{keywordtype}{bool}\ amber\_init\_client(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv,}
+\DoxyCodeLine{00098\ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00114\ \textcolor{keywordtype}{void}\ snprintfizer(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ *format,\ ...);}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00116\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AMBER\_MANAGE\_CLIENT\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,44 @@
+\doxysection{Gui\+VR.\+hpp}
+\hypertarget{GuiVR_8hpp_source}{}\label{GuiVR_8hpp_source}\index{gui/bonusVR/include/GuiVR.hpp@{gui/bonusVR/include/GuiVR.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ GuiVR}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ GUIVR\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ GUIVR\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}ModelVR.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}WindowVR.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}EntityVR.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#include\ <memory>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}ItemVR.hpp"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}MapVR.hpp"{}}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGuiVR}{GuiVR}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGuiVR}{GuiVR}}(android\_app\ *app);}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGuiVR}{\string~GuiVR}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ update();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isRunning();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ createMap(\textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ std::shared\_ptr<MapVR>\ \_map;}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::shared\_ptr<EGE::WindowVR>\ \_window;}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<EntityVR>>\ \_entities;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::shared\_ptr<EGE::Shader>\ \_shader;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00036\ \};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !GUIVR\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

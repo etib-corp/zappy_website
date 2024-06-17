@@ -1,0 +1,77 @@
+\doxysection{net\+::Tcp\+Manager\+Cmd Class Reference}
+\hypertarget{classnet_1_1TcpManagerCmd}{}\label{classnet_1_1TcpManagerCmd}\index{net::TcpManagerCmd@{net::TcpManagerCmd}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnet_1_1TcpCommand}{Tcp\+Command}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classnet_1_1TcpManagerCmd_a2045a782440f82ad0efb95a6bbbaf900}{get\+Command}} (std\+::string command)
+\begin{DoxyCompactList}\small\item\em Retrieves a \doxylink{classnet_1_1TcpCommand}{Tcp\+Command} object based on the given command string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classnet_1_1TcpManagerCmd_a0cf0edef62b337659d48c42033da7286}{add\+Command}} (const std\+::string \&command, net\+::type\+\_\+command\+\_\+t type, std\+::function$<$ void(std\+::vector$<$ std\+::string $>$ \&args)$>$ callback)
+\begin{DoxyCompactList}\small\item\em Adds a command to the \doxylink{classnet_1_1TcpManagerCmd}{Tcp\+Manager\+Cmd} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{classnet_1_1TcpCommand}{Tcp\+Command}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{classnet_1_1TcpManagerCmd_ac2c44703d42d8403d75957ac68aa341a}{\+\_\+commands}}
+\begin{DoxyCompactList}\small\item\em A map that associates strings with \doxylink{classnet_1_1TcpCommand}{Tcp\+Command} pointers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classnet_1_1TcpManagerCmd_a0cf0edef62b337659d48c42033da7286}\label{classnet_1_1TcpManagerCmd_a0cf0edef62b337659d48c42033da7286} 
+\index{net::TcpManagerCmd@{net::TcpManagerCmd}!addCommand@{addCommand}}
+\index{addCommand@{addCommand}!net::TcpManagerCmd@{net::TcpManagerCmd}}
+\doxysubsubsection{\texorpdfstring{addCommand()}{addCommand()}}
+{\footnotesize\ttfamily void net\+::\+Tcp\+Manager\+Cmd\+::add\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{command,  }\item[{net\+::type\+\_\+command\+\_\+t}]{type,  }\item[{std\+::function$<$ void(std\+::vector$<$ std\+::string $>$ \&args)$>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Adds a command to the \doxylink{classnet_1_1TcpManagerCmd}{Tcp\+Manager\+Cmd} object. 
+
+This function adds a command to the \doxylink{classnet_1_1TcpManagerCmd}{Tcp\+Manager\+Cmd} object. The command is associated with a type and a callback function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command string. \\
+\hline
+{\em type} & The type of the command. \\
+\hline
+{\em callback} & The callback function to be executed when the command is received. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classnet_1_1TcpManagerCmd_a2045a782440f82ad0efb95a6bbbaf900}\label{classnet_1_1TcpManagerCmd_a2045a782440f82ad0efb95a6bbbaf900} 
+\index{net::TcpManagerCmd@{net::TcpManagerCmd}!getCommand@{getCommand}}
+\index{getCommand@{getCommand}!net::TcpManagerCmd@{net::TcpManagerCmd}}
+\doxysubsubsection{\texorpdfstring{getCommand()}{getCommand()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnet_1_1TcpCommand}{net\+::\+Tcp\+Command}} \texorpdfstring{$\ast$}{*} net\+::\+Tcp\+Manager\+Cmd\+::get\+Command (\begin{DoxyParamCaption}\item[{std\+::string}]{command }\end{DoxyParamCaption})}
+
+
+
+Retrieves a \doxylink{classnet_1_1TcpCommand}{Tcp\+Command} object based on the given command string. 
+
+This function searches for a \doxylink{classnet_1_1TcpCommand}{Tcp\+Command} object that matches the provided command string. If a matching command is found, a pointer to the \doxylink{classnet_1_1TcpCommand}{Tcp\+Command} object is returned. If no matching command is found, nullptr is returned.
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command string to search for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the \doxylink{classnet_1_1TcpCommand}{Tcp\+Command} object if found, nullptr otherwise. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classnet_1_1TcpManagerCmd_ac2c44703d42d8403d75957ac68aa341a}\label{classnet_1_1TcpManagerCmd_ac2c44703d42d8403d75957ac68aa341a} 
+\index{net::TcpManagerCmd@{net::TcpManagerCmd}!\_commands@{\_commands}}
+\index{\_commands@{\_commands}!net::TcpManagerCmd@{net::TcpManagerCmd}}
+\doxysubsubsection{\texorpdfstring{\_commands}{\_commands}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{classnet_1_1TcpCommand}{Tcp\+Command}} \texorpdfstring{$\ast$}{*}$>$ net\+::\+Tcp\+Manager\+Cmd\+::\+\_\+commands\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A map that associates strings with \doxylink{classnet_1_1TcpCommand}{Tcp\+Command} pointers. 
+
+This map is used to store and retrieve \doxylink{classnet_1_1TcpCommand}{Tcp\+Command} objects based on their associated strings. The keys of the map are strings, and the values are pointers to \doxylink{classnet_1_1TcpCommand}{Tcp\+Command} objects. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/include/Tcp\+Manager\+Cmd.\+hpp\item 
+gui/src/Tcp\+Manager\+Cmd.\+cpp\end{DoxyCompactItemize}

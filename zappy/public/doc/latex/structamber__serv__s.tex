@@ -1,0 +1,75 @@
+\doxysection{amber\+\_\+serv\+\_\+s Struct Reference}
+\hypertarget{structamber__serv__s}{}\label{structamber__serv__s}\index{amber\_serv\_s@{amber\_serv\_s}}
+
+
+Structure representing the Amber server.  
+
+
+
+
+{\ttfamily \#include $<$amber\+\_\+init.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structamber__serv__s_af5f69ed2c5b618f91e4e92ef4e6cb659}\label{structamber__serv__s_af5f69ed2c5b618f91e4e92ef4e6cb659} 
+\mbox{\hyperlink{structtcp__s}{tcp\+\_\+t}} {\bfseries \+\_\+tcp}
+\item 
+\Hypertarget{structamber__serv__s_af7eae0e8c7e0e13ff3c553781d5d355b}\label{structamber__serv__s_af7eae0e8c7e0e13ff3c553781d5d355b} 
+int {\bfseries \+\_\+freq}
+\item 
+\Hypertarget{structamber__serv__s_aace46b1f97d52eff4922dce8fef631de}\label{structamber__serv__s_aace46b1f97d52eff4922dce8fef631de} 
+fd\+\_\+set {\bfseries \+\_\+readfds}
+\item 
+\Hypertarget{structamber__serv__s_ac260042eb10118f542368e474f3a873a}\label{structamber__serv__s_ac260042eb10118f542368e474f3a873a} 
+fd\+\_\+set {\bfseries \+\_\+writefds}
+\item 
+\Hypertarget{structamber__serv__s_a548cea7cb0976f5130e54c8d0fd60d4c}\label{structamber__serv__s_a548cea7cb0976f5130e54c8d0fd60d4c} 
+fd\+\_\+set {\bfseries \+\_\+exceptfds}
+\item 
+\Hypertarget{structamber__serv__s_a7d9095b59ee358882db864f33bc416ac}\label{structamber__serv__s_a7d9095b59ee358882db864f33bc416ac} 
+\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+clients}
+\item 
+\Hypertarget{structamber__serv__s_ad5077e9ea82430c60a083b7930b5402a}\label{structamber__serv__s_ad5077e9ea82430c60a083b7930b5402a} 
+\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+graphic\+\_\+clients}
+\item 
+\Hypertarget{structamber__serv__s_aa6e20929a1f45910039210807f1772bf}\label{structamber__serv__s_aa6e20929a1f45910039210807f1772bf} 
+bool {\bfseries \+\_\+is\+\_\+running}
+\item 
+\Hypertarget{structamber__serv__s_a3d07ffffb66bbca1e0368c6e1e66e72c}\label{structamber__serv__s_a3d07ffffb66bbca1e0368c6e1e66e72c} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} {\bfseries \+\_\+teams\+\_\+name}
+\item 
+\Hypertarget{structamber__serv__s_ab92b2ca4a678d06e7c4e706f39d4d840}\label{structamber__serv__s_ab92b2ca4a678d06e7c4e706f39d4d840} 
+\mbox{\hyperlink{structtcp__s}{tcp\+\_\+t}} {\bfseries \+\_\+debug\+\_\+client}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure representing the Amber server. 
+
+This structure holds the necessary information for the Amber server. It includes the TCP connection, the frequency, the file descriptor set, and a list of clients.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tcp} & The TCP connection object for the server. \\
+\hline
+{\em \+\_\+freq} & The frequency of game cycles. \\
+\hline
+{\em \+\_\+readfds} & The file descriptor set for the server. \\
+\hline
+{\em \+\_\+writefds} & \\
+\hline
+{\em \+\_\+clients} & The list of clients connected to the server. \\
+\hline
+{\em \+\_\+graphic\+\_\+clients} & The list of graphic clients connected to the server. \\
+\hline
+{\em \+\_\+is\+\_\+running} & A boolean flag indicating if the server is running. \\
+\hline
+{\em \+\_\+teams\+\_\+name} & The names of the teams participating in the game. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+server/include/amber\+\_\+init.\+h\end{DoxyCompactItemize}

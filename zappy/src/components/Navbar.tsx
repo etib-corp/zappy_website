@@ -20,7 +20,7 @@ export function NavbarComponent() {
             Home
           </Navbar.Link>
           <Navbar.Link href="https://github.com/MAILLOTNathan/zappy">GitHub</Navbar.Link>
-          <Navbar.Link href="#">Docs</Navbar.Link>
+          <Navbar.Link href="doc/html/index.html">Docs</Navbar.Link>
           <DarkThemeToggle />
         </div>
       </Navbar.Collapse>

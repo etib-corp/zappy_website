@@ -1,0 +1,105 @@
+\doxysection{amber\+\_\+command\+\_\+graphical.\+h}
+\hypertarget{amber__command__graphical_8h_source}{}\label{amber__command__graphical_8h_source}\index{server/include/amber\_command\_graphical.h@{server/include/amber\_command\_graphical.h}}
+\mbox{\hyperlink{amber__command__graphical_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ amber\_command\_graphical}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AMBER\_COMMAND\_GRAPHICAL\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ AMBER\_COMMAND\_GRAPHICAL\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_init.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_manage\_client.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#define\ CONTANT\_MAP\ "{}bct\ \%d\ \%d\ \%d\ \%d\ \%d\ \%d\ \%d\ \%d\ \%d\(\backslash\)n"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structgraphical__command__s}{graphical\_command\_s}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{char}\ *\_command;}
+\DoxyCodeLine{00026\ \ \ \ \ void\ (*\_func)(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00027\ \ \ \ \ void\ (*\_execute)(\mbox{\hyperlink{structcommand__s}{command\_t}}\ *cmd,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00029\ \ \ \ \ type\_command\_t\ \_id;}
+\DoxyCodeLine{00030\ \}\ \mbox{\hyperlink{amber__command__graphical_8h_a35883de652e30ef8f91b0ebfbd02327b}{graphical\_command\_t}};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a8a487d6943b17d1c7381dd4d48eb735c}{amber\_manage\_command\_grahical}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00056\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ac279f4bcfa3df151d34aec0d1f211d51}{amber\_graphic\_execute\_msz}}(\mbox{\hyperlink{structcommand__s}{command\_t}}\ *cmd,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00072\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a529556c0c43f5089a4d4dafad35ec85c}{amber\_graphic\_msz}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00087\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ad43924b53c80b8fa51ac9c08a7ba9d76}{amber\_graphic\_execute\_bct}}(\mbox{\hyperlink{structcommand__s}{command\_t}}\ *cmd,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00103\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_aa49126e9c0a64cc7c37d0a676ad897a9}{amber\_graphic\_bct}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00118\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ab31b4fb14e9e7a0cd94b14955f6e50b2}{amber\_graphic\_execute\_mct}}(UNUSED\ \mbox{\hyperlink{structcommand__s}{command\_t}}\ *cmd,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00132\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a8ac9861b8c46a19439c3053468178edf}{amber\_graphic\_mct}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00147\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ade679465ccab83cf93d9f2e17dec42db}{amber\_graphic\_execute\_sgt}}(UNUSED\ \mbox{\hyperlink{structcommand__s}{command\_t}}\ *cmd,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00148\ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00149\ }
+\DoxyCodeLine{00161\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ab55780ba285cd602f2481dcc07253cd5}{amber\_graphic\_sgt}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00176\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a907d9f6b7e0fc9703154f305f36d70bf}{amber\_graphic\_execute\_sst}}(\mbox{\hyperlink{structcommand__s}{command\_t}}\ *cmd,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00177\ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00187\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a832fd56ef4a8eaf2b934a49b5224b9fe}{amber\_graphic\_sst}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00201\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ad92f45faaa8443cd75fc7b20c72d71e2}{amber\_graphic\_execute\_tna}}(UNUSED\ \mbox{\hyperlink{structcommand__s}{command\_t}}\ *cmd,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00202\ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00203\ }
+\DoxyCodeLine{00214\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a8443e34baa3198a8bfe489a15c2ccc0a}{amber\_graphic\_tna}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00229\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a83d085820b94386f9f3b2065cafc4c16}{amber\_graphic\_execute\_ppo}}(\mbox{\hyperlink{structcommand__s}{command\_t}}\ *cmd,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00230\ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00241\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ac5f326ebf2236e08dbd78f11dea9cd2b}{amber\_graphic\_ppo}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00259\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a2d2600f64e413f919f0441427c14e742}{amber\_graphic\_execute\_plv}}(\mbox{\hyperlink{structcommand__s}{command\_t}}\ *cmd,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00260\ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00261\ }
+\DoxyCodeLine{00274\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_aabe3a44f5652a2bffd1c24fa507ad0a7}{amber\_graphic\_plv}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00275\ }
+\DoxyCodeLine{00291\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a3ecc46eb8d5637c9b4bfbbb893133ba4}{amber\_graphic\_execute\_pin}}(\mbox{\hyperlink{structcommand__s}{command\_t}}\ *cmd,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00292\ \ \ \ \ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients);}
+\DoxyCodeLine{00293\ }
+\DoxyCodeLine{00306\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a789ebe44eab076e14af7a951df1019ad}{amber\_graphic\_pin}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00307\ }
+\DoxyCodeLine{00319\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ac3d1776838a4b8cc0eda7de875ca19f9}{amber\_graphic\_loop}}(\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *server,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world);}
+\DoxyCodeLine{00320\ }
+\DoxyCodeLine{00330\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_adf25a5b0587b794ff995ffbd4ce74d30}{amber\_event\_pnw}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients\_gra);}
+\DoxyCodeLine{00331\ }
+\DoxyCodeLine{00342\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structgraphical__command__s}{graphical\_command\_t}}\ graphical\_commands[];}
+\DoxyCodeLine{00343\ }
+\DoxyCodeLine{00356\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a9f7ce7f2f66753b1133186c2f357805d}{amber\_event\_idmoved}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients\_gra,\ \textcolor{keywordtype}{char}\ c);}
+\DoxyCodeLine{00357\ }
+\DoxyCodeLine{00369\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ac0d00594a088423b69b5d17a017121d9}{amber\_event\_pbc}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients\_gra);}
+\DoxyCodeLine{00370\ }
+\DoxyCodeLine{00380\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ad453f899fc0d95d84b7df608221155f1}{amber\_event\_pex}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients\_gra);}
+\DoxyCodeLine{00381\ }
+\DoxyCodeLine{00393\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_afe3170ae05107c3ae33d562e2452ec83}{amber\_event\_pie}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00394\ \ \ \ \ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients\_gra,\ \textcolor{keywordtype}{bool}\ success);}
+\DoxyCodeLine{00405\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_af67ce3235292a8aba540c42da1ad2946}{amber\_event\_pic}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv,\ \textcolor{keywordtype}{int}\ *ids);}
+\DoxyCodeLine{00406\ }
+\DoxyCodeLine{00417\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_ab80fc57d671818936c1728934f78caca}{amber\_event\_pdi}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients\_gra);}
+\DoxyCodeLine{00418\ }
+\DoxyCodeLine{00430\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_af35d556c40266a793cdb767b03a0ae0a}{amber\_event\_pgt}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients\_gra,}
+\DoxyCodeLine{00431\ \ \ \ \ \mbox{\hyperlink{structbox__s}{box\_t}}\ *ressource);}
+\DoxyCodeLine{00432\ }
+\DoxyCodeLine{00446\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_abf0eeec1813294f6e5ecbb27fd932441}{amber\_event\_pdr}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *clients\_gra,}
+\DoxyCodeLine{00447\ \ \ \ \ \mbox{\hyperlink{structbox__s}{box\_t}}\ *ressource);}
+\DoxyCodeLine{00448\ }
+\DoxyCodeLine{00459\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a073492aa80f1ba33ed74302697b93514}{amber\_event\_enw}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structlist__s}{list\_t}}\ *gra\_client,\ \textcolor{keywordtype}{int}\ id\_egg);}
+\DoxyCodeLine{00460\ }
+\DoxyCodeLine{00472\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{amber__command__graphical_8h_a3dcf5d978b88664d0a1cfd043e777b67}{amber\_event\_pfk}}(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00473\ }
+\DoxyCodeLine{00474\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AMBER\_COMMAND\_GRAPHICAL\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

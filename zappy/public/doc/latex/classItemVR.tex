@@ -1,0 +1,88 @@
+\doxysection{Item\+VR Class Reference}
+\hypertarget{classItemVR}{}\label{classItemVR}\index{ItemVR@{ItemVR}}
+Inheritance diagram for Item\+VR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classItemVR}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classItemVR_afa46299b5cc21ae473e2ac26350fd0be}\label{classItemVR_afa46299b5cc21ae473e2ac26350fd0be} 
+enum {\bfseries TYPE} \{ \newline
+{\bfseries FOOD} = 0
+, {\bfseries LINEMATE}
+, {\bfseries DERAUMERE}
+, {\bfseries SIBUR}
+, \newline
+{\bfseries MENDIANE}
+, {\bfseries PHIRAS}
+, {\bfseries THYSTAME}
+, {\bfseries MAX}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classItemVR_a4ca99ffdab06cc0bfea58bb06135748d}\label{classItemVR_a4ca99ffdab06cc0bfea58bb06135748d} 
+{\bfseries Item\+VR} (const EGE\+::\+Maths\+::\+Vector2$<$ int $>$ \&position, std\+::shared\+\_\+ptr$<$ EGE\+::\+Window\+VR $>$ window)
+\item 
+void \mbox{\hyperlink{classItemVR_a91a26ee08ed23f449d9c636ca0e874d9}{update}} (std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$ shader)
+\item 
+\Hypertarget{classItemVR_ab6647dceb22eb4828bb8b6c13b33eab9}\label{classItemVR_ab6647dceb22eb4828bb8b6c13b33eab9} 
+void {\bfseries set\+Type} (TYPE type)
+\item 
+\Hypertarget{classItemVR_ac84fb22da58cf7dcbe3531ad5c2396e1}\label{classItemVR_ac84fb22da58cf7dcbe3531ad5c2396e1} 
+TYPE {\bfseries get\+Type} () const
+\item 
+\Hypertarget{classItemVR_aaf0176de0c377736717e22649f3b10f5}\label{classItemVR_aaf0176de0c377736717e22649f3b10f5} 
+void {\bfseries set\+Pos} (EGE\+::\+Maths\+::\+Vector2$<$ int $>$ position)
+\item 
+\Hypertarget{classItemVR_a5b528dbbea18991ddd0465764ae867e2}\label{classItemVR_a5b528dbbea18991ddd0465764ae867e2} 
+EGE\+::\+Maths\+::\+Vector2$<$ int $>$ {\bfseries get\+Pos} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEntityVR}{Entity\+VR}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries update} (std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$ shader)
+\item 
+virtual void {\bfseries set\+Position} (const EGE\+::\+Maths\+::\+Vector3$<$ float $>$ \&position)
+\item 
+virtual EGE\+::\+Maths\+::\+Vector3$<$ float $>$ {\bfseries get\+Position} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classItemVR_a6104e940ac47c74192769c05c5937bdf}\label{classItemVR_a6104e940ac47c74192769c05c5937bdf} 
+TYPE {\bfseries \+\_\+type}
+\item 
+\Hypertarget{classItemVR_af1c73af1d271dec13d6eca575a3be0ce}\label{classItemVR_af1c73af1d271dec13d6eca575a3be0ce} 
+EGE\+::\+Maths\+::\+Vector2$<$ int $>$ {\bfseries \+\_\+position}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEntityVR}{Entity\+VR}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ EGE\+::\+Model\+VR $>$ {\bfseries \+\_\+model}
+\item 
+EGE\+::\+Maths\+::\+Vector3$<$ float $>$ {\bfseries \+\_\+position}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classItemVR_a91a26ee08ed23f449d9c636ca0e874d9}\label{classItemVR_a91a26ee08ed23f449d9c636ca0e874d9} 
+\index{ItemVR@{ItemVR}!update@{update}}
+\index{update@{update}!ItemVR@{ItemVR}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Item\+VR\+::update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classEntityVR}{Entity\+VR}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/bonus\+VR/include/Item\+VR.\+hpp\item 
+gui/bonus\+VR/src/Item\+VR.\+cpp\end{DoxyCompactItemize}

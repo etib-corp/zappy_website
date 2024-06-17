@@ -6,8 +6,8 @@ export default function FooterComponent () {
         <Footer.Copyright href="#" by="by Etib Corp™" year={2024} />
         <Footer.LinkGroup>
             <div className="flex items-center space-x-4">
-                <Footer.Link href="#">GitHub</Footer.Link>
-                <Footer.Link href="#">Docs</Footer.Link>
+                <Footer.Link href="https://github.com/MAILLOTNathan/zappy">GitHub</Footer.Link>
+                <Footer.Link href="doc/html/index.html">Docs</Footer.Link>
                 <DarkThemeToggle />
             </div>
         </Footer.LinkGroup>
