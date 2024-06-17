@@ -4,7 +4,7 @@ import { DarkThemeToggle, SidebarLogo } from "flowbite-react";
 
 import { Navbar } from "flowbite-react";
 
-export function Narbar_Component() {
+export function NavbarComponent() {
   return (
   <div className="py-5 px-8">
     <Navbar className="py-10" fluid rounded>
