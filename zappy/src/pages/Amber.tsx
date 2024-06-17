@@ -8,13 +8,15 @@ import RFC from "../components/RFC";
 
 export default function Amber() {
     return (
-        <div className="dark:bg-gray-800 py-2">
+        <div className="dark:bg-gray-800 py-2 overflow-x-hidden">
             <Narbar_Component />
-            <div className="flex justify-center items-center bg-red-400 my-10">
-                <h1 className="text-4xl font-bold">
+            <div className="max-md:mx-8 flex items-center justify-center bg-red-400 my-10">
+                <h1 className="max-lg:ml-20 max-sm:ml-5 max-sm:text-md max-md:text-2xl max-md:ml-10 text-4xl font-semibold font-sans">
                     Amber
                 </h1>
-                <Article properties={{ title: "Performance and stability", content: "The ultimate server." }} />
+                <div className="max-sm:-mx-16 max-md:-mx-10 max-lg:-mx-5">
+                    <Article properties={{ title: "Performance and stability", content: "The ultimate server." }} />
+                </div>
             </div>
             <Article properties={amber.Lore} />
             <Title text="Our technicals advantages" />

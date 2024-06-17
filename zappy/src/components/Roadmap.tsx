@@ -167,7 +167,7 @@ export default function Roadmap() {
                                 <Timeline.Content>
                                 <Timeline.Time>May 21 2024</Timeline.Time>
                                 <Timeline.Title>Networkout</Timeline.Title>
-                                <Timeline.Body className="text-sm w-80">
+                                <Timeline.Body className="max-sm:w-4/5 text-sm w-80">
                                     We started to make the base of the communication protocol between the server and the client.
                                 </Timeline.Body>
                                 </Timeline.Content>
@@ -217,7 +217,7 @@ export default function Roadmap() {
                                 <Timeline.Content>
                                 <Timeline.Time>June 10 2024</Timeline.Time>
                                 <Timeline.Title>User friendly now</Timeline.Title>
-                                <Timeline.Body className="text-sm w-80">
+                                <Timeline.Body className="max-sm:w-4/5 text-sm w-80">
                                     We have implemented a first version of the user interface. It's very simple but it's a start.
                                 </Timeline.Body>
                                 </Timeline.Content>
@@ -237,7 +237,7 @@ export default function Roadmap() {
                                 <Timeline.Content>
                                 <Timeline.Time>June 14 2024</Timeline.Time>
                                 <Timeline.Title>The first merge</Timeline.Title>
-                                <Timeline.Body className="text-sm w-80">
+                                <Timeline.Body className="max-sm:w-4/5 text-sm w-80">
                                     After 4 weeks of work, we have merged the interface, the server and our AI together. We see some little things to fix.
                                 </Timeline.Body>
                                 </Timeline.Content>

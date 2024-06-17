@@ -11,7 +11,7 @@ import Roadmap from "../components/Roadmap";
 
 export default function Home() {
     return (
-        <div className="dark:bg-gray-800 py-2">
+        <div className="dark:bg-gray-800 py-2 overflow-x-hidden">
           <Narbar_Component />
           <Presentation />
           <Quote picture="https://companieslogo.com/img/orig/epitech-eu-28fcad28.png?t=1701708648" name="Epitech" description="IT School" text="Courage, Excellence & Solidarity." />
