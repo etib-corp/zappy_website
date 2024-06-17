@@ -10,8 +10,8 @@ export default function Amber() {
     return (
         <div className="dark:bg-gray-800 py-2 overflow-x-hidden">
             <Narbar_Component />
-            <div className="max-md:mx-8 flex items-center justify-center bg-red-400 my-10">
-                <h1 className="max-lg:ml-20 max-sm:ml-5 max-sm:text-md max-md:text-2xl max-md:ml-10 text-4xl font-semibold font-sans">
+            <div className="max-md:mx-8 flex items-center justify-center rounded my-10 bg-gradient-to-r from-purple-500 to-pink-500">
+                <h1 className="max-lg:ml-20 max-sm:ml-5 max-sm:text-md max-md:text-2xl max-md:ml-10 text-4xl font-semibold font-sans italic overline">
                     Amber
                 </h1>
                 <div className="max-sm:-mx-16 max-md:-mx-10 max-lg:-mx-5">

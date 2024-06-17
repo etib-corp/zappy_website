@@ -8,8 +8,8 @@ export default function Onyx() {
     return (
         <div className="dark:bg-gray-800 py-2 overflow-x-hidden">
             <Narbar_Component />
-            <div className="max-md:mx-8 flex items-center justify-center bg-tahiti my-10">
-                <h1 className="max-lg:ml-20 max-md:text-2xl max-md:ml-10 text-4xl font-semibold font-sans">
+            <div className="max-md:mx-8 flex items-center justify-center my-10 bg-gradient-to-r from-tahiti to-purple-500">
+                <h1 className="max-lg:ml-20 max-md:text-2xl max-md:ml-10 text-4xl font-semibold font-sans italic overline">
                     Onyx
                 </h1>
                 <div className="max-md:-mx-10 max-lg:-mx-5">

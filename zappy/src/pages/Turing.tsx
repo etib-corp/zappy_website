@@ -6,7 +6,7 @@ export default function Turing () {
     return (
         <div className="dark:bg-gray-800 py-2 overflow-x-hidden">
             <Narbar_Component />
-            <div className="max-md:mx-8 flex items-center justify-center bg-tahiti my-10">
+            <div className="max-md:mx-8 flex items-center justify-center my-10 bg-gradient-to-r from-pink-500 to-red-500">
                 <h1 className="max-md:text-2xl max-md:ml-10 text-4xl">
                     Turing
                 </h1>
