@@ -1,0 +1,45 @@
+\doxysection{amber\+\_\+check\+\_\+arg.\+h}
+\hypertarget{amber__check__arg_8h_source}{}\label{amber__check__arg_8h_source}\index{server/include/amber\_check\_arg.h@{server/include/amber\_check\_arg.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ amber\_check\_arg}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AMBER\_CHECK\_ARG\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ AMBER\_CHECK\_ARG\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdbool.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdio.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdlib.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#include\ <string.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}string\_array.h"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#define\ HELP\_TMP\ "{}\ -\/n\ name1\ name2\ ...\ -\/c\ clientsNb\ [-\/f\ freq]\(\backslash\)n"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#define\ HELP\ "{}USAGE:\ ./zappy\_server\ -\/p\ port\ -\/x\ width\ -\/y\ height"{}}\ HELP\_TMP}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#define\ HELP\_FREQ\_TMP\ "{}time\ unit\ for\ execution\ of\ actions\(\backslash\)n"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#define\ HELP\_FREQ\ "{}\(\backslash\)tfreq:\ is\ the\ reciprocal\ of\ "{}}\ HELP\_FREQ\_TMP}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structargs__s}{args\_s}}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \_port;\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structargs__s_aca095bf0e9a8b9070fc3c84ddb90b0e1}{\_width}};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structargs__s_af5517a61c6f4911cc1b4a3e10bca48cc}{\_height}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{char}\ **\mbox{\hyperlink{structargs__s_a07665e5abf439ef3d7d22e3996a726f8}{\_teams}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structargs__s_af90c6a50e7db65e0f7b22d330a849311}{\_clientsNb}};\ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{structargs__s_ad126095227fd9490ffd7192e19cb68ac}{\_freq}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00039\ \}\ \mbox{\hyperlink{structargs__s}{args\_t}};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00052\ \textcolor{keywordtype}{bool}\ amber\_check\_arg(\textcolor{keywordtype}{int}\ ac,\ \textcolor{keywordtype}{char}\ **av,\ \mbox{\hyperlink{structargs__s}{args\_t}}\ *args);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{double}\ amber\_get\_flags(\textcolor{keywordtype}{int}\ ac,\ \textcolor{keywordtype}{char}\ **av,\ \textcolor{keywordtype}{char}\ *flag);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \textcolor{keywordtype}{void}\ amber\_display\_args(\mbox{\hyperlink{structargs__s}{args\_t}}\ *args);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{bool}\ amber\_get\_team\_name(\textcolor{keywordtype}{int}\ ac,\ \textcolor{keywordtype}{char}\ **av,\ \mbox{\hyperlink{structargs__s}{args\_t}}\ *args);}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AMBER\_CHECK\_ARG\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

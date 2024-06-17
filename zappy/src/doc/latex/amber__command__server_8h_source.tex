@@ -1,0 +1,42 @@
+\doxysection{amber\+\_\+command\+\_\+server.\+h}
+\hypertarget{amber__command__server_8h_source}{}\label{amber__command__server_8h_source}\index{server/include/amber\_command\_server.h@{server/include/amber\_command\_server.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ amber\_command\_server}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AMBER\_COMMAND\_SERVER\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ AMBER\_COMMAND\_SERVER\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_world.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_init.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}string\_array.h"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#define\ FDDEBUG(serv)\ serv-\/>\_debug\_client.\_fd}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#define\ INFO\_CLIENT\_TMP\ \ "{}Position:\ y=\%d\ x=\%d\ |\ Level:\ \%d\ |\ "{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#define\ INFO\_CLIENT\ "{}Client\ ID:\ \%d\ |\ Team:\ \%s\ |\ "{}}\ INFO\_CLIENT\_TMP}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00032\ \textcolor{keywordtype}{void}\ amber\_serv\_clients(\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *server,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{char}\ **cmd);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00048\ \textcolor{keywordtype}{void}\ amber\_manage\_command(\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *server,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{char}\ *buffer);}
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{void}\ amber\_serv\_map(\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *server,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \textcolor{keywordtype}{char}\ **cmd);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00082\ \textcolor{keywordtype}{void}\ amber\_serv\_tp(\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *server,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \textcolor{keywordtype}{char}\ **cmd);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00092\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structamber__command__server__s}{amber\_command\_server\_s}}\ \{}
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structamber__command__server__s_a6137685d72716a71925c20c1b63d036d}{command}};\ }
+\DoxyCodeLine{00094\ \ \ \ \ void\ (*func)(\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *,\ \textcolor{keywordtype}{char}\ **);}
+\DoxyCodeLine{00095\ \}\ \mbox{\hyperlink{structamber__command__server__s}{amber\_command\_server\_t}};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00105\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structamber__command__server__s}{amber\_command\_server\_t}}\ command\_serv[];}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AMBER\_COMMAND\_SERVER\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

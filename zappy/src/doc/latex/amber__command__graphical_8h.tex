@@ -1,0 +1,734 @@
+\doxysection{server/include/amber\+\_\+command\+\_\+graphical.h File Reference}
+\hypertarget{amber__command__graphical_8h}{}\label{amber__command__graphical_8h}\index{server/include/amber\_command\_graphical.h@{server/include/amber\_command\_graphical.h}}
+
+
+Header file containing the declaration of the graphical\+\_\+commands array.  
+
+
+{\ttfamily \#include \"{}amber\+\_\+init.\+h\"{}}\newline
+{\ttfamily \#include \"{}amber\+\_\+manage\+\_\+client.\+h\"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structgraphical__command__s}{graphical\+\_\+command\+\_\+s}}
+\begin{DoxyCompactList}\small\item\em Struct representing a graphical command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{amber__command__graphical_8h_aba4b399e474d7e4cd97ae49ebe438694}\label{amber__command__graphical_8h_aba4b399e474d7e4cd97ae49ebe438694} 
+\#define {\bfseries CONTANT\+\_\+\+MAP}~\"{}bct \%d \%d \%d \%d \%d \%d \%d \%d \%d\textbackslash{}n\"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structgraphical__command__s}{graphical\+\_\+command\+\_\+s}} \mbox{\hyperlink{amber__command__graphical_8h_a35883de652e30ef8f91b0ebfbd02327b}{graphical\+\_\+command\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Struct representing a graphical command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a8a487d6943b17d1c7381dd4d48eb735c}{amber\+\_\+manage\+\_\+command\+\_\+grahical}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Manages the graphical command for the Amber server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ac279f4bcfa3df151d34aec0d1f211d51}{amber\+\_\+graphic\+\_\+execute\+\_\+msz}} (\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}cmd, \mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}world, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients)
+\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a529556c0c43f5089a4d4dafad35ec85c}{amber\+\_\+graphic\+\_\+msz}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Executes the \"{}msz\"{} command for the graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ad43924b53c80b8fa51ac9c08a7ba9d76}{amber\+\_\+graphic\+\_\+execute\+\_\+bct}} (\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}cmd, \mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}world, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients)
+\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_aa49126e9c0a64cc7c37d0a676ad897a9}{amber\+\_\+graphic\+\_\+bct}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, UNUSED char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Executes the \"{}bct\"{} command for the graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ab31b4fb14e9e7a0cd94b14955f6e50b2}{amber\+\_\+graphic\+\_\+execute\+\_\+mct}} (UNUSED \mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}cmd, \mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}world, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients)
+\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a8ac9861b8c46a19439c3053468178edf}{amber\+\_\+graphic\+\_\+mct}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, UNUSED char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Sends the MCT command to the graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ade679465ccab83cf93d9f2e17dec42db}{amber\+\_\+graphic\+\_\+execute\+\_\+sgt}} (UNUSED \mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}cmd, \mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}world, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients)
+\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ab55780ba285cd602f2481dcc07253cd5}{amber\+\_\+graphic\+\_\+sgt}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, UNUSED char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Sends the \"{}sgt\"{} command to the graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a907d9f6b7e0fc9703154f305f36d70bf}{amber\+\_\+graphic\+\_\+execute\+\_\+sst}} (\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}cmd, \mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}world, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients)
+\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a832fd56ef4a8eaf2b934a49b5224b9fe}{amber\+\_\+graphic\+\_\+sst}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Sets the state of the graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ad92f45faaa8443cd75fc7b20c72d71e2}{amber\+\_\+graphic\+\_\+execute\+\_\+tna}} (UNUSED \mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}cmd, \mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}world, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients)
+\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a8443e34baa3198a8bfe489a15c2ccc0a}{amber\+\_\+graphic\+\_\+tna}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, UNUSED char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Sends the TNA command to the graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a83d085820b94386f9f3b2065cafc4c16}{amber\+\_\+graphic\+\_\+execute\+\_\+ppo}} (\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}cmd, \mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}world, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients)
+\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ac5f326ebf2236e08dbd78f11dea9cd2b}{amber\+\_\+graphic\+\_\+ppo}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Updates the position and orientation of a graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a2d2600f64e413f919f0441427c14e742}{amber\+\_\+graphic\+\_\+execute\+\_\+plv}} (\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}cmd, \mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}world, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients)
+\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_aabe3a44f5652a2bffd1c24fa507ad0a7}{amber\+\_\+graphic\+\_\+plv}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Sends the player level (plv) command to the graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a3ecc46eb8d5637c9b4bfbbb893133ba4}{amber\+\_\+graphic\+\_\+execute\+\_\+pin}} (\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}cmd, \mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}world, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients)
+\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a789ebe44eab076e14af7a951df1019ad}{amber\+\_\+graphic\+\_\+pin}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}arg)
+\begin{DoxyCompactList}\small\item\em Handles the \textquotesingle{}graphic\+\_\+pin\textquotesingle{} command for the Amber server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ac3d1776838a4b8cc0eda7de875ca19f9}{amber\+\_\+graphic\+\_\+loop}} (\mbox{\hyperlink{structamber__serv__s}{amber\+\_\+serv\+\_\+t}} \texorpdfstring{$\ast$}{*}server, \mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}world)
+\begin{DoxyCompactList}\small\item\em Executes the graphical loop for the Amber server. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_adf25a5b0587b794ff995ffbd4ce74d30}{amber\+\_\+event\+\_\+pnw}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients\+\_\+gra)
+\begin{DoxyCompactList}\small\item\em Sends the PNW event to a graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a9f7ce7f2f66753b1133186c2f357805d}{amber\+\_\+event\+\_\+idmoved}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients\+\_\+gra, char c)
+\begin{DoxyCompactList}\small\item\em Handles the event when an ID is moved. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ac0d00594a088423b69b5d17a017121d9}{amber\+\_\+event\+\_\+pbc}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients\+\_\+gra)
+\begin{DoxyCompactList}\small\item\em Handles the PCB event for the Amber graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ad453f899fc0d95d84b7df608221155f1}{amber\+\_\+event\+\_\+pex}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients\+\_\+gra)
+\begin{DoxyCompactList}\small\item\em Sends a PEX event to a graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_afe3170ae05107c3ae33d562e2452ec83}{amber\+\_\+event\+\_\+pie}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients\+\_\+gra, bool success)
+\begin{DoxyCompactList}\small\item\em Handles the \"{}pie\"{} event for the graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_af67ce3235292a8aba540c42da1ad2946}{amber\+\_\+event\+\_\+pic}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__serv__s}{amber\+\_\+serv\+\_\+t}} \texorpdfstring{$\ast$}{*}serv, int \texorpdfstring{$\ast$}{*}ids)
+\begin{DoxyCompactList}\small\item\em Handles the \"{}pic\"{} event for the graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_ab80fc57d671818936c1728934f78caca}{amber\+\_\+event\+\_\+pdi}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients\+\_\+gra)
+\begin{DoxyCompactList}\small\item\em Handles the PDI event for a graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_af35d556c40266a793cdb767b03a0ae0a}{amber\+\_\+event\+\_\+pgt}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients\+\_\+gra, \mbox{\hyperlink{structbox__s}{box\+\_\+t}} \texorpdfstring{$\ast$}{*}ressource)
+\begin{DoxyCompactList}\small\item\em Handles the \"{}pgt\"{} event for the graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_abf0eeec1813294f6e5ecbb27fd932441}{amber\+\_\+event\+\_\+pdr}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}clients\+\_\+gra, \mbox{\hyperlink{structbox__s}{box\+\_\+t}} \texorpdfstring{$\ast$}{*}ressource)
+\begin{DoxyCompactList}\small\item\em Handles the PDR (Player Drop Resource) event for a graphical client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a073492aa80f1ba33ed74302697b93514}{amber\+\_\+event\+\_\+enw}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}gra\+\_\+client, int id\+\_\+egg)
+\begin{DoxyCompactList}\small\item\em Notifies the graphical clients about the creation of a new egg. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{amber__command__graphical_8h_a3dcf5d978b88664d0a1cfd043e777b67}{amber\+\_\+event\+\_\+pfk}} (\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}client, \mbox{\hyperlink{structamber__serv__s}{amber\+\_\+serv\+\_\+t}} \texorpdfstring{$\ast$}{*}serv)
+\begin{DoxyCompactList}\small\item\em Handles the PFK event for a graphical client. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{amber__command__graphical_8h_a1b5b6a16a403fb0ede8e7201a8fd322b}\label{amber__command__graphical_8h_a1b5b6a16a403fb0ede8e7201a8fd322b} 
+const \mbox{\hyperlink{amber__command__graphical_8h_a35883de652e30ef8f91b0ebfbd02327b}{graphical\+\_\+command\+\_\+t}} {\bfseries graphical\+\_\+commands} \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file containing the declaration of the graphical\+\_\+commands array. 
+
+This file declares the external array graphical\+\_\+commands\mbox{[}\mbox{]}, which contains the graphical commands. The graphical\+\_\+commands array is used for storing and accessing the graphical commands in the server. 
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{amber__command__graphical_8h_a35883de652e30ef8f91b0ebfbd02327b}\label{amber__command__graphical_8h_a35883de652e30ef8f91b0ebfbd02327b} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!graphical\_command\_t@{graphical\_command\_t}}
+\index{graphical\_command\_t@{graphical\_command\_t}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{graphical\_command\_t}{graphical\_command\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{structgraphical__command__s}{graphical\+\_\+command\+\_\+s}} \mbox{\hyperlink{amber__command__graphical_8h_a35883de652e30ef8f91b0ebfbd02327b}{graphical\+\_\+command\+\_\+t}}}
+
+
+
+Struct representing a graphical command. 
+
+This struct holds information about a graphical command, including the command string and a function pointer to the corresponding function that handles the command. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{amber__command__graphical_8h_a073492aa80f1ba33ed74302697b93514}\label{amber__command__graphical_8h_a073492aa80f1ba33ed74302697b93514} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_enw@{amber\_event\_enw}}
+\index{amber\_event\_enw@{amber\_event\_enw}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_enw()}{amber\_event\_enw()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+enw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{gra\+\_\+client,  }\item[{int}]{id\+\_\+egg }\end{DoxyParamCaption})}
+
+
+
+Notifies the graphical clients about the creation of a new egg. 
+
+This function sends an ENW (Egg New) event to the graphical clients, informing them about the creation of a new egg.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The client who triggered the event. \\
+\hline
+{\em gra\+\_\+client} & The list of graphical clients. \\
+\hline
+{\em id\+\_\+egg} & The ID of the newly created egg. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a9f7ce7f2f66753b1133186c2f357805d}\label{amber__command__graphical_8h_a9f7ce7f2f66753b1133186c2f357805d} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_idmoved@{amber\_event\_idmoved}}
+\index{amber\_event\_idmoved@{amber\_event\_idmoved}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_idmoved()}{amber\_event\_idmoved()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+idmoved (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients\+\_\+gra,  }\item[{char}]{c }\end{DoxyParamCaption})}
+
+
+
+Handles the event when an ID is moved. 
+
+This function is responsible for handling the event when an ID is moved in the graphical client. It takes the client, the list of graphical clients, and the character representing the ID as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The client triggering the event. \\
+\hline
+{\em clients\+\_\+gra} & The list of graphical clients. \\
+\hline
+{\em c} & The character representing the ID that was moved. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ac0d00594a088423b69b5d17a017121d9}\label{amber__command__graphical_8h_ac0d00594a088423b69b5d17a017121d9} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_pbc@{amber\_event\_pbc}}
+\index{amber\_event\_pbc@{amber\_event\_pbc}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_pbc()}{amber\_event\_pbc()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+pbc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients\+\_\+gra }\end{DoxyParamCaption})}
+
+
+
+Handles the PCB event for the Amber graphical client. 
+
+This function is responsible for handling the PCB event for the Amber graphical client. It takes in a pointer to the client and a list of graphical clients as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & A pointer to the Amber graphical client. \\
+\hline
+{\em clients\+\_\+gra} & A list of graphical clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ab80fc57d671818936c1728934f78caca}\label{amber__command__graphical_8h_ab80fc57d671818936c1728934f78caca} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_pdi@{amber\_event\_pdi}}
+\index{amber\_event\_pdi@{amber\_event\_pdi}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_pdi()}{amber\_event\_pdi()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+pdi (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients\+\_\+gra }\end{DoxyParamCaption})}
+
+
+
+Handles the PDI event for a graphical client. 
+
+This function is called when a PDI event is received from a client. It updates the graphical representation of the game state by removing the specified client from the list of graphical clients.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The graphical client that triggered the event. \\
+\hline
+{\em clients\+\_\+gra} & The list of graphical clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_abf0eeec1813294f6e5ecbb27fd932441}\label{amber__command__graphical_8h_abf0eeec1813294f6e5ecbb27fd932441} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_pdr@{amber\_event\_pdr}}
+\index{amber\_event\_pdr@{amber\_event\_pdr}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_pdr()}{amber\_event\_pdr()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+pdr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients\+\_\+gra,  }\item[{\mbox{\hyperlink{structbox__s}{box\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ressource }\end{DoxyParamCaption})}
+
+
+
+Handles the PDR (Player Drop Resource) event for a graphical client. 
+
+This function is responsible for handling the PDR event, which occurs when a player drops a resource. It updates the graphical client\textquotesingle{}s state and sends the necessary information to all graphical clients.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The graphical client that triggered the event. \\
+\hline
+{\em clients\+\_\+gra} & The list of all graphical clients. \\
+\hline
+{\em ressource} & The box containing the dropped resource. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ad453f899fc0d95d84b7df608221155f1}\label{amber__command__graphical_8h_ad453f899fc0d95d84b7df608221155f1} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_pex@{amber\_event\_pex}}
+\index{amber\_event\_pex@{amber\_event\_pex}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_pex()}{amber\_event\_pex()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+pex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients\+\_\+gra }\end{DoxyParamCaption})}
+
+
+
+Sends a PEX event to a graphical client. 
+
+This function sends a PEX event to a graphical client, indicating that a player has joined or left the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The client to send the event to. \\
+\hline
+{\em clients\+\_\+gra} & The list of graphical clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a3dcf5d978b88664d0a1cfd043e777b67}\label{amber__command__graphical_8h_a3dcf5d978b88664d0a1cfd043e777b67} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_pfk@{amber\_event\_pfk}}
+\index{amber\_event\_pfk@{amber\_event\_pfk}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_pfk()}{amber\_event\_pfk()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+pfk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__serv__s}{amber\+\_\+serv\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{serv }\end{DoxyParamCaption})}
+
+
+
+Handles the PFK event for a graphical client. 
+
+This function is responsible for handling the PFK event, which is triggered when a player successfully lays an egg. It takes in a pointer to the client and server structures.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & A pointer to the graphical client structure. \\
+\hline
+{\em serv} & A pointer to the server structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_af35d556c40266a793cdb767b03a0ae0a}\label{amber__command__graphical_8h_af35d556c40266a793cdb767b03a0ae0a} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_pgt@{amber\_event\_pgt}}
+\index{amber\_event\_pgt@{amber\_event\_pgt}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_pgt()}{amber\_event\_pgt()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+pgt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients\+\_\+gra,  }\item[{\mbox{\hyperlink{structbox__s}{box\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{ressource }\end{DoxyParamCaption})}
+
+
+
+Handles the \"{}pgt\"{} event for the graphical client. 
+
+This function is responsible for processing the \"{}pgt\"{} event received from a graphical client. It updates the graphical client\textquotesingle{}s state based on the provided parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The graphical client that triggered the event. \\
+\hline
+{\em clients\+\_\+gra} & The list of graphical clients. \\
+\hline
+{\em ressource} & The resource box associated with the event. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_af67ce3235292a8aba540c42da1ad2946}\label{amber__command__graphical_8h_af67ce3235292a8aba540c42da1ad2946} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_pic@{amber\_event\_pic}}
+\index{amber\_event\_pic@{amber\_event\_pic}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_pic()}{amber\_event\_pic()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+pic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__serv__s}{amber\+\_\+serv\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{serv,  }\item[{int \texorpdfstring{$\ast$}{*}}]{ids }\end{DoxyParamCaption})}
+
+
+
+Handles the \"{}pic\"{} event for the graphical client. 
+
+This function is responsible for processing the \"{}pic\"{} event received from the server and updating the graphical client accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & A pointer to the graphical client. \\
+\hline
+{\em clients\+\_\+gra} & A pointer to the server structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_afe3170ae05107c3ae33d562e2452ec83}\label{amber__command__graphical_8h_afe3170ae05107c3ae33d562e2452ec83} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_pie@{amber\_event\_pie}}
+\index{amber\_event\_pie@{amber\_event\_pie}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_pie()}{amber\_event\_pie()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+pie (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients\+\_\+gra,  }\item[{bool}]{success }\end{DoxyParamCaption})}
+
+
+
+Handles the \"{}pie\"{} event for the graphical client. 
+
+This function is responsible for processing the \"{}pie\"{} event received from the server. It updates the graphical client\textquotesingle{}s state based on the event information.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The graphical client receiving the event. \\
+\hline
+{\em clients\+\_\+gra} & The list of graphical clients. \\
+\hline
+{\em success} & A boolean indicating whether the event was successful or not. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_adf25a5b0587b794ff995ffbd4ce74d30}\label{amber__command__graphical_8h_adf25a5b0587b794ff995ffbd4ce74d30} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_event\_pnw@{amber\_event\_pnw}}
+\index{amber\_event\_pnw@{amber\_event\_pnw}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_event\_pnw()}{amber\_event\_pnw()}}
+{\footnotesize\ttfamily void amber\+\_\+event\+\_\+pnw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients\+\_\+gra }\end{DoxyParamCaption})}
+
+
+
+Sends the PNW event to a graphical client. 
+
+This function sends the PNW event to a graphical client, providing information about a newly connected player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The graphical client to send the event to. \\
+\hline
+{\em clients\+\_\+gra} & The list of graphical clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_aa49126e9c0a64cc7c37d0a676ad897a9}\label{amber__command__graphical_8h_aa49126e9c0a64cc7c37d0a676ad897a9} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_bct@{amber\_graphic\_bct}}
+\index{amber\_graphic\_bct@{amber\_graphic\_bct}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_bct()}{amber\_graphic\_bct()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+bct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{UNUSED char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg }\end{DoxyParamCaption})}
+
+
+
+Executes the \"{}bct\"{} command for the graphical client. 
+
+This function is responsible for executing the \"{}bct\"{} command for the graphical client. It takes a pointer to the amber\+\_\+client\+\_\+t structure and an array of strings as arguments. The array of strings is not used in this function and is marked as UNUSED.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & A pointer to the amber\+\_\+client\+\_\+t structure representing the graphical client. \\
+\hline
+{\em arg} & An array of strings representing the command arguments (UNUSED). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ad43924b53c80b8fa51ac9c08a7ba9d76}\label{amber__command__graphical_8h_ad43924b53c80b8fa51ac9c08a7ba9d76} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_execute\_bct@{amber\_graphic\_execute\_bct}}
+\index{amber\_graphic\_execute\_bct@{amber\_graphic\_execute\_bct}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_execute\_bct()}{amber\_graphic\_execute\_bct()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+execute\+\_\+bct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cmd,  }\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{world,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients }\end{DoxyParamCaption})}
+
+Executes the BCT command for the graphical client.
+
+This function is responsible for executing the BCT command for the graphical client. It takes in the command structure, the client structure, the world structure, and the list of clients.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command structure containing the BCT command. \\
+\hline
+{\em client} & The graphical client structure. \\
+\hline
+{\em world} & The world structure. \\
+\hline
+{\em clients} & The list of clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ab31b4fb14e9e7a0cd94b14955f6e50b2}\label{amber__command__graphical_8h_ab31b4fb14e9e7a0cd94b14955f6e50b2} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_execute\_mct@{amber\_graphic\_execute\_mct}}
+\index{amber\_graphic\_execute\_mct@{amber\_graphic\_execute\_mct}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_execute\_mct()}{amber\_graphic\_execute\_mct()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+execute\+\_\+mct (\begin{DoxyParamCaption}\item[{UNUSED \mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cmd,  }\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{world,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients }\end{DoxyParamCaption})}
+
+Executes the MCT command for the graphical client.
+
+This function is responsible for executing the MCT command for the graphical client. It takes a command object, a client object, a world object, and a list of clients as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command object (unused). \\
+\hline
+{\em client} & The graphical client object. \\
+\hline
+{\em world} & The world object. \\
+\hline
+{\em clients} & The list of clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ac279f4bcfa3df151d34aec0d1f211d51}\label{amber__command__graphical_8h_ac279f4bcfa3df151d34aec0d1f211d51} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_execute\_msz@{amber\_graphic\_execute\_msz}}
+\index{amber\_graphic\_execute\_msz@{amber\_graphic\_execute\_msz}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_execute\_msz()}{amber\_graphic\_execute\_msz()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+execute\+\_\+msz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cmd,  }\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{world,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients }\end{DoxyParamCaption})}
+
+Executes the \textquotesingle{}msz\textquotesingle{} command for the graphical client.
+
+This function is responsible for executing the \textquotesingle{}msz\textquotesingle{} command received from the graphical client. It takes the command object, the client object, the world object, and the list of clients as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command object representing the \textquotesingle{}msz\textquotesingle{} command. \\
+\hline
+{\em client} & The graphical client object. \\
+\hline
+{\em world} & The world object representing the game world. \\
+\hline
+{\em clients} & The list of all connected clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a3ecc46eb8d5637c9b4bfbbb893133ba4}\label{amber__command__graphical_8h_a3ecc46eb8d5637c9b4bfbbb893133ba4} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_execute\_pin@{amber\_graphic\_execute\_pin}}
+\index{amber\_graphic\_execute\_pin@{amber\_graphic\_execute\_pin}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_execute\_pin()}{amber\_graphic\_execute\_pin()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+execute\+\_\+pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cmd,  }\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{world,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients }\end{DoxyParamCaption})}
+
+Executes the \"{}pin\"{} command for graphical clients.
+
+This function is responsible for executing the \"{}pin\"{} command for graphical clients. It takes a pointer to the command structure, a pointer to the client structure, a pointer to the world structure, and a pointer to the list of clients as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & Pointer to the command structure. \\
+\hline
+{\em client} & Pointer to the client structure. \\
+\hline
+{\em world} & Pointer to the world structure. \\
+\hline
+{\em clients} & Pointer to the list of clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a2d2600f64e413f919f0441427c14e742}\label{amber__command__graphical_8h_a2d2600f64e413f919f0441427c14e742} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_execute\_plv@{amber\_graphic\_execute\_plv}}
+\index{amber\_graphic\_execute\_plv@{amber\_graphic\_execute\_plv}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_execute\_plv()}{amber\_graphic\_execute\_plv()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+execute\+\_\+plv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cmd,  }\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{world,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients }\end{DoxyParamCaption})}
+
+Executes the \"{}plv\"{} command for the graphical client.
+
+This function is responsible for executing the \"{}plv\"{} command, which is used to retrieve the player\textquotesingle{}s level information for the graphical client. It takes in the command structure, the client structure, the world structure, and the list of clients as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command structure containing the parsed command information. \\
+\hline
+{\em client} & The graphical client structure. \\
+\hline
+{\em world} & The world structure containing the game state. \\
+\hline
+{\em clients} & The list of all connected clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a83d085820b94386f9f3b2065cafc4c16}\label{amber__command__graphical_8h_a83d085820b94386f9f3b2065cafc4c16} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_execute\_ppo@{amber\_graphic\_execute\_ppo}}
+\index{amber\_graphic\_execute\_ppo@{amber\_graphic\_execute\_ppo}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_execute\_ppo()}{amber\_graphic\_execute\_ppo()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+execute\+\_\+ppo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cmd,  }\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{world,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients }\end{DoxyParamCaption})}
+
+Executes the PPO command for a graphical client.
+
+This function is responsible for executing the PPO command, which is used to retrieve the position and orientation of a player. It takes as input the command structure, the graphical client, the world state, and the list of connected clients.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command structure containing the PPO command. \\
+\hline
+{\em client} & The graphical client that sent the command. \\
+\hline
+{\em world} & The current state of the game world. \\
+\hline
+{\em clients} & The list of connected clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ade679465ccab83cf93d9f2e17dec42db}\label{amber__command__graphical_8h_ade679465ccab83cf93d9f2e17dec42db} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_execute\_sgt@{amber\_graphic\_execute\_sgt}}
+\index{amber\_graphic\_execute\_sgt@{amber\_graphic\_execute\_sgt}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_execute\_sgt()}{amber\_graphic\_execute\_sgt()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+execute\+\_\+sgt (\begin{DoxyParamCaption}\item[{UNUSED \mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cmd,  }\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{world,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients }\end{DoxyParamCaption})}
+
+Executes the \"{}sgt\"{} command for the graphical client.
+
+This function is responsible for executing the \"{}sgt\"{} command for the graphical client. It takes a command object, a client object, a world object, and a list of clients as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command object (unused). \\
+\hline
+{\em client} & The graphical client object. \\
+\hline
+{\em world} & The world object. \\
+\hline
+{\em clients} & The list of clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a907d9f6b7e0fc9703154f305f36d70bf}\label{amber__command__graphical_8h_a907d9f6b7e0fc9703154f305f36d70bf} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_execute\_sst@{amber\_graphic\_execute\_sst}}
+\index{amber\_graphic\_execute\_sst@{amber\_graphic\_execute\_sst}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_execute\_sst()}{amber\_graphic\_execute\_sst()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+execute\+\_\+sst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cmd,  }\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{world,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients }\end{DoxyParamCaption})}
+
+Executes the \"{}sst\"{} command for the graphical client.
+
+This function is responsible for executing the \"{}sst\"{} command for the graphical client. It takes in the command structure, the client structure, the world structure, and the list of clients.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command structure containing the command information. \\
+\hline
+{\em client} & The graphical client structure. \\
+\hline
+{\em world} & The world structure containing the game state. \\
+\hline
+{\em clients} & The list of clients connected to the server. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ad92f45faaa8443cd75fc7b20c72d71e2}\label{amber__command__graphical_8h_ad92f45faaa8443cd75fc7b20c72d71e2} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_execute\_tna@{amber\_graphic\_execute\_tna}}
+\index{amber\_graphic\_execute\_tna@{amber\_graphic\_execute\_tna}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_execute\_tna()}{amber\_graphic\_execute\_tna()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+execute\+\_\+tna (\begin{DoxyParamCaption}\item[{UNUSED \mbox{\hyperlink{structcommand__s}{command\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{cmd,  }\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{\mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{world,  }\item[{\mbox{\hyperlink{structlist__s}{list\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{clients }\end{DoxyParamCaption})}
+
+Executes the TNA command for the graphical client.
+
+This function is responsible for executing the TNA command, which sends the names of all the teams in the game to the graphical client. It takes in the command, the client, the world, and the list of clients as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmd} & The command to be executed (unused). \\
+\hline
+{\em client} & The graphical client. \\
+\hline
+{\em world} & The game world. \\
+\hline
+{\em clients} & The list of all clients. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ac3d1776838a4b8cc0eda7de875ca19f9}\label{amber__command__graphical_8h_ac3d1776838a4b8cc0eda7de875ca19f9} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_loop@{amber\_graphic\_loop}}
+\index{amber\_graphic\_loop@{amber\_graphic\_loop}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_loop()}{amber\_graphic\_loop()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__serv__s}{amber\+\_\+serv\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{server,  }\item[{\mbox{\hyperlink{structamber__world__s}{amber\+\_\+world\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{world }\end{DoxyParamCaption})}
+
+
+
+Executes the graphical loop for the Amber server. 
+
+This function is responsible for running the graphical loop of the Amber server. It takes a pointer to the server structure and a pointer to the world structure as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em server} & A pointer to the Amber server structure. \\
+\hline
+{\em world} & A pointer to the Amber world structure. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a8ac9861b8c46a19439c3053468178edf}\label{amber__command__graphical_8h_a8ac9861b8c46a19439c3053468178edf} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_mct@{amber\_graphic\_mct}}
+\index{amber\_graphic\_mct@{amber\_graphic\_mct}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_mct()}{amber\_graphic\_mct()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+mct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{UNUSED char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg }\end{DoxyParamCaption})}
+
+
+
+Sends the MCT command to the graphical client. 
+
+This function is responsible for sending the MCT (Map Content) command to the graphical client. The MCT command requests the graphical client to retrieve and display the current state of the game map.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The graphical client to send the command to. \\
+\hline
+{\em arg} & Unused argument. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a529556c0c43f5089a4d4dafad35ec85c}\label{amber__command__graphical_8h_a529556c0c43f5089a4d4dafad35ec85c} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_msz@{amber\_graphic\_msz}}
+\index{amber\_graphic\_msz@{amber\_graphic\_msz}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_msz()}{amber\_graphic\_msz()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+msz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg }\end{DoxyParamCaption})}
+
+
+
+Executes the \"{}msz\"{} command for the graphical client. 
+
+This function is responsible for handling the \"{}msz\"{} command received from the graphical client. It takes a pointer to the amber\+\_\+client\+\_\+t structure and a pointer to the argument array as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & A pointer to the amber\+\_\+client\+\_\+t structure representing the graphical client. \\
+\hline
+{\em arg} & A pointer to the argument array containing the command arguments. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a789ebe44eab076e14af7a951df1019ad}\label{amber__command__graphical_8h_a789ebe44eab076e14af7a951df1019ad} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_pin@{amber\_graphic\_pin}}
+\index{amber\_graphic\_pin@{amber\_graphic\_pin}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_pin()}{amber\_graphic\_pin()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+pin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg }\end{DoxyParamCaption})}
+
+
+
+Handles the \textquotesingle{}graphic\+\_\+pin\textquotesingle{} command for the Amber server. 
+
+This function is responsible for processing the \textquotesingle{}graphic\+\_\+pin\textquotesingle{} command received from a graphical client. It takes a pointer to the client structure and a pointer to an array of arguments as parameters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & A pointer to the amber\+\_\+client\+\_\+t structure representing the graphical client. \\
+\hline
+{\em arg} & An array of strings containing the command arguments. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_aabe3a44f5652a2bffd1c24fa507ad0a7}\label{amber__command__graphical_8h_aabe3a44f5652a2bffd1c24fa507ad0a7} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_plv@{amber\_graphic\_plv}}
+\index{amber\_graphic\_plv@{amber\_graphic\_plv}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_plv()}{amber\_graphic\_plv()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+plv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg }\end{DoxyParamCaption})}
+
+
+
+Sends the player level (plv) command to the graphical client. 
+
+This function is responsible for sending the player level (plv) command to the graphical client. It takes a pointer to the {\ttfamily amber\+\_\+client\+\_\+t} structure representing the graphical client and a double pointer to the argument array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & A pointer to the {\ttfamily amber\+\_\+client\+\_\+t} structure representing the graphical client. \\
+\hline
+{\em arg} & A double pointer to the argument array. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ac5f326ebf2236e08dbd78f11dea9cd2b}\label{amber__command__graphical_8h_ac5f326ebf2236e08dbd78f11dea9cd2b} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_ppo@{amber\_graphic\_ppo}}
+\index{amber\_graphic\_ppo@{amber\_graphic\_ppo}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_ppo()}{amber\_graphic\_ppo()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+ppo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg }\end{DoxyParamCaption})}
+
+
+
+Updates the position and orientation of a graphical client. 
+
+This function is responsible for updating the position and orientation of a graphical client.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The graphical client to update. \\
+\hline
+{\em arg} & The arguments for the update. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_ab55780ba285cd602f2481dcc07253cd5}\label{amber__command__graphical_8h_ab55780ba285cd602f2481dcc07253cd5} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_sgt@{amber\_graphic\_sgt}}
+\index{amber\_graphic\_sgt@{amber\_graphic\_sgt}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_sgt()}{amber\_graphic\_sgt()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+sgt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{UNUSED char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg }\end{DoxyParamCaption})}
+
+
+
+Sends the \"{}sgt\"{} command to the graphical client. 
+
+This function is responsible for sending the \"{}sgt\"{} command to the graphical client. The \"{}sgt\"{} command is used to retrieve the current time unit value from the server.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The graphical client to send the command to. \\
+\hline
+{\em arg} & Unused argument. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a832fd56ef4a8eaf2b934a49b5224b9fe}\label{amber__command__graphical_8h_a832fd56ef4a8eaf2b934a49b5224b9fe} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_sst@{amber\_graphic\_sst}}
+\index{amber\_graphic\_sst@{amber\_graphic\_sst}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_sst()}{amber\_graphic\_sst()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+sst (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg }\end{DoxyParamCaption})}
+
+
+
+Sets the state of the graphical client. 
+
+This function is used to set the state of the graphical client.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The graphical client. \\
+\hline
+{\em arg} & The arguments passed to the function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a8443e34baa3198a8bfe489a15c2ccc0a}\label{amber__command__graphical_8h_a8443e34baa3198a8bfe489a15c2ccc0a} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_graphic\_tna@{amber\_graphic\_tna}}
+\index{amber\_graphic\_tna@{amber\_graphic\_tna}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_graphic\_tna()}{amber\_graphic\_tna()}}
+{\footnotesize\ttfamily void amber\+\_\+graphic\+\_\+tna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{UNUSED char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg }\end{DoxyParamCaption})}
+
+
+
+Sends the TNA command to the graphical client. 
+
+This function is responsible for sending the TNA command to the graphical client. The TNA command is used to request the names of all the teams in the game.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The graphical client to send the command to. \\
+\hline
+{\em arg} & Unused argument. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{amber__command__graphical_8h_a8a487d6943b17d1c7381dd4d48eb735c}\label{amber__command__graphical_8h_a8a487d6943b17d1c7381dd4d48eb735c} 
+\index{amber\_command\_graphical.h@{amber\_command\_graphical.h}!amber\_manage\_command\_grahical@{amber\_manage\_command\_grahical}}
+\index{amber\_manage\_command\_grahical@{amber\_manage\_command\_grahical}!amber\_command\_graphical.h@{amber\_command\_graphical.h}}
+\doxysubsubsection{\texorpdfstring{amber\_manage\_command\_grahical()}{amber\_manage\_command\_grahical()}}
+{\footnotesize\ttfamily void amber\+\_\+manage\+\_\+command\+\_\+grahical (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structamber__client__s}{amber\+\_\+client\+\_\+t}} \texorpdfstring{$\ast$}{*}}]{client,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{arg }\end{DoxyParamCaption})}
+
+
+
+Manages the graphical command for the Amber server. 
+
+This function is responsible for handling the graphical command received from a client.
+
+
+\begin{DoxyParams}{Parameters}
+{\em client} & The client sending the command. \\
+\hline
+{\em arg} & The arguments passed with the command. \\
+\hline
+\end{DoxyParams}

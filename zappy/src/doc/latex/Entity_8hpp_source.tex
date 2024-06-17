@@ -1,0 +1,38 @@
+\doxysection{Entity.\+hpp}
+\hypertarget{Entity_8hpp_source}{}\label{Entity_8hpp_source}\index{gui/include/Entity.hpp@{gui/include/Entity.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ gui}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Entity}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}Maths/Vector3.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Model.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Shader.hpp"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceOnyx}{Onyx}}\ \{}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classOnyx_1_1Entity}{Entity}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classOnyx_1_1Entity_a47be073bf8779a1124af6a701fb8a044}{\string~Entity}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOnyx_1_1Entity_ac1f594fdd0473e9182d75a7b2db3106d}{update}}(std::shared\_ptr<EGE::Shader>\ shader);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOnyx_1_1Entity_afe5101b37934eba361377613919074cf}{setPosition}}(\textcolor{keyword}{const}\ EGE::Maths::Vector3<float>\&\ position);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ EGE::Maths::Vector3<float>\ \mbox{\hyperlink{classOnyx_1_1Entity_a7ce2bc65be4ac978287e42a6f81df158}{getPosition}}();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::shared\_ptr<EGE::Model>\ \mbox{\hyperlink{classOnyx_1_1Entity_a951d726876449156f5f17383c51ffcb9}{getModel}}();}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<EGE::Model>\ \mbox{\hyperlink{classOnyx_1_1Entity_aded44b3834c06aad8f88193caa3419bd}{\_model}};\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ EGE::Maths::Vector3<float>\ \mbox{\hyperlink{classOnyx_1_1Entity_a114bf724ad20e45425d7c19473bc6ce3}{\_position}};\ }
+\DoxyCodeLine{00063\ \ \ \ \ \};}
+\DoxyCodeLine{00064\ \}}
+
+\end{DoxyCode}

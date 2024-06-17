@@ -1,0 +1,38 @@
+\doxysection{Memory\+IOStream Class Reference}
+\hypertarget{classMemoryIOStream}{}\label{classMemoryIOStream}\index{MemoryIOStream@{MemoryIOStream}}
+Inheritance diagram for Memory\+IOStream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMemoryIOStream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classMemoryIOStream_afdeb2c2f43245b3021ee7950d20d5dd6}\label{classMemoryIOStream_afdeb2c2f43245b3021ee7950d20d5dd6} 
+{\bfseries Memory\+IOStream} (const unsigned char \texorpdfstring{$\ast$}{*}buffer, size\+\_\+t length)
+\item 
+\Hypertarget{classMemoryIOStream_a960e73ea0fd444deb5c06c772cb8e038}\label{classMemoryIOStream_a960e73ea0fd444deb5c06c772cb8e038} 
+size\+\_\+t {\bfseries Read} (void \texorpdfstring{$\ast$}{*}out\+Buffer, size\+\_\+t size, size\+\_\+t count) override
+\item 
+\Hypertarget{classMemoryIOStream_a45a5fed767cfc4bc153b85886bb888ad}\label{classMemoryIOStream_a45a5fed767cfc4bc153b85886bb888ad} 
+size\+\_\+t {\bfseries Write} (const void \texorpdfstring{$\ast$}{*}buffer, size\+\_\+t size, size\+\_\+t count) override
+\item 
+\Hypertarget{classMemoryIOStream_aa8295fafc9420f43a680422b1d7a3e84}\label{classMemoryIOStream_aa8295fafc9420f43a680422b1d7a3e84} 
+ai\+Return {\bfseries Seek} (size\+\_\+t offset, ai\+Origin origin) override
+\item 
+\Hypertarget{classMemoryIOStream_a7f9b2d1187e3367bbb1e9f00b8c61d0c}\label{classMemoryIOStream_a7f9b2d1187e3367bbb1e9f00b8c61d0c} 
+size\+\_\+t {\bfseries Tell} () const override
+\item 
+\Hypertarget{classMemoryIOStream_afcceee34745ef637a1ecc5959e363fb6}\label{classMemoryIOStream_afcceee34745ef637a1ecc5959e363fb6} 
+size\+\_\+t {\bfseries File\+Size} () const override
+\item 
+\Hypertarget{classMemoryIOStream_ab15a9e77ab59c655c34b204898ae47c5}\label{classMemoryIOStream_ab15a9e77ab59c655c34b204898ae47c5} 
+void {\bfseries Flush} () override
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/ege/include/Memory\+IOStream.\+hpp\item 
+gui/ege/src/Memory\+IOStream.\+cpp\end{DoxyCompactItemize}

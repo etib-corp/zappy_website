@@ -5,7 +5,6 @@ export default function Turing () {
     return (
         <div className="dark:bg-gray-800 py-2">
             <Narbar_Component />
-            
             <Footer_Component />
         </div>
     );

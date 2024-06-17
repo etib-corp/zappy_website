@@ -1,0 +1,59 @@
+\doxysection{amber\+\_\+manage\+\_\+command\+\_\+ai.\+h}
+\hypertarget{amber__manage__command__ai_8h_source}{}\label{amber__manage__command__ai_8h_source}\index{server/include/amber\_manage\_command\_ai.h@{server/include/amber\_manage\_command\_ai.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ amber\_manage\_command\_ai}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AMBER\_MANAGE\_COMMAND\_AI\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ AMBER\_MANAGE\_COMMAND\_AI\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_init.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_queue\_command.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}string\_array.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_manage\_client.h"{}}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_logic.h"{}}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00025\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structai__command__s}{ai\_command\_s}}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structai__command__s_a5a882208d197aa4113a6d883ed286b90}{\_command}};\ }
+\DoxyCodeLine{00027\ \ \ \ \ type\_command\_t\ \mbox{\hyperlink{structai__command__s_ac3f0efe512542e5ba0f90c731591bc6b}{\_type}};\ }
+\DoxyCodeLine{00028\ \ \ \ \ void\ (*\mbox{\hyperlink{structai__command__s_ae5996fed2f6dbb290a54f5bfb7079fc6}{\_func}})}
+\DoxyCodeLine{00029\ \ \ \ \ (\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);\ }
+\DoxyCodeLine{00031\ \}\ \mbox{\hyperlink{structai__command__s}{ai\_command\_t}};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{void}\ amber\_ai\_incantation(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{void}\ amber\_ai\_take\_object(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00061\ \textcolor{keywordtype}{void}\ amber\_ai\_set\_object(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00074\ \textcolor{keywordtype}{void}\ amber\_ai\_forward(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00086\ \textcolor{keywordtype}{void}\ amber\_manage\_command\_ai(\mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv,}
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00095\ \textcolor{keywordtype}{void}\ amber\_ai\_right(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00105\ \textcolor{keywordtype}{void}\ amber\_ai\_left(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00119\ \textcolor{keywordtype}{void}\ amber\_ai\_look(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{void}\ amber\_ai\_inventory(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00141\ \textcolor{keywordtype}{void}\ amber\_ai\_broadcast(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00156\ \textcolor{keywordtype}{void}\ amber\_ai\_connect\_nbr(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00164\ \textcolor{keywordtype}{void}\ amber\_ai\_fork(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00165\ }
+\DoxyCodeLine{00177\ \textcolor{keywordtype}{void}\ amber\_ai\_eject(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \textcolor{keywordtype}{char}\ **arg);}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00179\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structai__command__s}{ai\_command\_t}}\ ai\_commands[];}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AMBER\_MANAGE\_COMMAND\_AI\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

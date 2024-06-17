@@ -1,0 +1,70 @@
+\doxysection{amber\+\_\+queue\+\_\+command.\+h}
+\hypertarget{amber__queue__command_8h_source}{}\label{amber__queue__command_8h_source}\index{server/include/amber\_queue\_command.h@{server/include/amber\_queue\_command.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ amber\_queue\_command}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AMBER\_QUEUE\_COMMAND\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ AMBER\_QUEUE\_COMMAND\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdlib.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdio.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdbool.h>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ type\_command\_s\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ T\_FORWARD,\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ T\_RIGHT,\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ T\_LEFT,\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ T\_LOOK,\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ T\_INVENTORY,\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ T\_BROADCAST,\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ T\_CONNECT\_NBR,\ \ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ T\_FORK,\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ T\_EJECT,\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ T\_TAKE,\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ T\_SET,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ T\_INCANTATION,\ \ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ T\_MSZ,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ T\_BCT,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ T\_MCT,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ T\_SGT,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ T\_SST,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ T\_TNA,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ T\_PPO,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ T\_PLV,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ T\_PIN,\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00044\ \}\ type\_command\_t;}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00055\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structcommand__s}{command\_s}}\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structcommand__s_ae4686b87a3dff61c89257ab6ce3b4d2f}{\_arg}};\ }
+\DoxyCodeLine{00057\ \ \ \ \ type\_command\_t\ \mbox{\hyperlink{structcommand__s_a0b0c23076fa2a4d257f83472d14b0d32}{\_id}};\ \ \ \ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structcommand__s_a914e879b52f390719cfd319a91aca9ec}{\_time}};\ \ }
+\DoxyCodeLine{00059\ \}\ \mbox{\hyperlink{structcommand__s}{command\_t}};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00070\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structqueue__command__s}{queue\_command\_s}}\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \mbox{\hyperlink{structcommand__s}{command\_t}}\ *\_command;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structqueue__command__s}{queue\_command\_s}}\ *\_next;}
+\DoxyCodeLine{00073\ \}\ \mbox{\hyperlink{structqueue__command__t}{queue\_command\_t}};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00082\ \textcolor{keywordtype}{bool}\ queue\_push\_back(\mbox{\hyperlink{structqueue__command__t}{queue\_command\_t}}\ **q,\ \mbox{\hyperlink{structcommand__s}{command\_t}}\ *command);}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00093\ \textcolor{keywordtype}{bool}\ queue\_push\_back\_d(\mbox{\hyperlink{structqueue__command__t}{queue\_command\_t}}\ **q,\ \textcolor{keywordtype}{char}\ *arg,\ \textcolor{keywordtype}{int}\ time,\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id});}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00105\ \mbox{\hyperlink{structcommand__s}{command\_t}}\ *queue\_pop\_front(\mbox{\hyperlink{structqueue__command__t}{queue\_command\_t}}\ **q);}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00112\ \textcolor{keywordtype}{void}\ queue\_display(\mbox{\hyperlink{structqueue__command__t}{queue\_command\_t}}\ *q);}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00121\ \textcolor{keywordtype}{void}\ queue\_destroy(\mbox{\hyperlink{structqueue__command__t}{queue\_command\_t}}\ **q);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00132\ \mbox{\hyperlink{structcommand__s}{command\_t}}\ *queue\_front(\mbox{\hyperlink{structqueue__command__t}{queue\_command\_t}}\ *q);}
+\DoxyCodeLine{00133\ }
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{int}\ queue\_command\_size(\mbox{\hyperlink{structqueue__command__t}{queue\_command\_t}}\ *queue);}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00142\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AMBER\_QUEUE\_COMMAND\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,83 @@
+\doxysection{Tcp\+Client.\+hpp}
+\hypertarget{TcpClient_8hpp_source}{}\label{TcpClient_8hpp_source}\index{gui/include/TcpClient.hpp@{gui/include/TcpClient.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ TcpClient}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ TCPCLIENT\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ TCPCLIENT\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ <sys/socket.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ <netinet/in.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#include\ <arpa/inet.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#include\ <unistd.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ <string>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#include\ <queue>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#include\ <array>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#include\ <cstring>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}Error.hpp"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}TcpCommand.hpp"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}TcpManagerCmd.hpp"{}}}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\ \ \ \ \#define\ COMMAND\_VALIDE}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{namespace\ }net\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classnet_1_1TcpClientError}{TcpClientError}}\ :\ \textcolor{keyword}{public}\ EGE::Error\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classnet_1_1TcpClientError_a9e1305245b9080578c48aa29d6d8ee17}{TcpClientError}}(\textcolor{keyword}{const}\ std::string\&\ message)\ :\ Error(message)\ \{\}}
+\DoxyCodeLine{00041\ \ \ \ \ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classnet_1_1TcpClient}{TcpClient}}\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classnet_1_1TcpClient}{TcpClient}}(\textcolor{keyword}{const}\ std::string\&\ ip,\ \textcolor{keywordtype}{int}\ port);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classnet_1_1TcpClient_ab1dd44c460e6b2c978de0177b409f742}{\string~TcpClient}}();}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classnet_1_1TcpClient_aad338e67f9952249433a0f7f94a77041}{connection}}();}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classnet_1_1TcpClient_aae86498883e9adb9353d34d989baeb7e}{disconnect}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classnet_1_1TcpClient_a0dcfe4f6b7c5d146b2fe6a74649fc887}{sendRequest}}(\textcolor{keyword}{const}\ std::string\&\ request);}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classnet_1_1TcpClient_a350ef0f6ab9fe4cd88af9a1b470796f8}{waitEvent}}();}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classnet_1_1TcpClient_a41c6f00d76ff34259d9576ae0787f8b9}{addCommand}}(\textcolor{keyword}{const}\ std::string\&\ command,\ net::type\_command\_t\ type,\ std::function<\textcolor{keywordtype}{void}(std::vector<std::string>\&\ args)>\ callback);}
+\DoxyCodeLine{00110\ }
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classnet_1_1TcpClient_ac3a7159b26cdd662a4febe01a6033de4}{getIP}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classnet_1_1TcpClient_a83e883ae3e738e1acf25ded5cc8fdcd2}{getPort}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classnet_1_1TcpClient_a7d8cb133d77834830f217ea8d5bcd63f}{\_ip}};\ }
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classnet_1_1TcpClient_aa2bb55f4192292f5c1a6d196c7b07f65}{\_port}};\ }
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classnet_1_1TcpClient_aca57bb5436ebab4f3d0f97508e16c64d}{\_fd}};\ }
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }sockaddr\_in\ \mbox{\hyperlink{classnet_1_1TcpClient_adb82356fe6e92e286bc984211cb5d0c3}{\_serv\_addr}};\ }
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classnet_1_1TcpManagerCmd}{TcpManagerCmd}}\ \mbox{\hyperlink{classnet_1_1TcpClient_abcf011b17e4c7f47c5cc6c61909ee0db}{\_manager}};\ }
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ fd\_set\ \mbox{\hyperlink{classnet_1_1TcpClient_a9f2585d7db4b0aa308d9f5fa520482a7}{\_readfds}};\ }
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classnet_1_1TcpClient_a865b96fd785fb1b7ded9c52d2298e8ee}{\_buffer}};\ }
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ fd\_set\ \mbox{\hyperlink{classnet_1_1TcpClient_a1b6a06ca23767d1e8d1fa5fd7e6a396a}{\_writefds}};\ }
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_initSocket();}
+\DoxyCodeLine{00140\ }
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_initFdSet();}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_getheader();}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_sendTeamName();}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_readAll();}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \_evalCommand();}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00166\ \}\ \textcolor{comment}{//\ namespace\ net}}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !TCPCLIENT\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

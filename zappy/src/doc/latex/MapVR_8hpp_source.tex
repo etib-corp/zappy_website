@@ -1,0 +1,47 @@
+\doxysection{Map\+VR.\+hpp}
+\hypertarget{MapVR_8hpp_source}{}\label{MapVR_8hpp_source}\index{gui/bonusVR/include/MapVR.hpp@{gui/bonusVR/include/MapVR.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ MapVR}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ MAPVR\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ MAPVR\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Maths/Vector2.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}WindowVR.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}Shader.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}FloorVR.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMapVR}{MapVR}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classEntityVR}{EntityVR}}\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMapVR}{MapVR}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMapVR}{MapVR}}(\textcolor{keyword}{const}\ EGE::Maths::Vector2<int>\&\ size,\ std::shared\_ptr<EGE::WindowVR>\ window);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMapVR}{\string~MapVR}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ update(std::shared\_ptr<EGE::Shader>\ shader);}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ addItem(\textcolor{keyword}{const}\ EGE::Maths::Vector2<int>\&\ position,\ ItemVR::TYPE\ type,\ \textcolor{keywordtype}{int}\ number\ =\ 1);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ removeItem(\textcolor{keyword}{const}\ EGE::Maths::Vector2<int>\&\ position,\ ItemVR::TYPE\ type);}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ EGE::Maths::Vector2<int>\ getSize()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<FloorVR>>\ getFloor()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<FloorVR>>\ \_floor;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ EGE::Maths::Vector2<int>\ \_size;}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ std::shared\_ptr<EGE::WindowVR>\ \_window;}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !MAPVR\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

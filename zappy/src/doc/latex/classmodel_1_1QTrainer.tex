@@ -1,0 +1,93 @@
+\doxysection{model.\+QTrainer Class Reference}
+\hypertarget{classmodel_1_1QTrainer}{}\label{classmodel_1_1QTrainer}\index{model.QTrainer@{model.QTrainer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodel_1_1QTrainer_ae5a9319bc169d30ea1c997a2eb166c48}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, model, lr, gamma)
+\item 
+\mbox{\hyperlink{classmodel_1_1QTrainer_a4a93ada8d6fd95879482f802aefe791b}{train\+\_\+step}} (self, state, action, reward, next\+\_\+state, done)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodel_1_1QTrainer_a077c234f2ced91f61b0b3668ddb97111}\label{classmodel_1_1QTrainer_a077c234f2ced91f61b0b3668ddb97111} 
+{\bfseries lr}
+\item 
+\Hypertarget{classmodel_1_1QTrainer_a45194b6437a3353d187c7de07d0b72ae}\label{classmodel_1_1QTrainer_a45194b6437a3353d187c7de07d0b72ae} 
+{\bfseries gamma}
+\item 
+\Hypertarget{classmodel_1_1QTrainer_a6df9df43495b87e6db3771e0b1634675}\label{classmodel_1_1QTrainer_a6df9df43495b87e6db3771e0b1634675} 
+{\bfseries model}
+\item 
+\Hypertarget{classmodel_1_1QTrainer_afd4c3e96a35da6a7b84f4c1f61580c2b}\label{classmodel_1_1QTrainer_afd4c3e96a35da6a7b84f4c1f61580c2b} 
+{\bfseries optimizer}
+\item 
+\Hypertarget{classmodel_1_1QTrainer_aab80588116bfda65c8f8d1b75ed38141}\label{classmodel_1_1QTrainer_aab80588116bfda65c8f8d1b75ed38141} 
+{\bfseries criterion}
+\item 
+\Hypertarget{classmodel_1_1QTrainer_ae209d48c6a428299f4cb30e58fb5b8d5}\label{classmodel_1_1QTrainer_ae209d48c6a428299f4cb30e58fb5b8d5} 
+{\bfseries device}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}QTrainer class for training a Q-learning model.
+
+Args:
+    model (torch.nn.Module): The Q-learning model.
+    lr (float): The learning rate for the optimizer.
+    gamma (float): The discount factor for future rewards.
+
+Attributes:
+    lr (float): The learning rate for the optimizer.
+    gamma (float): The discount factor for future rewards.
+    model (torch.nn.Module): The Q-learning model.
+    optimizer (torch.optim.Optimizer): The optimizer for updating the model's parameters.
+    criterion (torch.nn.Module): The loss function for calculating the training loss.
+
+Methods:
+    train_step: Performs a single training step.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodel_1_1QTrainer_ae5a9319bc169d30ea1c997a2eb166c48}\label{classmodel_1_1QTrainer_ae5a9319bc169d30ea1c997a2eb166c48} 
+\index{model.QTrainer@{model.QTrainer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!model.QTrainer@{model.QTrainer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily model.\+QTrainer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{model,  }\item[{}]{lr,  }\item[{}]{gamma }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize the Model class.
+
+Args:
+    model (torch.nn.Module): The neural network model.
+    lr (float): The learning rate for the optimizer.
+    gamma (float): The discount factor for the loss function.
+
+Attributes:
+    lr (float): The learning rate for the optimizer.
+    gamma (float): The discount factor for the loss function.
+    model (torch.nn.Module): The neural network model.
+    optimizer (torch.optim.Adam): The optimizer for updating the model parameters.
+    criterion (torch.nn.MSELoss): The loss function for calculating the mean squared error.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodel_1_1QTrainer_a4a93ada8d6fd95879482f802aefe791b}\label{classmodel_1_1QTrainer_a4a93ada8d6fd95879482f802aefe791b} 
+\index{model.QTrainer@{model.QTrainer}!train\_step@{train\_step}}
+\index{train\_step@{train\_step}!model.QTrainer@{model.QTrainer}}
+\doxysubsubsection{\texorpdfstring{train\_step()}{train\_step()}}
+{\footnotesize\ttfamily model.\+QTrainer.\+train\+\_\+step (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{state,  }\item[{}]{action,  }\item[{}]{reward,  }\item[{}]{next\+\_\+state,  }\item[{}]{done }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Performs a single training step.
+
+Args:
+    state (list or numpy.ndarray): The current state.
+    action (int): The action taken in the current state.
+    reward (float): The reward received for taking the action.
+    next_state (list or numpy.ndarray): The next state after taking the action.
+    done (bool): Whether the episode is done after taking the action.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ia/model.\+py\end{DoxyCompactItemize}
