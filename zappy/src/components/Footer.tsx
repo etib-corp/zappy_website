@@ -2,7 +2,7 @@ import { Footer, DarkThemeToggle } from "flowbite-react";
 
 export default function Footer_Component () {
     return (
-        <Footer container className="min-w-screen-md flex items-center space-x-14">
+        <Footer container className="min-w-screen-md max-md:mx-1 flex items-center space-x-14">
         <Footer.Copyright href="#" by="by Etib Corp™" year={2024} />
         <Footer.LinkGroup>
             <div className="flex items-center space-x-4">

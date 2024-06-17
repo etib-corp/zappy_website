@@ -8,14 +8,14 @@ export function Narbar_Component() {
   return (
   <div className="py-5 px-8">
     <Navbar className="py-10" fluid rounded>
-      <Navbar.Brand className="min-md:px-20 px-10" href="/">
+      <Navbar.Brand className="min-md:px-20 min-sm:px-5 px-2" href="/">
         <img src="zappy_bg.png" alt="Zappy" className="h-20"/>
       </Navbar.Brand>
       <div className="flex justify-center">
         <Navbar.Toggle />
       </div>
       <Navbar.Collapse>
-        <div className="min-w-screen-md flex items-center space-x-7">
+        <div className="min-w-screen-md max-sm:space-x-5 flex items-center space-x-7">
           <Navbar.Link href="/">
             Home
           </Navbar.Link>

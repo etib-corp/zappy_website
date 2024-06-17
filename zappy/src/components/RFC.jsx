@@ -159,7 +159,7 @@ export default function RFC() {
                 </Table.Row>
                 </Table.Body>
             </Table>
-            <div className="flex max-w-96">
+            <div className="max-sm:px-2 max-md:my-10 flex max-w-96">
                 <Table>
                     <Table.Head>
                     <Table.HeadCell>

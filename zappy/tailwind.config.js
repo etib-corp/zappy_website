@@ -4,7 +4,11 @@ const flowbite = require("flowbite-react/tailwind");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", flowbite.content()],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'amber-pattern': "url('../public/explorer.png')",
+      },
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -16,6 +20,9 @@ module.exports = {
       'silver': '#ecebff',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
+    },
+    fontFamily: {
+      'Apple': ['San Francisco']
     },
   },
   plugins: [flowbite.plugin()],
