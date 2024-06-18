@@ -1,6 +1,9 @@
 import FooterComponent from "../components/Footer";
 import { NavbarComponent } from "../components/Navbar";
 import { Article } from "../components/Bloc";
+import { Title } from "../components/Quote";
+
+import turing from "../JSON/turing.json";
 
 export default function Turing () {
     return (
@@ -11,7 +14,29 @@ export default function Turing () {
                     Turing
                 </h1>
                 <div className="max-md:-mx-10">
-                    <Article properties={{ title: "Dive into immersion", content: "Experience the simulation" }} />
+                    <Article properties={{ title: "Work smarter, not harder", content: "Be impressed by our logic" }} />
+                </div>
+            </div>
+            <div className="flex flex-wrap justify-center">
+                <div className="w-3/4 max-md:w-lvw">
+                    <Article properties={turing.Turing} />
+                    <Article properties={turing.How} />
+                </div>
+                <div className="w-2/3 max-md:w-11/12">
+                    <Title text="The Mother" />
+                    <Article properties={turing.Mother} />
+                </div>
+                <div className="w-2/3 max-md:w-11/12">
+                    <Title text="The suicidal child" />
+                    <Article properties={turing.Suicidal} />
+                </div>
+                <div className="w-2/3 max-md:w-11/12">
+                    <Title text="The Niffler (the collector)" />
+                    <Article properties={turing.Collector} />
+                </div>
+                <div className="w-2/3 max-md:w-11/12">
+                    <Title text="The Pilot fish (the evolver)" />
+                    <Article properties={turing.Evolver} />
                 </div>
             </div>
             <FooterComponent />

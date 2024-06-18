@@ -1,0 +1,32 @@
+{
+    "Turing":
+    {
+        "title": "The Turing AI",
+        "content": "We think a long time before making our AI. Multiple solutions were proposed to us, like a neural network, and other solutions which seems a little bit too loud for the work that we had to do. So we went back to a powerfull and basic algorithm."
+    },
+    "How":
+    {
+        "title": "How we thought",
+        "content": "Basically the goal for a Trantorian is to pass levels as many as possible and stay alive. So we let ethic aside, and our 'Mother AI' makes suicidals and submissives children (which are our 'Child AI')."
+    },
+    "Mother":
+    {
+        "title": "Mama Fratelli",
+        "content": "The mother we made just aims at level up solo. So it makes children and 'asks' them ressources to level up. When it needs to eat to stay alive, it orders to children for food."
+    },
+    "Suicidal":
+    {
+        "title": "Funest destiny...",
+        "content": "The only way for Trantorians to make unlimited food, is to make children that will instantly die. Because when a child borns, he spawn with food in its inventory. And after its die, another 'Collector child' will collect the food let on the floor by its brother. So as we said, the mother seems a bit awful."
+    },
+    "Collector":
+    {
+        "title": "Farm ! Farm ! Farm !",
+        "content": "The main goal of this type of children, is to collect food for the mother, and they can ear orders from the mom which indicates what she needs. He tries to stay alive, but when he died, his mother will just throw another collector child."
+    },
+    "Evolver":
+    {
+        "title": "Stay with me !",
+        "content": "Maybe our mother is not as bad as we say. Or maybe not with everybody. Because she throws children which just stay here with her. Because to pass to the next level, a Trantorian needs some specifics ressources AND other Trantorians from his own team."
+    }
+}
