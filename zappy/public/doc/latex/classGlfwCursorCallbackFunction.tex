@@ -1,0 +1,100 @@
+\doxysection{Glfw\+Cursor\+Callback\+Function Class Reference}
+\hypertarget{classGlfwCursorCallbackFunction}{}\label{classGlfwCursorCallbackFunction}\index{GlfwCursorCallbackFunction@{GlfwCursorCallbackFunction}}
+
+
+Represents a singleton callback function for GLFW window focus events.  
+
+
+
+
+{\ttfamily \#include $<$Glfw\+Callback.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classGlfwCursorCallbackFunction_aa0483727a2f54882843ec0f75a89fe17}\label{classGlfwCursorCallbackFunction_aa0483727a2f54882843ec0f75a89fe17} 
+{\bfseries Glfw\+Cursor\+Callback\+Function} (const \mbox{\hyperlink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Deleted copy constructor. \end{DoxyCompactList}\item 
+\Hypertarget{classGlfwCursorCallbackFunction_a3c2a8e3c7f8bb4af9176cef92973e2e5}\label{classGlfwCursorCallbackFunction_a3c2a8e3c7f8bb4af9176cef92973e2e5} 
+\mbox{\hyperlink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function}} \& {\bfseries operator=} (const \mbox{\hyperlink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Deleted copy assignment operator. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... \+\_\+\+Arg\+Types$>$ }\\void \mbox{\hyperlink{classGlfwCursorCallbackFunction_ae790b6146d24bf58bf0db372201de511}{call}} (\+\_\+\+Arg\+Types... args)
+\begin{DoxyCompactList}\small\item\em Calls the callback function with the provided arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename F $>$ }\\static \mbox{\hyperlink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGlfwCursorCallbackFunction_a433672541fda2141f707cb72073015de}{get\+Instance}} (F \&\&callback, bool force=false)
+\item 
+static \mbox{\hyperlink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classGlfwCursorCallbackFunction_ab5b74cf8f9389aeb115228282fce469c}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a singleton callback function for GLFW window focus events. 
+
+This class provides a singleton implementation for a callback function that is invoked when a GLFW window gains or loses focus. It allows registering a callback function that takes a GLFWwindow pointer and an integer as arguments. The callback function can be set using the {\ttfamily get\+Instance} method. The {\ttfamily call} method is used to invoke the registered callback function. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGlfwCursorCallbackFunction_ae790b6146d24bf58bf0db372201de511}\label{classGlfwCursorCallbackFunction_ae790b6146d24bf58bf0db372201de511} 
+\index{GlfwCursorCallbackFunction@{GlfwCursorCallbackFunction}!call@{call}}
+\index{call@{call}!GlfwCursorCallbackFunction@{GlfwCursorCallbackFunction}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily template$<$typename... \+\_\+\+Arg\+Types$>$ \\
+void Glfw\+Cursor\+Callback\+Function\+::call (\begin{DoxyParamCaption}\item[{\+\_\+\+Arg\+Types...}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calls the callback function with the provided arguments. 
+
+This function checks if a callback function is set and then calls it with the provided arguments.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \+\_\+\+Arg\+Types} & The types of the arguments. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The arguments to be passed to the callback function. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classGlfwCursorCallbackFunction_ab5b74cf8f9389aeb115228282fce469c}\label{classGlfwCursorCallbackFunction_ab5b74cf8f9389aeb115228282fce469c} 
+\index{GlfwCursorCallbackFunction@{GlfwCursorCallbackFunction}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!GlfwCursorCallbackFunction@{GlfwCursorCallbackFunction}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function}} \texorpdfstring{$\ast$}{*} Glfw\+Cursor\+Callback\+Function\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns the instance of the \doxylink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function}.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the instance of the \doxylink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function}. 
+\end{DoxyReturn}
+\Hypertarget{classGlfwCursorCallbackFunction_a433672541fda2141f707cb72073015de}\label{classGlfwCursorCallbackFunction_a433672541fda2141f707cb72073015de} 
+\index{GlfwCursorCallbackFunction@{GlfwCursorCallbackFunction}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!GlfwCursorCallbackFunction@{GlfwCursorCallbackFunction}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+static \mbox{\hyperlink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function}} \texorpdfstring{$\ast$}{*} Glfw\+Cursor\+Callback\+Function\+::get\+Instance (\begin{DoxyParamCaption}\item[{F \&\&}]{callback,  }\item[{bool}]{force = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Returns an instance of the \doxylink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function} with the specified callback function.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em F} & The type of the callback function. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em callback} & The callback function to be invoked when the window focus changes. \\
+\hline
+{\em force} & If set to true, forces the creation of a new instance even if one already exists. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the instance of the \doxylink{classGlfwCursorCallbackFunction}{Glfw\+Cursor\+Callback\+Function}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gui/ege/include/Glfw\+Callback.\+hpp\end{DoxyCompactItemize}

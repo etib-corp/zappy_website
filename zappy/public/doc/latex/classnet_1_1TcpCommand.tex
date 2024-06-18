@@ -1,0 +1,92 @@
+\doxysection{net\+::Tcp\+Command Class Reference}
+\hypertarget{classnet_1_1TcpCommand}{}\label{classnet_1_1TcpCommand}\index{net::TcpCommand@{net::TcpCommand}}
+
+
+Class representing a TCP command.  
+
+
+
+
+{\ttfamily \#include $<$Tcp\+Command.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classnet_1_1TcpCommand_a762771227586b68c4f2ea25c02f6f6b6}\label{classnet_1_1TcpCommand_a762771227586b68c4f2ea25c02f6f6b6} 
+{\bfseries Tcp\+Command} ()=default
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classnet_1_1TcpCommand_a2aade124d5c07655b5a4fa7972e1e842}{Tcp\+Command}} (type\+\_\+command\+\_\+t type, std\+::function$<$ void(std\+::vector$<$ std\+::string $>$ \&args)$>$ callback)
+\begin{DoxyCompactList}\small\item\em Constructor with type and callback function. \end{DoxyCompactList}\item 
+\Hypertarget{classnet_1_1TcpCommand_a8e2fd8a4ee9ef3f2c56945ab230988cc}\label{classnet_1_1TcpCommand_a8e2fd8a4ee9ef3f2c56945ab230988cc} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Tcp\+Command} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classnet_1_1TcpCommand_aaa941af7feeb7a95372c334347a3f599}{exec}} (std\+::vector$<$ std\+::string $>$ \&args)
+\begin{DoxyCompactList}\small\item\em Executes the TCP command with the given arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classnet_1_1TcpCommand_a008222d5348f717c35825bc753c28034}\label{classnet_1_1TcpCommand_a008222d5348f717c35825bc753c28034} 
+type\+\_\+command\+\_\+t {\bfseries \+\_\+type}
+\begin{DoxyCompactList}\small\item\em The type of the command. \end{DoxyCompactList}\item 
+std\+::function$<$ void(std\+::vector$<$ std\+::string $>$ \&args)$>$ \mbox{\hyperlink{classnet_1_1TcpCommand_a9438611612969f43a8d7c4003fd00a19}{\+\_\+callback}}
+\begin{DoxyCompactList}\small\item\em A callable object that can hold and invoke a function with the signature\+: void(std\+::vector$<$std\+::string$>$\& args) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a TCP command. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classnet_1_1TcpCommand_a2aade124d5c07655b5a4fa7972e1e842}\label{classnet_1_1TcpCommand_a2aade124d5c07655b5a4fa7972e1e842} 
+\index{net::TcpCommand@{net::TcpCommand}!TcpCommand@{TcpCommand}}
+\index{TcpCommand@{TcpCommand}!net::TcpCommand@{net::TcpCommand}}
+\doxysubsubsection{\texorpdfstring{TcpCommand()}{TcpCommand()}}
+{\footnotesize\ttfamily net\+::\+Tcp\+Command\+::\+Tcp\+Command (\begin{DoxyParamCaption}\item[{type\+\_\+command\+\_\+t}]{type,  }\item[{std\+::function$<$ void(std\+::vector$<$ std\+::string $>$ \&args)$>$}]{callback }\end{DoxyParamCaption})}
+
+
+
+Constructor with type and callback function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the command. \\
+\hline
+{\em callback} & The callback function to be executed when the command is executed. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classnet_1_1TcpCommand_aaa941af7feeb7a95372c334347a3f599}\label{classnet_1_1TcpCommand_aaa941af7feeb7a95372c334347a3f599} 
+\index{net::TcpCommand@{net::TcpCommand}!exec@{exec}}
+\index{exec@{exec}!net::TcpCommand@{net::TcpCommand}}
+\doxysubsubsection{\texorpdfstring{exec()}{exec()}}
+{\footnotesize\ttfamily void net\+::\+Tcp\+Command\+::exec (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{args }\end{DoxyParamCaption})}
+
+
+
+Executes the TCP command with the given arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & The vector of strings containing the command arguments. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classnet_1_1TcpCommand_a9438611612969f43a8d7c4003fd00a19}\label{classnet_1_1TcpCommand_a9438611612969f43a8d7c4003fd00a19} 
+\index{net::TcpCommand@{net::TcpCommand}!\_callback@{\_callback}}
+\index{\_callback@{\_callback}!net::TcpCommand@{net::TcpCommand}}
+\doxysubsubsection{\texorpdfstring{\_callback}{\_callback}}
+{\footnotesize\ttfamily std\+::function$<$void(std\+::vector$<$std\+::string$>$\& args)$>$ net\+::\+Tcp\+Command\+::\+\_\+callback\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+A callable object that can hold and invoke a function with the signature\+: void(std\+::vector$<$std\+::string$>$\& args) 
+
+This type is used to store a callback function that takes a reference to a vector of strings as an argument and returns void. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/include/Tcp\+Command.\+hpp\item 
+gui/src/Tcp\+Command.\+cpp\end{DoxyCompactItemize}

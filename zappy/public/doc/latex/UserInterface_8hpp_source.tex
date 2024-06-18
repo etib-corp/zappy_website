@@ -1,0 +1,31 @@
+\doxysection{User\+Interface.\+hpp}
+\hypertarget{UserInterface_8hpp_source}{}\label{UserInterface_8hpp_source}\index{gui/include/UserInterface.hpp@{gui/include/UserInterface.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ UserInterface}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}Sound/Device.hpp"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Sound/Playlist.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}GUI/GUIManager.hpp"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classUserInterface}{UserInterface}}\ :\ \textcolor{keyword}{public}\ EGE::GUIManager\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUserInterface_ae6fb70370701b3bd6120e923df9705b0}{UserInterface}}();}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classUserInterface_ae588b2ff1711a016dd4c6fc5002c0841}{\string~UserInterface}}()\{\};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classUserInterface_a52d922cf2915e12eac30e92f6ffa6212}{initPlaylist}}(\textcolor{keyword}{const}\ std::string\ \&path);}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ EGE::Sound::Playlist\ *\mbox{\hyperlink{classUserInterface_a3f83eddb00d06b1cb1b7e1d9495641d3}{getPlaylist}}();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ EGE::Sound::Device\ *\mbox{\hyperlink{classUserInterface_a764b3893c8598311c71eb461622c6a97}{\_soundDevice}};\ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ EGE::Sound::Playlist\ *\mbox{\hyperlink{classUserInterface_a99ebcc05165c2660bda8659f2eb9e46f}{\_playlist}};\ }
+\DoxyCodeLine{00046\ \};}
+
+\end{DoxyCode}

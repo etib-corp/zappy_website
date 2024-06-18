@@ -4,7 +4,7 @@ import { DarkThemeToggle, SidebarLogo } from "flowbite-react";
 
 import { Navbar } from "flowbite-react";
 
-export function Narbar_Component() {
+export function NavbarComponent() {
   return (
   <div className="py-5 px-8">
     <Navbar className="py-10" fluid rounded>
@@ -20,7 +20,7 @@ export function Narbar_Component() {
             Home
           </Navbar.Link>
           <Navbar.Link href="https://github.com/MAILLOTNathan/zappy">GitHub</Navbar.Link>
-          <Navbar.Link href="#">Docs</Navbar.Link>
+          <Navbar.Link href="doc/html/index.html">Docs</Navbar.Link>
           <DarkThemeToggle />
         </div>
       </Navbar.Collapse>

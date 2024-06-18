@@ -1,0 +1,100 @@
+\doxysection{amber\+\_\+client\+\_\+s Struct Reference}
+\hypertarget{structamber__client__s}{}\label{structamber__client__s}\index{amber\_client\_s@{amber\_client\_s}}
+
+
+Structure representing an Amber client.  
+
+
+
+
+{\ttfamily \#include $<$amber\+\_\+init.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structamber__client__s_a5d405ecae767a8fac96fc3b032ec9bec}\label{structamber__client__s_a5d405ecae767a8fac96fc3b032ec9bec} 
+\mbox{\hyperlink{structtcp__s}{tcp\+\_\+t}} {\bfseries \+\_\+tcp}
+\item 
+\Hypertarget{structamber__client__s_a7ccd853789c5cca71e31870ec018740d}\label{structamber__client__s_a7ccd853789c5cca71e31870ec018740d} 
+char \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+buffer}
+\item 
+\Hypertarget{structamber__client__s_a66432cfdc378e76e1069caa6ce5ef17c}\label{structamber__client__s_a66432cfdc378e76e1069caa6ce5ef17c} 
+char \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+team\+\_\+name}
+\item 
+\Hypertarget{structamber__client__s_a0e29200f54f0cbf1fb4636becd0a7daa}\label{structamber__client__s_a0e29200f54f0cbf1fb4636becd0a7daa} 
+direction\+\_\+t {\bfseries \+\_\+direction}
+\item 
+\Hypertarget{structamber__client__s_a34c95fadd0bac9a7dc4465c4d5b6766e}\label{structamber__client__s_a34c95fadd0bac9a7dc4465c4d5b6766e} 
+int {\bfseries \+\_\+x}
+\item 
+\Hypertarget{structamber__client__s_a1bdfef9f699b866d8e19477688a3d94f}\label{structamber__client__s_a1bdfef9f699b866d8e19477688a3d94f} 
+int {\bfseries \+\_\+y}
+\item 
+\Hypertarget{structamber__client__s_acfedbb3cd63ff774db917383802cf997}\label{structamber__client__s_acfedbb3cd63ff774db917383802cf997} 
+int {\bfseries \+\_\+level}
+\item 
+\Hypertarget{structamber__client__s_aa43cebdb1db52cac6eca18921a0a7748}\label{structamber__client__s_aa43cebdb1db52cac6eca18921a0a7748} 
+int {\bfseries \+\_\+id}
+\item 
+\Hypertarget{structamber__client__s_a0f4fea4ac1be46678dfd5e369b82e6cc}\label{structamber__client__s_a0f4fea4ac1be46678dfd5e369b82e6cc} 
+\mbox{\hyperlink{structqueue__command__t}{queue\+\_\+command\+\_\+t}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+queue\+\_\+command}
+\item 
+\Hypertarget{structamber__client__s_a65ead77ba447fedcae1fc828171bfc36}\label{structamber__client__s_a65ead77ba447fedcae1fc828171bfc36} 
+\mbox{\hyperlink{structbox__s}{box\+\_\+t}} \texorpdfstring{$\ast$}{*} {\bfseries \+\_\+inventory}
+\item 
+\Hypertarget{structamber__client__s_a79da68cc1b80a7968275f450ffed64df}\label{structamber__client__s_a79da68cc1b80a7968275f450ffed64df} 
+bool {\bfseries \+\_\+is\+\_\+graphical}
+\item 
+\Hypertarget{structamber__client__s_af4270293cd8c7ae12a58341660f07518}\label{structamber__client__s_af4270293cd8c7ae12a58341660f07518} 
+bool {\bfseries \+\_\+is\+\_\+incantating}
+\item 
+\Hypertarget{structamber__client__s_a82da36204b22c86da3a83c5b08f633fb}\label{structamber__client__s_a82da36204b22c86da3a83c5b08f633fb} 
+unsigned long {\bfseries \+\_\+ellapsed\+\_\+time}
+\item 
+\Hypertarget{structamber__client__s_a4c936cd08045249afb0f52e0c8e3813e}\label{structamber__client__s_a4c936cd08045249afb0f52e0c8e3813e} 
+unsigned long {\bfseries \+\_\+clock\+\_\+food}
+\item 
+\Hypertarget{structamber__client__s_a6a1826167a7c143e1123f525fe146622}\label{structamber__client__s_a6a1826167a7c143e1123f525fe146622} 
+bool {\bfseries \+\_\+is\+\_\+error}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure representing an Amber client. 
+
+This structure contains the necessary information to handle an Amber client. It includes a TCP connection object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+tcp} & The TCP connection object for the client. \\
+\hline
+{\em \+\_\+buffer} & A buffer to store the data received from the client. \\
+\hline
+{\em \+\_\+team\+\_\+name} & The name of the team the client belongs to. \\
+\hline
+{\em \+\_\+direction} & The direction the client is facing. \\
+\hline
+{\em \+\_\+x} & The x-\/coordinate of the client. \\
+\hline
+{\em \+\_\+y} & The y-\/coordinate of the client. \\
+\hline
+{\em \+\_\+level} & The level of the client. \\
+\hline
+{\em \+\_\+id} & The ID of the client. \\
+\hline
+{\em \+\_\+queue\+\_\+command} & The queue of commands to be executed by the client. \\
+\hline
+{\em \+\_\+inventory} & The inventory of the client. \\
+\hline
+{\em \+\_\+elapsed\+\_\+time} & The elapsed time since the last command. \\
+\hline
+{\em \+\_\+is\+\_\+graphical} & A boolean flag indicating if the client is graphical. \\
+\hline
+{\em \+\_\+is\+\_\+incantating} & A boolean flag indicating if the client is incantating. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+server/include/amber\+\_\+init.\+h\end{DoxyCompactItemize}

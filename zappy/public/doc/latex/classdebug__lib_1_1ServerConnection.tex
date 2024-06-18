@@ -1,0 +1,144 @@
+\doxysection{debug\+\_\+lib.\+Server\+Connection Class Reference}
+\hypertarget{classdebug__lib_1_1ServerConnection}{}\label{classdebug__lib_1_1ServerConnection}\index{debug\_lib.ServerConnection@{debug\_lib.ServerConnection}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdebug__lib_1_1ServerConnection_abd7050e39e498ac84281de224eb0f8a3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, ai)
+\item 
+\mbox{\hyperlink{classdebug__lib_1_1ServerConnection_aa995834d0018affce5ac2d18f842b82e}{get\+\_\+con\+\_\+num}} (self, data)
+\item 
+\mbox{\hyperlink{classdebug__lib_1_1ServerConnection_ad746f7e328a20734e6064c71a86c22d9}{connect\+\_\+to\+\_\+server\+\_\+debug}} (self)
+\item 
+\mbox{\hyperlink{classdebug__lib_1_1ServerConnection_a52a52cf8be16bed907638b5140f34115}{connect\+\_\+to\+\_\+server}} (self, team\+\_\+name)
+\item 
+\mbox{\hyperlink{classdebug__lib_1_1ServerConnection_ab2ded65cf17fba25793af3b464c1af4a}{send\+\_\+request}} (self, request)
+\item 
+\mbox{\hyperlink{classdebug__lib_1_1ServerConnection_a2cc9098c11ae8342614f1319d6fb4ef7}{read\+\_\+line}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classdebug__lib_1_1ServerConnection_a465ddc5dbee796de160314c94c35e7f8}\label{classdebug__lib_1_1ServerConnection_a465ddc5dbee796de160314c94c35e7f8} 
+{\bfseries HOST}
+\item 
+\Hypertarget{classdebug__lib_1_1ServerConnection_acca77eb2563483cad09c6fde5f246581}\label{classdebug__lib_1_1ServerConnection_acca77eb2563483cad09c6fde5f246581} 
+{\bfseries PORT}
+\item 
+\Hypertarget{classdebug__lib_1_1ServerConnection_abed630b9d1cc9c82110f4ddabfcea48f}\label{classdebug__lib_1_1ServerConnection_abed630b9d1cc9c82110f4ddabfcea48f} 
+{\bfseries s}
+\item 
+\Hypertarget{classdebug__lib_1_1ServerConnection_a82819498ef9940b37b911695ce96a961}\label{classdebug__lib_1_1ServerConnection_a82819498ef9940b37b911695ce96a961} 
+{\bfseries conn\+\_\+num}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a connection to the server.
+
+This class provides methods to establish a connection to the server, send and receive data,
+and handle errors in the connection.
+
+Attributes:
+    HOST (str): The host address of the server.
+    PORT (int): The port number of the server.
+    s (socket.socket): The socket object used for the connection.
+    conn_num (int): The connection number received from the server.
+
+Methods:
+    __init__(self, ai): Initializes a new instance of the ServerConnection class.
+    get_con_num(self, data): Extracts the connection number from the received data.
+    connect_to_server_debug(self): Connects to the server in debug mode.
+    connect_to_server(self, team_name): Connects to the server and sends the team name.
+    send_request(self, request): Sends a request to the server and returns the response.
+    read_line(self): Reads a line from the server.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdebug__lib_1_1ServerConnection_abd7050e39e498ac84281de224eb0f8a3}\label{classdebug__lib_1_1ServerConnection_abd7050e39e498ac84281de224eb0f8a3} 
+\index{debug\_lib.ServerConnection@{debug\_lib.ServerConnection}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!debug\_lib.ServerConnection@{debug\_lib.ServerConnection}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily debug\+\_\+lib.\+Server\+Connection.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{ai }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a new instance of the ServerConnection class.
+
+Args:
+    ai (AI): The AI object containing the host and port information.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdebug__lib_1_1ServerConnection_a52a52cf8be16bed907638b5140f34115}\label{classdebug__lib_1_1ServerConnection_a52a52cf8be16bed907638b5140f34115} 
+\index{debug\_lib.ServerConnection@{debug\_lib.ServerConnection}!connect\_to\_server@{connect\_to\_server}}
+\index{connect\_to\_server@{connect\_to\_server}!debug\_lib.ServerConnection@{debug\_lib.ServerConnection}}
+\doxysubsubsection{\texorpdfstring{connect\_to\_server()}{connect\_to\_server()}}
+{\footnotesize\ttfamily debug\+\_\+lib.\+Server\+Connection.\+connect\+\_\+to\+\_\+server (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{team\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Connects to the server and sends the team name.
+
+Args:
+    team_name (str): The name of the team.
+
+Returns:
+    None\end{DoxyVerb}
+ \Hypertarget{classdebug__lib_1_1ServerConnection_ad746f7e328a20734e6064c71a86c22d9}\label{classdebug__lib_1_1ServerConnection_ad746f7e328a20734e6064c71a86c22d9} 
+\index{debug\_lib.ServerConnection@{debug\_lib.ServerConnection}!connect\_to\_server\_debug@{connect\_to\_server\_debug}}
+\index{connect\_to\_server\_debug@{connect\_to\_server\_debug}!debug\_lib.ServerConnection@{debug\_lib.ServerConnection}}
+\doxysubsubsection{\texorpdfstring{connect\_to\_server\_debug()}{connect\_to\_server\_debug()}}
+{\footnotesize\ttfamily debug\+\_\+lib.\+Server\+Connection.\+connect\+\_\+to\+\_\+server\+\_\+debug (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Connects to the server in debug mode.
+
+This method establishes a connection to the server and allows the user to send and receive data.
+It continuously listens for user input and sends it to the server. If the user enters "quit",
+the program exits. If there is an error in the connection, an error message is printed and the
+program exits with an exit code of 84.
+
+Args:
+    self: The instance of the class.
+
+Returns:
+    None\end{DoxyVerb}
+ \Hypertarget{classdebug__lib_1_1ServerConnection_aa995834d0018affce5ac2d18f842b82e}\label{classdebug__lib_1_1ServerConnection_aa995834d0018affce5ac2d18f842b82e} 
+\index{debug\_lib.ServerConnection@{debug\_lib.ServerConnection}!get\_con\_num@{get\_con\_num}}
+\index{get\_con\_num@{get\_con\_num}!debug\_lib.ServerConnection@{debug\_lib.ServerConnection}}
+\doxysubsubsection{\texorpdfstring{get\_con\_num()}{get\_con\_num()}}
+{\footnotesize\ttfamily debug\+\_\+lib.\+Server\+Connection.\+get\+\_\+con\+\_\+num (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{data }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extracts the connection number from the received data.
+
+Args:
+    data (bytes): The data received from the server.
+
+Returns:
+    None\end{DoxyVerb}
+ \Hypertarget{classdebug__lib_1_1ServerConnection_a2cc9098c11ae8342614f1319d6fb4ef7}\label{classdebug__lib_1_1ServerConnection_a2cc9098c11ae8342614f1319d6fb4ef7} 
+\index{debug\_lib.ServerConnection@{debug\_lib.ServerConnection}!read\_line@{read\_line}}
+\index{read\_line@{read\_line}!debug\_lib.ServerConnection@{debug\_lib.ServerConnection}}
+\doxysubsubsection{\texorpdfstring{read\_line()}{read\_line()}}
+{\footnotesize\ttfamily debug\+\_\+lib.\+Server\+Connection.\+read\+\_\+line (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads a line from the server.
+
+Returns:
+    bytes: The line received from the server.\end{DoxyVerb}
+ \Hypertarget{classdebug__lib_1_1ServerConnection_ab2ded65cf17fba25793af3b464c1af4a}\label{classdebug__lib_1_1ServerConnection_ab2ded65cf17fba25793af3b464c1af4a} 
+\index{debug\_lib.ServerConnection@{debug\_lib.ServerConnection}!send\_request@{send\_request}}
+\index{send\_request@{send\_request}!debug\_lib.ServerConnection@{debug\_lib.ServerConnection}}
+\doxysubsubsection{\texorpdfstring{send\_request()}{send\_request()}}
+{\footnotesize\ttfamily debug\+\_\+lib.\+Server\+Connection.\+send\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{request }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sends a request to the server and returns the response.
+
+Args:
+    request (str): The request to send to the server.
+
+Returns:
+    bytes: The response received from the server.
+
+Raises:
+    SystemExit: If there is an error in the connection to the server.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ia/debug\+\_\+lib.\+py\end{DoxyCompactItemize}

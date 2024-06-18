@@ -1,0 +1,40 @@
+\chapter{AI COMMANDS}
+\hypertarget{md_server_2README}{}\label{md_server_2README}\index{AI COMMANDS@{AI COMMANDS}}
+\label{md_server_2README_autotoc_md21}%
+\Hypertarget{md_server_2README_autotoc_md21}%
+ \hypertarget{md_server_2README_autotoc_md22}{}\doxysubsection{\texorpdfstring{Queues of commands}{Queues of commands}}\label{md_server_2README_autotoc_md22}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structqueue__command__s}{queue\_command\_s}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{enum}\ \mbox{\hyperlink{structcommand__s}{command\_t}}\ command;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keywordtype}{char}\ *arg;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structqueue__command__s}{queue\_command\_s}}\ *next;}
+\DoxyCodeLine{\}\ \mbox{\hyperlink{structqueue__command__t}{queue\_command\_t}};}
+
+\end{DoxyCode}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{5}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Done   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Command   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ time   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ return   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Done   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Command   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ time   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ return   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Description    }\\\cline{1-5}
+\endhead
+NETWORK   &\PBS\centering Forward   &\PBS\centering 7/f   &\PBS\centering ok   &\PBS\centering move player one case forward    \\\cline{1-5}
+NETWORK   &\PBS\centering Right   &\PBS\centering 7/f   &\PBS\centering ok   &\PBS\centering turn player right    \\\cline{1-5}
+NETWORK   &\PBS\centering Left   &\PBS\centering 7/f   &\PBS\centering ok   &\PBS\centering turn player left    \\\cline{1-5}
+NETWORK   &\PBS\centering Look   &\PBS\centering 7/f   &\PBS\centering list of tile   &\PBS\centering look around    \\\cline{1-5}
+NETWORK   &\PBS\centering Inventory   &\PBS\centering 1/f   &\PBS\centering list the inventory of the ai   &\PBS\centering look inventory    \\\cline{1-5}
+NO   &\PBS\centering Broadcast {\itshape text}   &\PBS\centering 7/f   &\PBS\centering ok   &\PBS\centering send a message to all players    \\\cline{1-5}
+NETWORK   &\PBS\centering Connect\+\_\+nbr   &\PBS\centering 0/f   &\PBS\centering value   &\PBS\centering send the number of slots valid for the team    \\\cline{1-5}
+NO   &\PBS\centering Fork   &\PBS\centering 42/f   &\PBS\centering ok   &\PBS\centering create a new player    \\\cline{1-5}
+NO   &\PBS\centering Eject   &\PBS\centering 7/f   &\PBS\centering ok   &\PBS\centering eject player from the tile    \\\cline{1-5}
+NO   &\PBS\centering Take {\itshape object}   &\PBS\centering 7/f   &\PBS\centering ok/ko   &\PBS\centering take an object on the tile    \\\cline{1-5}
+NO   &\PBS\centering Set {\itshape object}   &\PBS\centering 7/f   &\PBS\centering ok/ko   &\PBS\centering set an object on the tile    \\\cline{1-5}
+NO   &\PBS\centering Incantation   &\PBS\centering 300/f   &\PBS\centering ok/ko   &\PBS\centering start the incantation   \\\cline{1-5}
+\end{longtabu}

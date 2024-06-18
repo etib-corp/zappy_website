@@ -1,0 +1,96 @@
+\doxysection{amber\+\_\+logic.\+h}
+\hypertarget{amber__logic_8h_source}{}\label{amber__logic_8h_source}\index{server/include/amber\_logic.h@{server/include/amber\_logic.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ amber\_logic}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AMBER\_LOGIC\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ AMBER\_LOGIC\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_queue\_command.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_init.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_clock.h"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#include\ <math.h>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#define\ ABS(n)\ (n\ <\ 0)\ ?\ -\/n\ :\ n}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structpos__s}{pos\_s}}\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{int}\ x;}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordtype}{int}\ y;}
+\DoxyCodeLine{00021\ \}\ \mbox{\hyperlink{structpos__s}{pos\_t}};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00030\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structlogic__command__s}{logic\_command\_s}}\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ type\_command\_t\ \mbox{\hyperlink{structlogic__command__s_ad003bb3a2d97494e896cc078c1bcd25e}{\_command}};\ }
+\DoxyCodeLine{00032\ \ \ \ \ void\ (*\mbox{\hyperlink{structlogic__command__s_a2f196b85551427c4b7f132a6df4d2207}{\_func}})}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *cli,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *wrld,}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *srv);\ }
+\DoxyCodeLine{00035\ \}\ \mbox{\hyperlink{structlogic__command__s}{logic\_command\_t}};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{extern}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structlogic__command__s}{logic\_command\_t}}\ logic\_commands[];}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00053\ \textcolor{keywordtype}{int}\ clamp(\textcolor{keywordtype}{int}\ min,\ \textcolor{keywordtype}{int}\ current,\ \textcolor{keywordtype}{int}\ max);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{int}\ real\_clamp(\textcolor{keywordtype}{int}\ min,\ \textcolor{keywordtype}{int}\ current,\ \textcolor{keywordtype}{int}\ max);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00073\ \textcolor{keywordtype}{void}\ amber\_check\_client\_alive(\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *server,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{void}\ send\_cli\_msg(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ *message);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00090\ \textcolor{keywordtype}{void}\ amber\_logic\_forward(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00091\ \ \ \ \ UNUSED\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00100\ \textcolor{keywordtype}{void}\ amber\_logic\_right(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00101\ \ \ \ \ UNUSED\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00110\ \textcolor{keywordtype}{void}\ amber\_logic\_left(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ UNUSED\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00111\ \ \ \ \ UNUSED\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00120\ \textcolor{keywordtype}{void}\ amber\_logic\_look(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00121\ \ \ \ \ UNUSED\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00122\ }
+\DoxyCodeLine{00130\ \textcolor{keywordtype}{void}\ amber\_logic\_inventory(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,}
+\DoxyCodeLine{00131\ \ \ \ \ UNUSED\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ UNUSED\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00140\ \textcolor{keywordtype}{void}\ amber\_logic\_broadcast(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00141\ \ \ \ \ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00150\ \textcolor{keywordtype}{void}\ amber\_logic\_eject(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00151\ \ \ \ \ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00160\ \textcolor{keywordtype}{void}\ amber\_logic\_fork(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00161\ \ \ \ \ UNUSED\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00162\ }
+\DoxyCodeLine{00181\ \textcolor{keywordtype}{void}\ amber\_logic\_connect\_nbr(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00182\ \ \ \ \ UNUSED\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00183\ }
+\DoxyCodeLine{00190\ \textcolor{keywordtype}{void}\ amber\_logic\_loop(\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world);}
+\DoxyCodeLine{00191\ }
+\DoxyCodeLine{00200\ \textcolor{keywordtype}{int}\ get\_distance(\textcolor{keywordtype}{int}\ src,\ \textcolor{keywordtype}{int}\ dest,\ \textcolor{keywordtype}{int}\ max);}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00211\ \textcolor{comment}{//\ int\ get\_direction\_action(int\ src,\ int\ dest,\ int\ max);}}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00219\ \textcolor{keywordtype}{bool}\ *initialize\_perimeter(\textcolor{keywordtype}{int}\ *directions);}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00233\ \textcolor{keywordtype}{int}\ get\_direction\_by\_perimeter(\textcolor{keywordtype}{bool}\ *perimeter,\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client);}
+\DoxyCodeLine{00234\ }
+\DoxyCodeLine{00235\ \mbox{\hyperlink{structpos__s}{pos\_t}}\ plotline(\mbox{\hyperlink{structpos__s}{pos\_t}}\ *m,\ \mbox{\hyperlink{structpos__s}{pos\_t}}\ *m2);}
+\DoxyCodeLine{00236\ }
+\DoxyCodeLine{00250\ \textcolor{keywordtype}{bool}\ *precise\_perimeter(\textcolor{keywordtype}{bool}\ *perim,\ \textcolor{keywordtype}{int}\ *distances);}
+\DoxyCodeLine{00251\ }
+\DoxyCodeLine{00260\ \textcolor{keywordtype}{void}\ amber\_logic\_take(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00261\ \ \ \ \ UNUSED\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00262\ }
+\DoxyCodeLine{00271\ \textcolor{keywordtype}{void}\ amber\_logic\_set(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00272\ \ \ \ \ UNUSED\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00287\ \textcolor{keywordtype}{void}\ amber\_logic\_incantation(\mbox{\hyperlink{structamber__client__s}{amber\_client\_t}}\ *client,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,}
+\DoxyCodeLine{00288\ \ \ \ \ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *serv);}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00290\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AMBER\_LOGIC\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

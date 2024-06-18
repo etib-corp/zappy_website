@@ -1,0 +1,78 @@
+\doxysection{Floor\+VR Class Reference}
+\hypertarget{classFloorVR}{}\label{classFloorVR}\index{FloorVR@{FloorVR}}
+Inheritance diagram for Floor\+VR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classFloorVR}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFloorVR_a448f939ad980cf5281609325a2f7fd82}\label{classFloorVR_a448f939ad980cf5281609325a2f7fd82} 
+{\bfseries Floor\+VR} (const EGE\+::\+Maths\+::\+Vector2$<$ int $>$ \&position, std\+::shared\+\_\+ptr$<$ EGE\+::\+Window\+VR $>$ window)
+\item 
+void \mbox{\hyperlink{classFloorVR_a67f0610dd369c107819e190e3028cb50}{update}} (std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$ shader)
+\item 
+\Hypertarget{classFloorVR_a03de280a35329e85b1fd323f4638aec5}\label{classFloorVR_a03de280a35329e85b1fd323f4638aec5} 
+void {\bfseries add\+Item} (Item\+VR\+::\+TYPE type, int number=1)
+\item 
+\Hypertarget{classFloorVR_ae1508c28085c9ab8911465ba4667ec3a}\label{classFloorVR_ae1508c28085c9ab8911465ba4667ec3a} 
+void {\bfseries remove\+Item} (Item\+VR\+::\+TYPE type)
+\item 
+\Hypertarget{classFloorVR_a1b7a71684562e6b752734eed85d0bd84}\label{classFloorVR_a1b7a71684562e6b752734eed85d0bd84} 
+int {\bfseries get\+Quantity} (Item\+VR\+::\+TYPE type) const
+\item 
+\Hypertarget{classFloorVR_a1f931e62f7544a0a9de780ac4bdc443b}\label{classFloorVR_a1f931e62f7544a0a9de780ac4bdc443b} 
+EGE\+::\+Maths\+::\+Vector2$<$ int $>$ {\bfseries get\+Position} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEntityVR}{Entity\+VR}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries update} (std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$ shader)
+\item 
+virtual void {\bfseries set\+Position} (const EGE\+::\+Maths\+::\+Vector3$<$ float $>$ \&position)
+\item 
+virtual EGE\+::\+Maths\+::\+Vector3$<$ float $>$ {\bfseries get\+Position} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFloorVR_aa20d20243bf185925af4c94f2b92dfe9}\label{classFloorVR_aa20d20243bf185925af4c94f2b92dfe9} 
+int {\bfseries \+\_\+quantity} \mbox{[}Item\+VR\+::\+TYPE\+::\+MAX\mbox{]}
+\item 
+\Hypertarget{classFloorVR_a348312705c6477a31e184767e4b757d2}\label{classFloorVR_a348312705c6477a31e184767e4b757d2} 
+EGE\+::\+Maths\+::\+Vector2$<$ int $>$ {\bfseries \+\_\+pos}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEntityVR}{Entity\+VR}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ EGE\+::\+Model\+VR $>$ {\bfseries \+\_\+model}
+\item 
+EGE\+::\+Maths\+::\+Vector3$<$ float $>$ {\bfseries \+\_\+position}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFloorVR_a0d69db6782186332f7866ec2e79df57e}\label{classFloorVR_a0d69db6782186332f7866ec2e79df57e} 
+static std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classItemVR}{Item\+VR}} $>$ $>$ {\bfseries \+\_\+items} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFloorVR_a67f0610dd369c107819e190e3028cb50}\label{classFloorVR_a67f0610dd369c107819e190e3028cb50} 
+\index{FloorVR@{FloorVR}!update@{update}}
+\index{update@{update}!FloorVR@{FloorVR}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Floor\+VR\+::update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classEntityVR}{Entity\+VR}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/bonus\+VR/include/Floor\+VR.\+hpp\item 
+gui/bonus\+VR/src/Floor\+VR.\+cpp\end{DoxyCompactItemize}

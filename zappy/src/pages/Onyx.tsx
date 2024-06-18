@@ -1,13 +1,13 @@
 import Bloc, { Article } from "../components/Bloc";
-import Footer_Component from "../components/Footer";
-import { Narbar_Component } from "../components/Navbar";
+import FooterComponent from "../components/Footer";
+import { NavbarComponent } from "../components/Navbar";
 
 import onyx from "../JSON/onyx.json";
 
 export default function Onyx() {
     return (
         <div className="dark:bg-gray-800 py-2 overflow-x-hidden">
-            <Narbar_Component />
+            <NavbarComponent />
             <div className="max-md:mx-8 flex items-center justify-center my-10 bg-gradient-to-r from-tahiti to-purple-500">
                 <h1 className="max-lg:ml-20 max-md:text-2xl max-md:ml-10 text-4xl font-semibold font-sans italic overline">
                     Onyx
@@ -36,7 +36,7 @@ export default function Onyx() {
                     <Bloc properties={onyx.Information} />
                 </div>
             </div>
-            <Footer_Component />
+            <FooterComponent />
         </div>
     );
 }
