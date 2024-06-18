@@ -1,0 +1,50 @@
+\doxysection{Map.\+hpp}
+\hypertarget{Map_8hpp_source}{}\label{Map_8hpp_source}\index{gui/include/Map.hpp@{gui/include/Map.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ gui}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Map}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UNUSED\ \_\_attribute\_\_((unused))}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}Floor.hpp"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}Maths/Vector2.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ "{}Utils.hpp"{}}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <regex>}}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespaceOnyx}{Onyx}}\ \{}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classOnyx_1_1Map}{Map}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classOnyx_1_1Entity}{Onyx::Entity}}\ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classOnyx_1_1Map_a2baf0e73768d1c3716e89a684921e59f}{Map}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classOnyx_1_1Map_a2baf0e73768d1c3716e89a684921e59f}{Map}}(\textcolor{keyword}{const}\ EGE::Maths::Vector2<int>\&\ size);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classOnyx_1_1Map_aa2931860f1cd10d2428db1e5fa861244}{\string~Map}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOnyx_1_1Map_a5b65381481e8011fd076cc5f8d24de0a}{update}}(std::shared\_ptr<EGE::Shader>\ shader);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOnyx_1_1Map_ab165b5d76d9569b22fabe292c0c8af01}{addItem}}(\textcolor{keyword}{const}\ EGE::Maths::Vector2<int>\&\ position,\ \mbox{\hyperlink{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd}{Onyx::Item::TYPE}}\ type,\ \textcolor{keywordtype}{int}\ number\ =\ 1);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classOnyx_1_1Map_a74e9da13854e1ec43d8987ed63f5ed1d}{removeItem}}(\textcolor{keyword}{const}\ EGE::Maths::Vector2<int>\&\ position,\ \mbox{\hyperlink{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd}{Onyx::Item::TYPE}}\ type);}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ EGE::Maths::Vector2<int>\ \mbox{\hyperlink{classOnyx_1_1Map_a3be71902d702dd97a16d9ff2402d0077}{getSize}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<Floor>>\ \mbox{\hyperlink{classOnyx_1_1Map_a4f66a3010650203af801dc2403272368}{getFloor}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classOnyx_1_1Map_aeca2e72ac92e553b853617237318237e}{getTileSelected}}(EGE::Maths::Vector3<float>\ cameraPositon,\ EGE::Maths::Vector3<float>\ cameraFront,\ EGE::Maths::Vector2<int>\ mousePos);}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<std::shared\_ptr<Floor>>\ \_floor;\ }
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ std::shared\_ptr<EGE::Shader>\ \_shader;\ \ \ \ \ \ \ }
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ EGE::Maths::Vector2<int>\ \_size;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00104\ \ \ \ \ \};}
+\DoxyCodeLine{00105\ \}}
+
+\end{DoxyCode}

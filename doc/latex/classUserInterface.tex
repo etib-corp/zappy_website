@@ -1,0 +1,94 @@
+\doxysection{User\+Interface Class Reference}
+\hypertarget{classUserInterface}{}\label{classUserInterface}\index{UserInterface@{UserInterface}}
+
+
+Represents the user interface for the zappy game.  
+
+
+
+
+{\ttfamily \#include $<$User\+Interface.\+hpp$>$}
+
+Inheritance diagram for User\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classUserInterface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classUserInterface_ae6fb70370701b3bd6120e923df9705b0}\label{classUserInterface_ae6fb70370701b3bd6120e923df9705b0} 
+{\bfseries User\+Interface} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \doxylink{classUserInterface}{User\+Interface} class. \end{DoxyCompactList}\item 
+\Hypertarget{classUserInterface_ae588b2ff1711a016dd4c6fc5002c0841}\label{classUserInterface_ae588b2ff1711a016dd4c6fc5002c0841} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+User\+Interface} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{classUserInterface}{User\+Interface} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUserInterface_a52d922cf2915e12eac30e92f6ffa6212}{init\+Playlist}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Initializes the playlist with the given path. \end{DoxyCompactList}\item 
+EGE\+::\+Sound\+::\+Playlist \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classUserInterface_a3f83eddb00d06b1cb1b7e1d9495641d3}{get\+Playlist}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the playlist. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+EGE\+::\+Sound\+::\+Device \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classUserInterface_a764b3893c8598311c71eb461622c6a97}{\+\_\+sound\+Device}}
+\item 
+EGE\+::\+Sound\+::\+Playlist \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classUserInterface_a99ebcc05165c2660bda8659f2eb9e46f}{\+\_\+playlist}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the user interface for the zappy game. 
+
+This class inherits from the EGE\+::\+GUIManager class and provides functionality for managing the graphical user interface of the game. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUserInterface_a3f83eddb00d06b1cb1b7e1d9495641d3}\label{classUserInterface_a3f83eddb00d06b1cb1b7e1d9495641d3} 
+\index{UserInterface@{UserInterface}!getPlaylist@{getPlaylist}}
+\index{getPlaylist@{getPlaylist}!UserInterface@{UserInterface}}
+\doxysubsubsection{\texorpdfstring{getPlaylist()}{getPlaylist()}}
+{\footnotesize\ttfamily EGE\+::\+Sound\+::\+Playlist \texorpdfstring{$\ast$}{*} User\+Interface\+::get\+Playlist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the playlist. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to the playlist. 
+\end{DoxyReturn}
+\Hypertarget{classUserInterface_a52d922cf2915e12eac30e92f6ffa6212}\label{classUserInterface_a52d922cf2915e12eac30e92f6ffa6212} 
+\index{UserInterface@{UserInterface}!initPlaylist@{initPlaylist}}
+\index{initPlaylist@{initPlaylist}!UserInterface@{UserInterface}}
+\doxysubsubsection{\texorpdfstring{initPlaylist()}{initPlaylist()}}
+{\footnotesize\ttfamily void User\+Interface\+::init\+Playlist (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Initializes the playlist with the given path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to the playlist. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classUserInterface_a99ebcc05165c2660bda8659f2eb9e46f}\label{classUserInterface_a99ebcc05165c2660bda8659f2eb9e46f} 
+\index{UserInterface@{UserInterface}!\_playlist@{\_playlist}}
+\index{\_playlist@{\_playlist}!UserInterface@{UserInterface}}
+\doxysubsubsection{\texorpdfstring{\_playlist}{\_playlist}}
+{\footnotesize\ttfamily EGE\+::\+Sound\+::\+Playlist\texorpdfstring{$\ast$}{*} User\+Interface\+::\+\_\+playlist\hspace{0.3cm}{\ttfamily [protected]}}
+
+The playlist. \Hypertarget{classUserInterface_a764b3893c8598311c71eb461622c6a97}\label{classUserInterface_a764b3893c8598311c71eb461622c6a97} 
+\index{UserInterface@{UserInterface}!\_soundDevice@{\_soundDevice}}
+\index{\_soundDevice@{\_soundDevice}!UserInterface@{UserInterface}}
+\doxysubsubsection{\texorpdfstring{\_soundDevice}{\_soundDevice}}
+{\footnotesize\ttfamily EGE\+::\+Sound\+::\+Device\texorpdfstring{$\ast$}{*} User\+Interface\+::\+\_\+sound\+Device\hspace{0.3cm}{\ttfamily [protected]}}
+
+The sound device. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/include/User\+Interface.\+hpp\item 
+gui/src/User\+Interface.\+cpp\end{DoxyCompactItemize}

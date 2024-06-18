@@ -1,0 +1,75 @@
+\doxysection{Map\+VR Class Reference}
+\hypertarget{classMapVR}{}\label{classMapVR}\index{MapVR@{MapVR}}
+Inheritance diagram for Map\+VR\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMapVR}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classMapVR_abfd9cd158a84bc4bcef0acee2012369d}\label{classMapVR_abfd9cd158a84bc4bcef0acee2012369d} 
+{\bfseries Map\+VR} (const EGE\+::\+Maths\+::\+Vector2$<$ int $>$ \&size, std\+::shared\+\_\+ptr$<$ EGE\+::\+Window\+VR $>$ window)
+\item 
+void \mbox{\hyperlink{classMapVR_a31470bc250f1740a95d39b52fefacf73}{update}} (std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$ shader)
+\item 
+\Hypertarget{classMapVR_a9fb1e336b591128e2209577fa718a9f8}\label{classMapVR_a9fb1e336b591128e2209577fa718a9f8} 
+void {\bfseries add\+Item} (const EGE\+::\+Maths\+::\+Vector2$<$ int $>$ \&position, Item\+VR\+::\+TYPE type, int number=1)
+\item 
+\Hypertarget{classMapVR_ab4b44a93e2415326ed6979eee2304197}\label{classMapVR_ab4b44a93e2415326ed6979eee2304197} 
+void {\bfseries remove\+Item} (const EGE\+::\+Maths\+::\+Vector2$<$ int $>$ \&position, Item\+VR\+::\+TYPE type)
+\item 
+\Hypertarget{classMapVR_a556e9f157f93e7cec4daff571c4ed098}\label{classMapVR_a556e9f157f93e7cec4daff571c4ed098} 
+EGE\+::\+Maths\+::\+Vector2$<$ int $>$ {\bfseries get\+Size} () const
+\item 
+\Hypertarget{classMapVR_a660dfac7e5be213ef4af49439084ec7a}\label{classMapVR_a660dfac7e5be213ef4af49439084ec7a} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFloorVR}{Floor\+VR}} $>$ $>$ {\bfseries get\+Floor} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classEntityVR}{Entity\+VR}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void {\bfseries update} (std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$ shader)
+\item 
+virtual void {\bfseries set\+Position} (const EGE\+::\+Maths\+::\+Vector3$<$ float $>$ \&position)
+\item 
+virtual EGE\+::\+Maths\+::\+Vector3$<$ float $>$ {\bfseries get\+Position} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classMapVR_a49587fdc26d4d35975e07ed387f9371e}\label{classMapVR_a49587fdc26d4d35975e07ed387f9371e} 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFloorVR}{Floor\+VR}} $>$ $>$ {\bfseries \+\_\+floor}
+\item 
+\Hypertarget{classMapVR_ab087e3b3da4d30816eb49212ef80c296}\label{classMapVR_ab087e3b3da4d30816eb49212ef80c296} 
+EGE\+::\+Maths\+::\+Vector2$<$ int $>$ {\bfseries \+\_\+size}
+\item 
+\Hypertarget{classMapVR_a71a3812546c1f497c14570df57341523}\label{classMapVR_a71a3812546c1f497c14570df57341523} 
+std\+::shared\+\_\+ptr$<$ EGE\+::\+Window\+VR $>$ {\bfseries \+\_\+window}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classEntityVR}{Entity\+VR}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ EGE\+::\+Model\+VR $>$ {\bfseries \+\_\+model}
+\item 
+EGE\+::\+Maths\+::\+Vector3$<$ float $>$ {\bfseries \+\_\+position}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMapVR_a31470bc250f1740a95d39b52fefacf73}\label{classMapVR_a31470bc250f1740a95d39b52fefacf73} 
+\index{MapVR@{MapVR}!update@{update}}
+\index{update@{update}!MapVR@{MapVR}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Map\+VR\+::update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classEntityVR}{Entity\+VR}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/bonus\+VR/include/Map\+VR.\+hpp\item 
+gui/bonus\+VR/src/Map\+VR.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\doxysection{list\+\_\+s Struct Reference}
+\hypertarget{structlist__s}{}\label{structlist__s}\index{list\_s@{list\_s}}
+
+
+Represents a list data structure.  
+
+
+
+
+{\ttfamily \#include $<$list.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structlist__s_ad5e546d5ddabee189057a8af10830c35}\label{structlist__s_ad5e546d5ddabee189057a8af10830c35} 
+\mbox{\hyperlink{structlinked__list__s}{linked\+\_\+list\+\_\+t}} \texorpdfstring{$\ast$}{*} {\bfseries nodes}
+\item 
+\Hypertarget{structlist__s_abfc9dcf6d9c9aeb6c1e2a51c41700bc1}\label{structlist__s_abfc9dcf6d9c9aeb6c1e2a51c41700bc1} 
+\mbox{\hyperlink{list_8h_a2d68774629ac361c160d71fb82b89868}{constructor\+\_\+t}} {\bfseries create}
+\item 
+\Hypertarget{structlist__s_a88a64c23214a67f1b4cbd4ed86704096}\label{structlist__s_a88a64c23214a67f1b4cbd4ed86704096} 
+\mbox{\hyperlink{list_8h_a29a1b06eaf4dd164b2243c9cc3e964b4}{destructor\+\_\+t}} {\bfseries destructor}
+\item 
+\Hypertarget{structlist__s_a4c970fd7696aa5d4aa30c8c566c49e57}\label{structlist__s_a4c970fd7696aa5d4aa30c8c566c49e57} 
+int {\bfseries len}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a list data structure. 
+
+The {\ttfamily list\+\_\+t} structure contains a linked list of nodes, along with function pointers for creating and destroying nodes. It also keeps track of the length of the list. 
+\begin{DoxyParams}{Parameters}
+{\em nodes} & A pointer to the linked list of nodes. \\
+\hline
+{\em create} & A function pointer to the constructor function for creating nodes. \\
+\hline
+{\em destructor} & A function pointer to the destructor function for destroying nodes. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+server/libs/list/include/\mbox{\hyperlink{list_8h}{list.\+h}}\end{DoxyCompactItemize}

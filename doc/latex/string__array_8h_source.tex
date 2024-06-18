@@ -1,0 +1,49 @@
+\doxysection{string\+\_\+array.\+h}
+\hypertarget{string__array_8h_source}{}\label{string__array_8h_source}\index{server/libs/string\_array/include/string\_array.h@{server/libs/string\_array/include/string\_array.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ string\_array}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ STRING\_ARRAY\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ STRING\_ARRAY\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ <unistd.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdlib.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdio.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#include\ <string.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdbool.h>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{void}\ free\_string\_array(\textcolor{keywordtype}{char}\ **array);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{int}\ length\_string\_array(\textcolor{keywordtype}{char}\ **array);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00039\ [[\_\_nodiscard\_\_]]\ \textcolor{keywordtype}{char}\ **append\_string\_array(\textcolor{keywordtype}{char}\ **array,\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ [[\_\_nodiscard\_\_]]\ \textcolor{keywordtype}{char}\ **pop\_back\_string\_array(\textcolor{keywordtype}{char}\ **array);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00055\ [[\_\_nodiscard\_\_]]\ \textcolor{keywordtype}{char}\ **pop\_front\_string\_array(\textcolor{keywordtype}{char}\ **array);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00064\ [[\_\_nodiscard\_\_]]\ \textcolor{keywordtype}{char}\ **prepend\_string\_array(\textcolor{keywordtype}{char}\ **array,\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00074\ [[\_\_nodiscard\_\_]]\ \textcolor{keywordtype}{char}\ **insert\_string\_array(\textcolor{keywordtype}{char}\ **arr,\ \textcolor{keywordtype}{char}\ *str,\ \textcolor{keywordtype}{int}\ idx);}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00083\ [[\_\_nodiscard\_\_]]\ \textcolor{keywordtype}{char}\ **remove\_string\_array(\textcolor{keywordtype}{char}\ **array,\ \textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00092\ \textcolor{keywordtype}{bool}\ contains\_string\_array(\textcolor{keywordtype}{char}\ **array,\ \textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00101\ [[\_\_nodiscard\_\_]]\ \textcolor{keywordtype}{char}\ *string\_array\_to\_string(\textcolor{keywordtype}{char}\ **array);}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00111\ [[\_\_nodiscard\_\_]]\ \textcolor{keywordtype}{char}\ **string\_to\_string\_array\_separator(\textcolor{keywordtype}{char}\ *str,\ \textcolor{keywordtype}{char}\ sep);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00120\ [[\_\_nodiscard\_\_]]\ \textcolor{keywordtype}{char}\ **string\_to\_string\_array(\textcolor{keywordtype}{char}\ *\textcolor{keywordtype}{string});}
+\DoxyCodeLine{00121\ }
+\DoxyCodeLine{00138\ [[\_\_nodiscard\_\_]]\ \textcolor{keywordtype}{char}\ *string\_array\_to\_string\_separator(\textcolor{keywordtype}{char}\ **arr,\ \textcolor{keywordtype}{char}\ sep);}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !STRING\_ARRAY\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

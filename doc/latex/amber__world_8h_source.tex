@@ -1,0 +1,107 @@
+\doxysection{amber\+\_\+world.\+h}
+\hypertarget{amber__world_8h_source}{}\label{amber__world_8h_source}\index{server/include/amber\_world.h@{server/include/amber\_world.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ amber\_world}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AMBER\_WORLD\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ AMBER\_WORLD\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdlib.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdio.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ <string.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdbool.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{common__defines_8h}{common\_defines.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{list_8h}{list.h}}"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}string\_array.h"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_check\_arg.h"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_clock.h"{}}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \#define\ FOOD\_DENSITY\ 0.5}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\ \ \ \ \#define\ LINEMATE\_DENSITY\ 0.3}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\ \ \ \ \#define\ DERAUMERE\_DENSITY\ 0.15}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\ \ \ \ \#define\ SIBUR\_DENSITY\ 0.1}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\ \ \ \ \#define\ MENDIANE\_DENSITY\ 0.1}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\ \ \ \ \#define\ PHIRAS\_DENSITY\ 0.08}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\ \ \ \ \#define\ THYSTAME\_DENSITY\ 0.05}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\ \ \ \ \#define\ RAND(x)\ (rand()\ \%\ x)}}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\ \ \ \ \#define\ INV\_TMP\ "{}mendiane\ \%d,\ phiras\ \%d,\ thystame\ \%d]\(\backslash\)n"{}}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\ \ \ \ \#define\ INVENTORY\ "{}[food\ \%d,\ linemate\ \%d,\ deraumere\ \%d,\ sibur\ \%d,\ "{}}\ INV\_TMP}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structegg__s}{egg\_s}}\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structegg__s_aca392264c7eaffc3162dcda6dcf2532e}{\_x}};\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structegg__s_ac69fd25c45e0d6cd58064e291f6b5264}{\_y}};\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{structegg__s_ad6f758af8a9f71976c20fb482cff3ddc}{\_team}};\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structegg__s_a1fd6eaa97a8c9b0741328d2a5567f445}{\_hatching\_time}};\ }
+\DoxyCodeLine{00042\ \ \ \ \ direction\_t\ \mbox{\hyperlink{structegg__s_a6e5f3e0dae499667c87254dfb9a4ba42}{\_direction}};\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structegg__s_a6b8237afe1e961549264e8c3f86e5560}{\_id}};\ }
+\DoxyCodeLine{00044\ \}\ \mbox{\hyperlink{structegg__s}{egg\_t}};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00053\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structbox__s}{box\_s}}\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{int}\ \_food;}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{int}\ \_linemate;}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{int}\ \_deraumere;}
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{int}\ \_sibur;}
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{int}\ \_mendiane;}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \_phiras;}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{int}\ \_thystame;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{int}\ \_players;}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ \_eggs;}
+\DoxyCodeLine{00063\ \}\ \mbox{\hyperlink{structbox__s}{box\_t}};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structpair__s}{pair\_s}}\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structpair__s_ab733a74e6ebaa0df4925d769983f79e9}{\_c\_value}};\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structpair__s_ae55d8a396c4bd2c1a4d36e1d415f88d4}{\_m\_value}};\ }
+\DoxyCodeLine{00071\ \}\ \mbox{\hyperlink{structpair__s}{pair\_t}};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00097\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structamber__world__s}{amber\_world\_s}}\ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{int}\ \_width;}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordtype}{int}\ \_height;}
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordtype}{int}\ \_clientsNb;}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{char}\ **\_teams\_name;}
+\DoxyCodeLine{00102\ \ \ \ \ \mbox{\hyperlink{structbox__s}{box\_t}}\ **\_case;}
+\DoxyCodeLine{00103\ \ \ \ \ \mbox{\hyperlink{structpair__s}{pair\_t}}\ \_food\_info;}
+\DoxyCodeLine{00104\ \ \ \ \ \mbox{\hyperlink{structpair__s}{pair\_t}}\ \_linemate\_info;}
+\DoxyCodeLine{00105\ \ \ \ \ \mbox{\hyperlink{structpair__s}{pair\_t}}\ \_deraumere\_info;}
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{structpair__s}{pair\_t}}\ \_sibur\_info;}
+\DoxyCodeLine{00107\ \ \ \ \ \mbox{\hyperlink{structpair__s}{pair\_t}}\ \_mendiane\_info;}
+\DoxyCodeLine{00108\ \ \ \ \ \mbox{\hyperlink{structpair__s}{pair\_t}}\ \_phiras\_info;}
+\DoxyCodeLine{00109\ \ \ \ \ \mbox{\hyperlink{structpair__s}{pair\_t}}\ \_thystame\_info;}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{structlist__s}{list\_t}}\ *\_eggs;}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{double}\ \_freq;}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \_clock;}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{int}\ \_last\_egg\_id;}
+\DoxyCodeLine{00114\ \}\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}};}
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00124\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *amber\_create\_world(\mbox{\hyperlink{structargs__s}{args\_t}}\ *args);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00134\ \textcolor{keywordtype}{void}\ destroy\_amber\_world(\mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world);}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00143\ \textcolor{keywordtype}{void}\ amber\_refill\_world(\mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world);}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00157\ \textcolor{keywordtype}{void}\ amber\_display\_world(\textcolor{keywordtype}{int}\ fd,\ \mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \textcolor{keywordtype}{bool}\ box);}
+\DoxyCodeLine{00158\ }
+\DoxyCodeLine{00168\ \textcolor{keywordtype}{void}\ *amber\_create\_egg(va\_list\ *ap);}
+\DoxyCodeLine{00169\ }
+\DoxyCodeLine{00178\ \textcolor{keywordtype}{void}\ amber\_destroy\_egg(\textcolor{keywordtype}{void}\ *gree);}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00187\ \mbox{\hyperlink{structegg__s}{egg\_t}}\ *amber\_get\_egg\_by\_team(\mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \textcolor{keywordtype}{char}\ *team);}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00200\ \textcolor{keywordtype}{char}\ *amber\_world\_case\_stringify(\mbox{\hyperlink{structbox__s}{box\_t}}\ *box);}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00211\ \textcolor{keywordtype}{int}\ amber\_get\_nbr\_eggs\_by\_team(\mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world,\ \textcolor{keywordtype}{char}\ *team);}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00221\ \mbox{\hyperlink{structbox__s}{box\_t}}\ *amber\_world\_case\_init(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00228\ \textcolor{keywordtype}{void}\ amber\_init\_egg(\mbox{\hyperlink{structamber__world__s}{amber\_world\_t}}\ *world);}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AMBER\_WORLD\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

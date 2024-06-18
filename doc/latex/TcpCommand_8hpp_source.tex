@@ -1,0 +1,70 @@
+\doxysection{Tcp\+Command.\+hpp}
+\hypertarget{TcpCommand_8hpp_source}{}\label{TcpCommand_8hpp_source}\index{gui/include/TcpCommand.hpp@{gui/include/TcpCommand.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ TcpCommand}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ TCPCOMMAND\_HPP\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ TCPCOMMAND\_HPP\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ <vector>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}Utils.hpp"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#include\ <functional>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{namespace\ }net\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ type\_command\_s\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ MSZ,\ \ \ \ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ BCT,\ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ MCT,\ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ TNA,\ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ PNW,\ \ \ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ PPO,\ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ PLV,\ \ \ \ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ PIN,\ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ PEX,\ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ PBC,\ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ PIC,\ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ PIE,\ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ PFK,\ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ PDR,\ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ PGT,\ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ PDI,\ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ ENW,\ \ \ \ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ EHT,\ \ \ \ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ EBO,\ \ \ \ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ EDI,\ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ SGT,\ \ \ \ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ SEG,\ \ \ \ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ SMG,\ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ IDM,\ \ \ \ }
+\DoxyCodeLine{00046\ \ \ \ \ \}\ type\_command\_t;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classnet_1_1TcpCommand}{TcpCommand}}\ \{}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classnet_1_1TcpCommand_a762771227586b68c4f2ea25c02f6f6b6}{TcpCommand}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classnet_1_1TcpCommand_a762771227586b68c4f2ea25c02f6f6b6}{TcpCommand}}(type\_command\_t\ type,\ std::function<\textcolor{keywordtype}{void}(std::vector<std::string>\&\ args)>\ callback);}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classnet_1_1TcpCommand_a8e2fd8a4ee9ef3f2c56945ab230988cc}{\string~TcpCommand}}();}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classnet_1_1TcpCommand_aaa941af7feeb7a95372c334347a3f599}{exec}}(std::vector<std::string>\&\ args);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ type\_command\_t\ \mbox{\hyperlink{classnet_1_1TcpCommand_a008222d5348f717c35825bc753c28034}{\_type}};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ std::function<void(std::vector<std::string>\&\ args)>\ \mbox{\hyperlink{classnet_1_1TcpCommand_a9438611612969f43a8d7c4003fd00a19}{\_callback}};}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00094\ \ \ \ \ \};}
+\DoxyCodeLine{00095\ \}\ \textcolor{comment}{//\ namespace\ net}}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !TCPCOMMAND\_HPP\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

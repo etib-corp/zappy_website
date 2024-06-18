@@ -1,0 +1,131 @@
+\doxysection{server/include/common\+\_\+defines.h File Reference}
+\hypertarget{common__defines_8h}{}\label{common__defines_8h}\index{server/include/common\_defines.h@{server/include/common\_defines.h}}
+
+
+Contains the definition of the direction\+\_\+t enum.  
+
+
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{common__defines_8h_addf5ec070e9499d36b7f2009ce736076}{UNUSED}}~\+\_\+\+\_\+attribute\+\_\+\+\_\+((unused))
+\begin{DoxyCompactList}\small\item\em Macro to mark a variable as unused. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{common__defines_8h_a3acffbd305ee72dcd4593c0d8af64a4f}{MIN}}(a,  b)~((a) $<$ (b) ? (a) \+: (b))
+\begin{DoxyCompactList}\small\item\em Macro to calculate the minimum of two values. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{common__defines_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}{MAX}}(a,  b)~((a) $>$ (b) ? (a) \+: (b))
+\begin{DoxyCompactList}\small\item\em Macro to calculate the maximum of two values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{common__defines_8h_a84c4a0cbb39f5434914cc25c3b17ca10}\label{common__defines_8h_a84c4a0cbb39f5434914cc25c3b17ca10} 
+typedef enum \mbox{\hyperlink{common__defines_8h_aa9aabf24ef46feff65320960721536e6}{direction\+\_\+s}} {\bfseries direction\+\_\+t}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{common__defines_8h_aa9aabf24ef46feff65320960721536e6}{direction\+\_\+s}} \{ \mbox{\hyperlink{common__defines_8h_aa9aabf24ef46feff65320960721536e6aba595d8bca8bc5e67c37c0a9d89becfa}{UP}} = 1
+, \mbox{\hyperlink{common__defines_8h_aa9aabf24ef46feff65320960721536e6aec8379af7490bb9eaaf579cf17876f38}{RIGHT}}
+, \mbox{\hyperlink{common__defines_8h_aa9aabf24ef46feff65320960721536e6a9b0b4a95b99523966e0e34ffdadac9da}{DOWN}}
+, \mbox{\hyperlink{common__defines_8h_aa9aabf24ef46feff65320960721536e6adb45120aafd37a973140edee24708065}{LEFT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Represents the possible directions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the definition of the direction\+\_\+t enum. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{common__defines_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f}\label{common__defines_8h_afa99ec4acc4ecb2dc3c2d05da15d0e3f} 
+\index{common\_defines.h@{common\_defines.h}!MAX@{MAX}}
+\index{MAX@{MAX}!common\_defines.h@{common\_defines.h}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define MAX(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a) $>$ (b) ? (a) \+: (b))}
+
+
+
+Macro to calculate the maximum of two values. 
+
+This macro takes two values and returns the larger of the two.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first value. \\
+\hline
+{\em b} & The second value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The larger of the two values. 
+\end{DoxyReturn}
+\Hypertarget{common__defines_8h_a3acffbd305ee72dcd4593c0d8af64a4f}\label{common__defines_8h_a3acffbd305ee72dcd4593c0d8af64a4f} 
+\index{common\_defines.h@{common\_defines.h}!MIN@{MIN}}
+\index{MIN@{MIN}!common\_defines.h@{common\_defines.h}}
+\doxysubsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \#define MIN(\begin{DoxyParamCaption}\item[{}]{a,  }\item[{}]{b }\end{DoxyParamCaption})~((a) $<$ (b) ? (a) \+: (b))}
+
+
+
+Macro to calculate the minimum of two values. 
+
+This macro takes two values and returns the smaller of the two.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The first value. \\
+\hline
+{\em b} & The second value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The smaller of the two values. 
+\end{DoxyReturn}
+\Hypertarget{common__defines_8h_addf5ec070e9499d36b7f2009ce736076}\label{common__defines_8h_addf5ec070e9499d36b7f2009ce736076} 
+\index{common\_defines.h@{common\_defines.h}!UNUSED@{UNUSED}}
+\index{UNUSED@{UNUSED}!common\_defines.h@{common\_defines.h}}
+\doxysubsubsection{\texorpdfstring{UNUSED}{UNUSED}}
+{\footnotesize\ttfamily \#define UNUSED~\+\_\+\+\_\+attribute\+\_\+\+\_\+((unused))}
+
+
+
+Macro to mark a variable as unused. 
+
+This macro is used to mark a variable as unused to avoid compiler warnings. It uses the {\ttfamily \+\_\+\+\_\+attribute\+\_\+\+\_\+((unused))} attribute to achieve this.
+
+Example usage\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int}\ foo\ UNUSED;}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{common__defines_8h_aa9aabf24ef46feff65320960721536e6}\label{common__defines_8h_aa9aabf24ef46feff65320960721536e6} 
+\index{common\_defines.h@{common\_defines.h}!direction\_s@{direction\_s}}
+\index{direction\_s@{direction\_s}!common\_defines.h@{common\_defines.h}}
+\doxysubsubsection{\texorpdfstring{direction\_s}{direction\_s}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{common__defines_8h_aa9aabf24ef46feff65320960721536e6}{direction\+\_\+s}}}
+
+
+
+Represents the possible directions. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UP@{UP}!common\_defines.h@{common\_defines.h}}\index{common\_defines.h@{common\_defines.h}!UP@{UP}}}\Hypertarget{common__defines_8h_aa9aabf24ef46feff65320960721536e6aba595d8bca8bc5e67c37c0a9d89becfa}\label{common__defines_8h_aa9aabf24ef46feff65320960721536e6aba595d8bca8bc5e67c37c0a9d89becfa} 
+UP&Up direction \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHT@{RIGHT}!common\_defines.h@{common\_defines.h}}\index{common\_defines.h@{common\_defines.h}!RIGHT@{RIGHT}}}\Hypertarget{common__defines_8h_aa9aabf24ef46feff65320960721536e6aec8379af7490bb9eaaf579cf17876f38}\label{common__defines_8h_aa9aabf24ef46feff65320960721536e6aec8379af7490bb9eaaf579cf17876f38} 
+RIGHT&Right direction \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOWN@{DOWN}!common\_defines.h@{common\_defines.h}}\index{common\_defines.h@{common\_defines.h}!DOWN@{DOWN}}}\Hypertarget{common__defines_8h_aa9aabf24ef46feff65320960721536e6a9b0b4a95b99523966e0e34ffdadac9da}\label{common__defines_8h_aa9aabf24ef46feff65320960721536e6a9b0b4a95b99523966e0e34ffdadac9da} 
+DOWN&Down direction \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEFT@{LEFT}!common\_defines.h@{common\_defines.h}}\index{common\_defines.h@{common\_defines.h}!LEFT@{LEFT}}}\Hypertarget{common__defines_8h_aa9aabf24ef46feff65320960721536e6adb45120aafd37a973140edee24708065}\label{common__defines_8h_aa9aabf24ef46feff65320960721536e6adb45120aafd37a973140edee24708065} 
+LEFT&Left direction \\
+\hline
+
+\end{DoxyEnumFields}

@@ -1,0 +1,107 @@
+\doxysection{model.\+Linear\+\_\+\+QNet Class Reference}
+\hypertarget{classmodel_1_1Linear__QNet}{}\label{classmodel_1_1Linear__QNet}\index{model.Linear\_QNet@{model.Linear\_QNet}}
+Inheritance diagram for model.\+Linear\+\_\+\+QNet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodel_1_1Linear__QNet}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodel_1_1Linear__QNet_aa855e75df4d02cb4a4fa2581d85fdff5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, input\+\_\+size, hidden\+\_\+size, output\+\_\+size)
+\item 
+\mbox{\hyperlink{classmodel_1_1Linear__QNet_aa6cb52dd8633f77adb489c4c1867a182}{forward}} (self, x)
+\item 
+\mbox{\hyperlink{classmodel_1_1Linear__QNet_a8ab3eda165a81bd34550acee12852f7e}{save}} (self, file\+\_\+name=\textquotesingle{}model.\+pth\textquotesingle{})
+\item 
+\mbox{\hyperlink{classmodel_1_1Linear__QNet_a64188a4eacfc548231b6b167498aef8e}{load}} (self, file\+\_\+name=\textquotesingle{}model.\+pth\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classmodel_1_1Linear__QNet_ab8819e678d49b86eb7d374326e033827}\label{classmodel_1_1Linear__QNet_ab8819e678d49b86eb7d374326e033827} 
+{\bfseries linear1}
+\item 
+\Hypertarget{classmodel_1_1Linear__QNet_a9d065b6650852c48ce1ee30eba5b969d}\label{classmodel_1_1Linear__QNet_a9d065b6650852c48ce1ee30eba5b969d} 
+{\bfseries linear2}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A linear Q-network model.
+
+Args:
+    input_size (int): The size of the input.
+    hidden_size (int): The size of the hidden layer.
+    output_size (int): The size of the output.
+
+Attributes:
+    linear1 (nn.Linear): The first linear layer.
+    linear2 (nn.Linear): The second linear layer.
+
+Methods:
+    forward(x): Performs forward pass through the network.
+    save(file_name='model.pth'): Saves the model's state dictionary to a file.
+    load(file_name='model.pth'): Loads the model's state dictionary from a file.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodel_1_1Linear__QNet_aa855e75df4d02cb4a4fa2581d85fdff5}\label{classmodel_1_1Linear__QNet_aa855e75df4d02cb4a4fa2581d85fdff5} 
+\index{model.Linear\_QNet@{model.Linear\_QNet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!model.Linear\_QNet@{model.Linear\_QNet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily model.\+Linear\+\_\+\+QNet.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{input\+\_\+size,  }\item[{}]{hidden\+\_\+size,  }\item[{}]{output\+\_\+size }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initializes a new instance of the Model class.
+
+Args:
+    input_size (int): The size of the input layer.
+    hidden_size (int): The size of the hidden layer.
+    output_size (int): The size of the output layer.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodel_1_1Linear__QNet_aa6cb52dd8633f77adb489c4c1867a182}\label{classmodel_1_1Linear__QNet_aa6cb52dd8633f77adb489c4c1867a182} 
+\index{model.Linear\_QNet@{model.Linear\_QNet}!forward@{forward}}
+\index{forward@{forward}!model.Linear\_QNet@{model.Linear\_QNet}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily model.\+Linear\+\_\+\+QNet.\+forward (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{x }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Forward pass of the model.
+
+Args:
+    x (torch.Tensor): Input tensor.
+
+Returns:
+    torch.Tensor: Output tensor.
+\end{DoxyVerb}
+ \Hypertarget{classmodel_1_1Linear__QNet_a64188a4eacfc548231b6b167498aef8e}\label{classmodel_1_1Linear__QNet_a64188a4eacfc548231b6b167498aef8e} 
+\index{model.Linear\_QNet@{model.Linear\_QNet}!load@{load}}
+\index{load@{load}!model.Linear\_QNet@{model.Linear\_QNet}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily model.\+Linear\+\_\+\+QNet.\+load (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+\_\+name = {\ttfamily \textquotesingle{}model.pth\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads the model's state dictionary from a file.
+
+Args:
+    file_name (str): The name of the file to load the model from. Defaults to 'model.pth'.
+\end{DoxyVerb}
+ \Hypertarget{classmodel_1_1Linear__QNet_a8ab3eda165a81bd34550acee12852f7e}\label{classmodel_1_1Linear__QNet_a8ab3eda165a81bd34550acee12852f7e} 
+\index{model.Linear\_QNet@{model.Linear\_QNet}!save@{save}}
+\index{save@{save}!model.Linear\_QNet@{model.Linear\_QNet}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily model.\+Linear\+\_\+\+QNet.\+save (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{file\+\_\+name = {\ttfamily \textquotesingle{}model.pth\textquotesingle{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves the model's state dictionary to a file.
+
+Args:
+    file_name (str): The name of the file to save the model to. Defaults to 'model.pth'.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ia/model.\+py\end{DoxyCompactItemize}

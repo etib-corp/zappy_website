@@ -1,0 +1,186 @@
+\doxysection{Onyx\+::Item Class Reference}
+\hypertarget{classOnyx_1_1Item}{}\label{classOnyx_1_1Item}\index{Onyx::Item@{Onyx::Item}}
+
+
+This class represents an item in the \doxylink{namespaceOnyx}{Onyx} game engine.  
+
+
+
+
+{\ttfamily \#include $<$Item.\+hpp$>$}
+
+Inheritance diagram for Onyx\+::Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classOnyx_1_1Item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classOnyx_1_1Item_1_1ItemError}{Item\+Error}}
+\begin{DoxyCompactList}\small\item\em This class represents an error related to the \doxylink{classOnyx_1_1Item}{Item} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd}\label{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd} 
+enum \mbox{\hyperlink{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd}{TYPE}} \{ \newline
+{\bfseries FOOD} = 0
+, {\bfseries LINEMATE}
+, {\bfseries DERAUMERE}
+, {\bfseries SIBUR}
+, \newline
+{\bfseries MENDIANE}
+, {\bfseries PHIRAS}
+, {\bfseries THYSTAME}
+, {\bfseries MAX}
+ \}
+\begin{DoxyCompactList}\small\item\em This enum represents the type of an item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOnyx_1_1Item_a74b4da536f7011452bfb4a4813051a82}{Item}} (EGE\+::\+Maths\+::\+Vector2$<$ int $>$ position, \mbox{\hyperlink{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd}{Onyx\+::\+Item\+::\+TYPE}} type)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classOnyx_1_1Item}{Item} class. \end{DoxyCompactList}\item 
+\Hypertarget{classOnyx_1_1Item_a41445d72c9329e73a636b6cad28d34dd}\label{classOnyx_1_1Item_a41445d72c9329e73a636b6cad28d34dd} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Item} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{classOnyx_1_1Item}{Item} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOnyx_1_1Item_ab31519a010def941745e18fd1e6c47a3}{update}} (std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$ shader) override
+\begin{DoxyCompactList}\small\item\em Updates the item. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd}{TYPE}} \mbox{\hyperlink{classOnyx_1_1Item_a3a28a2a1d86819697f90f708745d4de9}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em Gets the type of the item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOnyx_1_1Item_ab851884911a26daf016adf741f961bc5}{set\+Type}} (\mbox{\hyperlink{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd}{TYPE}} type)
+\begin{DoxyCompactList}\small\item\em Sets the type of the item. \end{DoxyCompactList}\item 
+EGE\+::\+Maths\+::\+Vector2$<$ int $>$ \mbox{\hyperlink{classOnyx_1_1Item_a9c04a6a63004140693503352af219d7f}{get\+Pos}} () const
+\begin{DoxyCompactList}\small\item\em Gets the position of the item in the grid of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOnyx_1_1Item_a572e29503be873a3d57021749de51027}{set\+Pos}} (EGE\+::\+Maths\+::\+Vector2$<$ int $>$ position)
+\begin{DoxyCompactList}\small\item\em Sets the position of the item in the grid of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classOnyx_1_1Entity}{Onyx\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Entity} ()=default
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classOnyx_1_1Entity_ac1f594fdd0473e9182d75a7b2db3106d}{update}} (std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$ shader)
+\begin{DoxyCompactList}\small\item\em Updates the entity. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classOnyx_1_1Entity_afe5101b37934eba361377613919074cf}{set\+Position}} (const EGE\+::\+Maths\+::\+Vector3$<$ float $>$ \&position)
+\begin{DoxyCompactList}\small\item\em Set the new position of the floor. \end{DoxyCompactList}\item 
+virtual EGE\+::\+Maths\+::\+Vector3$<$ float $>$ \mbox{\hyperlink{classOnyx_1_1Entity_a7ce2bc65be4ac978287e42a6f81df158}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Returns the position of the floor. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ EGE\+::\+Model $>$ \mbox{\hyperlink{classOnyx_1_1Entity_a951d726876449156f5f17383c51ffcb9}{get\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Returns the model associated with the entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classOnyx_1_1Entity}{Onyx\+::\+Entity}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ EGE\+::\+Model $>$ \mbox{\hyperlink{classOnyx_1_1Entity_aded44b3834c06aad8f88193caa3419bd}{\+\_\+model}}
+\item 
+EGE\+::\+Maths\+::\+Vector3$<$ float $>$ \mbox{\hyperlink{classOnyx_1_1Entity_a114bf724ad20e45425d7c19473bc6ce3}{\+\_\+position}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class represents an item in the \doxylink{namespaceOnyx}{Onyx} game engine. 
+
+It inherits from the \doxylink{classOnyx_1_1Entity}{Entity} class in the \doxylink{namespaceOnyx}{Onyx} namespace. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classOnyx_1_1Item_a74b4da536f7011452bfb4a4813051a82}\label{classOnyx_1_1Item_a74b4da536f7011452bfb4a4813051a82} 
+\index{Onyx::Item@{Onyx::Item}!Item@{Item}}
+\index{Item@{Item}!Onyx::Item@{Onyx::Item}}
+\doxysubsubsection{\texorpdfstring{Item()}{Item()}}
+{\footnotesize\ttfamily Onyx\+::\+Item\+::\+Item (\begin{DoxyParamCaption}\item[{EGE\+::\+Maths\+::\+Vector2$<$ int $>$}]{position,  }\item[{\mbox{\hyperlink{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd}{Onyx\+::\+Item\+::\+TYPE}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{classOnyx_1_1Item}{Item} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The position of the item. \\
+\hline
+{\em type} & The type of the item. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classOnyx_1_1Item_a9c04a6a63004140693503352af219d7f}\label{classOnyx_1_1Item_a9c04a6a63004140693503352af219d7f} 
+\index{Onyx::Item@{Onyx::Item}!getPos@{getPos}}
+\index{getPos@{getPos}!Onyx::Item@{Onyx::Item}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily EGE\+::\+Maths\+::\+Vector2$<$ int $>$ Onyx\+::\+Item\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the position of the item in the grid of the game. 
+
+\begin{DoxyReturn}{Returns}
+The position of the item. 
+\end{DoxyReturn}
+\Hypertarget{classOnyx_1_1Item_a3a28a2a1d86819697f90f708745d4de9}\label{classOnyx_1_1Item_a3a28a2a1d86819697f90f708745d4de9} 
+\index{Onyx::Item@{Onyx::Item}!getType@{getType}}
+\index{getType@{getType}!Onyx::Item@{Onyx::Item}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd}{Onyx\+::\+Item\+::\+TYPE}} Onyx\+::\+Item\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the type of the item. 
+
+\begin{DoxyReturn}{Returns}
+The type of the item. 
+\end{DoxyReturn}
+\Hypertarget{classOnyx_1_1Item_a572e29503be873a3d57021749de51027}\label{classOnyx_1_1Item_a572e29503be873a3d57021749de51027} 
+\index{Onyx::Item@{Onyx::Item}!setPos@{setPos}}
+\index{setPos@{setPos}!Onyx::Item@{Onyx::Item}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily void Onyx\+::\+Item\+::set\+Pos (\begin{DoxyParamCaption}\item[{EGE\+::\+Maths\+::\+Vector2$<$ int $>$}]{position }\end{DoxyParamCaption})}
+
+
+
+Sets the position of the item in the grid of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The new position of the item. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classOnyx_1_1Item_ab851884911a26daf016adf741f961bc5}\label{classOnyx_1_1Item_ab851884911a26daf016adf741f961bc5} 
+\index{Onyx::Item@{Onyx::Item}!setType@{setType}}
+\index{setType@{setType}!Onyx::Item@{Onyx::Item}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily void Onyx\+::\+Item\+::set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classOnyx_1_1Item_a52344f941bc0c2054d9b71063f09cbdd}{TYPE}}}]{type }\end{DoxyParamCaption})}
+
+
+
+Sets the type of the item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The new type of the item. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classOnyx_1_1Item_ab31519a010def941745e18fd1e6c47a3}\label{classOnyx_1_1Item_ab31519a010def941745e18fd1e6c47a3} 
+\index{Onyx::Item@{Onyx::Item}!update@{update}}
+\index{update@{update}!Onyx::Item@{Onyx::Item}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Onyx\+::\+Item\+::update (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ EGE\+::\+Shader $>$}]{shader }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shader} & The shader to use for the update. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classOnyx_1_1Entity_ac1f594fdd0473e9182d75a7b2db3106d}{Onyx\+::\+Entity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+gui/include/Item.\+hpp\item 
+gui/src/Item.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\doxysection{amber\+\_\+init.\+h}
+\hypertarget{amber__init_8h_source}{}\label{amber__init_8h_source}\index{server/include/amber\_init.h@{server/include/amber\_init.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ zappy}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ amber\_init}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ AMBER\_INIT\_H\_}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\ \ \ \ \#define\ AMBER\_INIT\_H\_}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdlib.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\ \ \ \ \#include\ <stdio.h>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#include\ <string.h>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#include\ <unistd.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \#include\ <sys/types.h>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \#include\ <sys/socket.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \#include\ <netinet/in.h>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \#include\ <arpa/inet.h>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \#include\ <netdb.h>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{common__defines_8h}{common\_defines.h}}"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}\mbox{\hyperlink{list_8h}{list.h}}"{}}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_check\_arg.h"{}}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}string\_array.h"{}}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_world.h"{}}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\ \ \ \ \#include\ "{}amber\_queue\_command.h"{}}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structtcp__s}{tcp\_s}}\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{int}\ \_fd;}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{int}\ \_port;}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keyword}{struct\ }sockaddr\_in\ \_addr;}
+\DoxyCodeLine{00042\ \}\ \mbox{\hyperlink{structtcp__s}{tcp\_t}};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00065\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structamber__client__s}{amber\_client\_s}}\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \mbox{\hyperlink{structtcp__s}{tcp\_t}}\ \_tcp;}
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{char}\ *\_buffer;}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{char}\ *\_team\_name;}
+\DoxyCodeLine{00069\ \ \ \ \ direction\_t\ \_direction;}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ \_x;}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ \_y;}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{int}\ \_level;}
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keywordtype}{int}\ \_id;}
+\DoxyCodeLine{00074\ \ \ \ \ \mbox{\hyperlink{structqueue__command__t}{queue\_command\_t}}\ *\_queue\_command;}
+\DoxyCodeLine{00075\ \ \ \ \ \mbox{\hyperlink{structbox__s}{box\_t}}\ *\_inventory;}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_is\_graphical;}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_is\_incantating;}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \_ellapsed\_time;}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{long}\ \_clock\_food;}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_is\_error;}
+\DoxyCodeLine{00081\ \}\ \mbox{\hyperlink{structamber__client__s}{amber\_client\_t}};}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00099\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_s}}\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{structtcp__s}{tcp\_t}}\ \_tcp;}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordtype}{int}\ \_freq;}
+\DoxyCodeLine{00102\ \ \ \ \ fd\_set\ \_readfds;}
+\DoxyCodeLine{00103\ \ \ \ \ fd\_set\ \_writefds;}
+\DoxyCodeLine{00104\ \ \ \ \ fd\_set\ \_exceptfds;}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \mbox{\hyperlink{structlist__s}{list\_t}}\ *\_clients;}
+\DoxyCodeLine{00107\ \ \ \ \ \mbox{\hyperlink{structlist__s}{list\_t}}\ *\_graphic\_clients;}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordtype}{bool}\ \_is\_running;}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordtype}{char}\ **\_teams\_name;}
+\DoxyCodeLine{00110\ \ \ \ \ \mbox{\hyperlink{structtcp__s}{tcp\_t}}\ \_debug\_client;}
+\DoxyCodeLine{00111\ \}\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}};}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00122\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *amber\_create\_server(\mbox{\hyperlink{structargs__s}{args\_t}}\ *args);}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00133\ \textcolor{keywordtype}{void}\ amber\_destroy\_server(\mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *server);}
+\DoxyCodeLine{00134\ }
+\DoxyCodeLine{00138\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{structamber__serv__s}{amber\_serv\_t}}\ *server;}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00140\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !AMBER\_INIT\_H\_\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}
